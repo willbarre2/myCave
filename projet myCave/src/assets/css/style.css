@@ -1,0 +1,15 @@
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "source",sans-serif;
+  color: #3e0018; }
