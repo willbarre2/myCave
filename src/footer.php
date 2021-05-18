@@ -1,7 +1,7 @@
 </main>
 
 <footer>
-    <p class="footer">&copy; William Barré - Tous droits réservés</p>
+    <p id="footer">&copy; William Barré - Tous droits réservés</p>
 </footer>
 
 
