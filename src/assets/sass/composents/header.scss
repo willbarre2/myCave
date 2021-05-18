@@ -3,17 +3,81 @@
 
 header{
     background: $bx;
+    height: 150px;
+    width: 100%;
+}
+#nav-cont{
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-header img{
-    width: 200px;
+header div img{
+    width: 250px;
+}
+
+nav ul{
+    display: flex;
 }
 
 nav ul li{
     list-style: none;
+    transition: 0.3s ease-in-out;
+    &:hover{
+        transform: scale(1.07);
+    }
 }
 
 nav ul li a{
     text-decoration: none;
+}
+
+%li-nav{
+    padding-bottom: .2rem;
+    margin: 1rem 5rem;
+    font-size: 2.5rem;
+    transition: .3s ease-in-out;
+}
+
+%hover{
+    &:hover{
+        transform: scale(1.07);
+    }
+}
+
+#nav-rouge{
+    color: $rouge;
+    @extend %li-nav;
+    &:hover{
+        transform: scale(1.07);
+        color:  transparentize($rouge, 0.5);
+    }
+}
+
+#nav-blanc{
+    color: $blanc;
+    @extend %li-nav;
+    &:hover{
+        transform: scale(1.07);
+        color:  transparentize($blanc, 0.5);
+    }
+}
+
+#nav-rose{
+    color: $rose;
+    @extend %li-nav;
+    &:hover{
+        transform: scale(1.07);
+        color:  transparentize($rose, 0.5);
+    }
+}
+
+.current_page{
+    border-bottom: 4px solid $rouge;
+    &:hover{
+        border-bottom-color: transparentize($rouge, 0.5);
+    }
 }

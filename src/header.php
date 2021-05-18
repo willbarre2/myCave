@@ -40,21 +40,23 @@ endif;
 
 <body>
     <header>
-        <img src="./assets/img/logos/logo-Cave.svg" alt="logo myCave">
-        <nav>
-            <ul>
-                <li>
-                    <a id="nav-rouge" class="<?php if ($page_rouge === $current_url) echo 'current_page'; ?>" href="<?php echo $page_rouge; ?>">Rouge</a>
-                </li>
-                <li>
-                    <a id="nav-blanc" class="<?php if ($page_blanc === $current_url) echo 'current_page'; ?>" href="<?php echo $page_blanc; ?>">Blanc</a>
-                </li>
-                <li>
-                    <a id="nav-rose" class="<?php if ($page_rose === $current_url) echo 'current_page'; ?>" href="<?php echo $page_rose; ?>">Rosé</a>
-                </li>
-            </ul>
-        </nav>
-        <a href="#" id="btn-con">Connexion</a>
+        <div id="nav-cont">
+            <img src="./assets/img/logos/logo-Cave.svg" alt="logo myCave">
+            <nav>
+                <ul>
+                    <li>
+                        <a id="nav-rouge" class="<?php if ($page_rouge === $current_url) echo 'current_page'; ?>" href="<?php echo $page_rouge; ?>">Rouge</a>
+                    </li>
+                    <li>
+                        <a id="nav-blanc" class="<?php if ($page_blanc === $current_url) echo 'current_page'; ?>" href="<?php echo $page_blanc; ?>">Blanc</a>
+                    </li>
+                    <li>
+                        <a id="nav-rose" class="<?php if ($page_rose === $current_url) echo 'current_page'; ?>" href="<?php echo $page_rose; ?>">Rosé</a>
+                    </li>
+                </ul>
+            </nav>
+            <a href="#" id="btn-con">Connexion</a>
+        </div>
     </header>
 
     <main>
