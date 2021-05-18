@@ -1,7 +1,5 @@
-$bx: #3e0018;
-$rouge: #88002d;
-$blanc: #ffe5aa;
-$rose: #ff7b6c;
+@import "./variables.scss";
+@import "./header.scss";
 
 @font-face {
     font-family: "source";
@@ -22,3 +20,5 @@ body{
     font-family: "source",sans-serif;
     color: $bx;
 }
+
+

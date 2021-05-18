@@ -1,0 +1,12 @@
+header {
+  background: #3e0018;
+  display: flex; }
+
+header img {
+  width: 200px; }
+
+nav ul li {
+  list-style: none; }
+
+nav ul li a {
+  text-decoration: none; }

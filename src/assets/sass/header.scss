@@ -1,0 +1,22 @@
+
+$bx: #3e0018;
+$rouge: #88002d;
+$blanc: #ffe5aa;
+$rose: #ff7b6c;
+
+header{
+    background: $bx;
+    display: flex;
+}
+
+header img{
+    width: 200px;
+}
+
+nav ul li{
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+}
