@@ -3,6 +3,12 @@ $rouge: #88002d;
 $blanc: #ffe5aa;
 $rose: #ff7b6c;
 
+$xl: "only screen and (max-width: 1200px)";
+$lg: "only screen and (max-width: 992px)";
+$md: "only screen and (max-width: 768px)";
+$sm: "only screen and (max-width: 576px)";
+$xs: "only screen and (max-width: 425px)";
+
 
 $animate: all 0.2s ease-in-out;
 
@@ -11,4 +17,9 @@ $animate: all 0.2s ease-in-out;
     border-radius: 30px;
     font-family: "sourceB";
     font-size: 2rem;
+}
+
+%btn-close{
+    width: 40px;
+    height: 40px;
 }

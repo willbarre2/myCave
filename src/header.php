@@ -40,6 +40,7 @@ endif;
 
 <body>
     <header>
+        <div id="btn-burger"></div>
         <div id="nav-cont">
             <img src="./assets/img/logos/logo-Cave.svg" alt="logo myCave">
             <nav>
