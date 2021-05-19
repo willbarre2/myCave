@@ -1,4 +1,22 @@
+#btn-con {
+  padding: 2px 15px;
+  border-radius: 30px;
+  font-family: "sourceB";
+  font-size: 2rem; }
+
+#nav-rouge, #nav-blanc, #nav-rose {
+  padding-bottom: .2rem;
+  margin: 1rem 5rem;
+  font-size: 2.5rem;
+  transition: all 0.2s ease-in-out; }
+
+#btn-con:hover {
+  cursor: pointer;
+  transform: scale(1.07); }
+
 header {
+  position: fixed;
+  top: 0;
   background: #3e0018;
   height: 150px;
   width: 100%; }
@@ -19,18 +37,12 @@ nav ul {
 
 nav ul li {
   list-style: none;
-  transition: 0.3s ease-in-out; }
+  transition: all 0.2s ease-in-out; }
   nav ul li:hover {
     transform: scale(1.07); }
 
 nav ul li a {
   text-decoration: none; }
-
-#nav-rouge, #nav-blanc, #nav-rose {
-  padding-bottom: .2rem;
-  margin: 1rem 5rem;
-  font-size: 2.5rem;
-  transition: .3s ease-in-out; }
 
 #nav-rouge {
   color: #88002d; }
@@ -54,3 +66,8 @@ nav ul li a {
   border-bottom: 4px solid #88002d; }
   .current_page:hover {
     border-bottom-color: rgba(136, 0, 45, 0.5); }
+
+#btn-con {
+  background-color: white;
+  color: #3e0018;
+  transition: all 0.2s ease-in-out; }

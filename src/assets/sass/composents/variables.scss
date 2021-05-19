@@ -2,3 +2,13 @@ $bx: #3e0018;
 $rouge: #88002d;
 $blanc: #ffe5aa;
 $rose: #ff7b6c;
+
+
+$animate: all 0.2s ease-in-out;
+
+%cta{
+    padding: 2px 15px;
+    border-radius: 30px;
+    font-family: "sourceB";
+    font-size: 2rem;
+}

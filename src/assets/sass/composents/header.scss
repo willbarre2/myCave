@@ -1,11 +1,28 @@
 
 @import "./variables.scss";
 
+%li-nav{
+    padding-bottom: .2rem;
+    margin: 1rem 5rem;
+    font-size: 2.5rem;
+    transition: $animate;
+}
+
+%hover{
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.07);
+    }
+}
+
 header{
+    position: fixed;
+    top: 0;
     background: $bx;
     height: 150px;
     width: 100%;
 }
+
 #nav-cont{
     width: 90%;
     height: 100%;
@@ -25,7 +42,7 @@ nav ul{
 
 nav ul li{
     list-style: none;
-    transition: 0.3s ease-in-out;
+    transition: $animate;
     &:hover{
         transform: scale(1.07);
     }
@@ -35,18 +52,6 @@ nav ul li a{
     text-decoration: none;
 }
 
-%li-nav{
-    padding-bottom: .2rem;
-    margin: 1rem 5rem;
-    font-size: 2.5rem;
-    transition: .3s ease-in-out;
-}
-
-%hover{
-    &:hover{
-        transform: scale(1.07);
-    }
-}
 
 #nav-rouge{
     color: $rouge;
@@ -64,7 +69,10 @@ nav ul li a{
         transform: scale(1.07);
         color:  transparentize($blanc, 0.5);
     }
+    
 }
+
+
 
 #nav-rose{
     color: $rose;
@@ -80,4 +88,13 @@ nav ul li a{
     &:hover{
         border-bottom-color: transparentize($rouge, 0.5);
     }
+}
+
+#btn-con{
+    background-color: white;
+    color: $bx;
+    @extend %cta;
+    transition: $animate;
+
+    @extend %hover;
 }

@@ -55,7 +55,7 @@ endif;
                     </li>
                 </ul>
             </nav>
-            <a href="#" id="btn-con">Connexion</a>
+            <div id="btn-con">Connexion</div>
         </div>
     </header>
 

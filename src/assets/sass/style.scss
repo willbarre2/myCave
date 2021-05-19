@@ -18,7 +18,15 @@
 body{
     font-family: "source",sans-serif;
     color: $bx;
+    background-image: url(../img/bg-bouteilles.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
 
-
 @import "./composents/header.scss";
+@import "./composents/main.scss";
+
+#div-test{
+    height: 400vh;
+}
+
