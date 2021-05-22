@@ -2,7 +2,7 @@
 @import "./variables.scss";
 
 %li-nav{
-    padding-bottom: .2rem;
+    padding-bottom: .3rem;
     margin: 1rem 5vw;
     font-size: 2.5rem;
     transition: $animate;
@@ -11,7 +11,7 @@
 %hover{
     &:hover{
         cursor: pointer;
-        transform: scale(1.07);
+        transform: $scale;
     }
 }
 
@@ -46,10 +46,11 @@ nav ul{
     list-style: none;
     transition: $animate;
         &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         }
        & a{
             text-decoration: none;
+            font-family: 'jose';
         } 
     }
 }
@@ -58,7 +59,7 @@ nav ul{
     color: $rouge;
     @extend %li-nav;
     &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         color:  transparentize($rouge, 0.5);
     }
 }
@@ -67,7 +68,7 @@ nav ul{
     color: $blanc;
     @extend %li-nav;
     &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         color:  transparentize($blanc, 0.5);
     }
     
@@ -77,13 +78,13 @@ nav ul{
     color: $rose;
     @extend %li-nav;
     &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         color:  transparentize($rose, 0.5);
     }
 }
 
 .current_page{
-    border-bottom: 4px solid $rouge;
+    border-bottom: 3px solid $rouge;
     &:hover{
         border-bottom-color: transparentize($rouge, 0.5);
     }
@@ -104,6 +105,34 @@ nav ul{
     @extend %btn-close;
 }
 
+#icon-bottle-white{
+   @extend %btn-close;
+   position: absolute;
+   top: 16px;
+   right: 21px;
+   margin: 0;
+   display: none;
+   transition: $animate;
+
+   &:hover{
+       transform: $scale;
+   }
+}
+
+#icon-bottle-bx{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 160px;
+    right: 10px;
+    margin: 0;
+    transition: $animate;
+
+    &:hover{
+        transform: $scale;
+    }
+}
+
 @media #{$xl} {
     %li-nav{
         margin: 1rem 3vw;
@@ -111,6 +140,13 @@ nav ul{
 }
 
 @media #{$lg} {
+    #icon-bottle-white{
+        display: block;
+    }
+    #icon-bottle-bx{
+        display: none;
+    }
+
     #nav-cont{
         flex-direction: column;
     }
@@ -143,4 +179,13 @@ nav ul{
     header.isOpen{
         height: 633px;
     }
+}
+
+@media #{$xs}{
+    header div img{
+        width: 200px;
+    }
+    #icon-bottle-white{
+        right: 10px;
+     }
 }

@@ -1,10 +1,94 @@
-<div id="div-test">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quae amet dicta, libero cum, rerum incidunt omnis, voluptas illum eum architecto eius vero quidem quod commodi numquam maxime laudantium minus?
-    Eius autem maxime, quasi vel voluptates, ex a dolores dolorem voluptatem iste delectus odit commodi quo corporis soluta vitae culpa accusantium rerum totam molestiae sequi! Voluptate iusto molestias omnis deleniti?
-    Reprehenderit minima animi, expedita repellendus, voluptatem hic incidunt impedit eius in commodi temporibus voluptas cupiditate perspiciatis ipsum. Adipisci sapiente recusandae, et perferendis fugiat quam officia eveniet facilis! Numquam, voluptatum earum?
-    Voluptates doloribus doloremque dignissimos itaque tenetur, id, optio accusantium aliquam numquam quae, quam architecto soluta excepturi neque. Accusantium eum vitae, molestiae odio debitis reiciendis dolorum quibusdam nihil, natus magni cupiditate!
-    Illum doloremque ab nihil explicabo optio expedita pariatur quis magnam accusamus nisi, sapiente aperiam, vitae dolore dolor soluta, ipsum qui laboriosam? Eligendi beatae cumque sunt veritatis quas mollitia et ut!
-    Ex dolor nesciunt, impedit magni labore quia officiis esse accusamus, voluptatibus ipsa quae nemo qui voluptas minima dolores, quidem dignissimos deleniti consequatur illo nobis nisi. Inventore architecto qui libero voluptatibus?
-    Dolores nesciunt repellat error aliquid porro vero fuga sit non officiis. Qui veniam laborum libero provident omnis, ab aperiam cum non atque eum mollitia excepturi culpa, corrupti obcaecati iste cumque.
-    Repellat nobis vero repudiandae quibusdam illo quisquam placeat tempore fugiat possimus laudantium amet nemo officia incidunt, quae minus expedita iste officiis ab recusandae fugit impedit quis magnam dolores. Vel, minima.
-    Debitis non quod amet atque corrupti dignissimos provident veritatis mollitia ullam totam impedit quidem culpa sunt voluptatibus cumque dolorum excepturi, maxime quas inventore nostrum odit facilis! Nulla itaque facere hic.
-    Debitis corporis explicabo placeat obcaecati eveniet, repellendus, eius consectetur eaque maiores a iusto quam, aut sint inventore aspernatur consequatur error? Laborum magni iste nostrum corrupti fugiat atque accusantium alias. Fugiat.</div>
+<div style="width: 100%; height: 150px;"></div> <!-- ratraper nav-bar -->
+
+<article class="cards">
+    <div class="card-cont">
+        <img src="./assets/img/generic.jpg" alt="photo bouteille">
+        <h2>CHATEAU DE SAINT COME DE PROUTPROUT</h2>
+        <div class="annee">
+            <h4>Année :</h4>
+            <p>2009</p>
+        </div>
+        <div class="cepage">
+            <h4>Cépage(s) :</h4>
+            <p>Grenache / Syrah</p>
+        </div>
+        <div class="pays">
+            <h4>Pays :</h4>
+            <p>France</p>
+        </div>
+        <div class="region">
+            <h4>Région :</h4>
+            <p>Southern Rhone / Gigondas</p>
+        </div>
+        <div class="descri">
+            <h4>Description :</h4>
+        </div>
+        <div class="textarea">
+            <p>Breaking the mold of the classics, this offering will surprise and undoubtedly get tongues wagging with the hints of coffee and tobacco in
+                perfect alignment with more traditional notes. Breaking the mold of the classics, this offering will surprise and
+                undoubtedly get tongues wagging with the hints of coffee and tobacco in
+                perfect alignment with more traditional notes. Sure to please the late-night crowd with the slight jolt of adrenaline it brings.</p>
+        </div>
+    </div>
+</article>
+
+<article class="cards">
+    <div class="card-cont">
+        <img src="./assets/img/generic.jpg" alt="photo bouteille">
+        <h2>CHATEAU DE SAINT COME</h2>
+        <div class="annee">
+            <h4>Année :</h4>
+            <p>2009</p>
+        </div>
+        <div class="cepage">
+            <h4>Cépage(s) :</h4>
+            <p>Grenache / Syrah</p>
+        </div>
+        <div class="pays">
+            <h4>Pays :</h4>
+            <p>France</p>
+        </div>
+        <div class="region">
+            <h4>Région :</h4>
+            <p>Southern Rhone / Gigondas</p>
+        </div>
+        <div class="descri">
+            <h4>Description :</h4>
+        </div>
+        <div class="textarea">
+            <p>Breaking the mold of the classics, this offering will surprise and undoubtedly get tongues wagging with the hints of coffee and tobacco.</p>
+        </div>
+    </div>
+</article>
+
+<article class="cards">
+    <div class="card-cont">
+        <img src="./assets/img/generic.jpg" alt="photo bouteille">
+        <h2>CHATEAU DE SAINT COME</h2>
+        <div class="annee">
+            <h4>Année :</h4>
+            <p>2009</p>
+        </div>
+        <div class="cepage">
+            <h4>Cépage(s) :</h4>
+            <p>Grenache / Syrah</p>
+        </div>
+        <div class="pays">
+            <h4>Pays :</h4>
+            <p>France</p>
+        </div>
+        <div class="region">
+            <h4>Région :</h4>
+            <p>Southern Rhone / Gigondas</p>
+        </div>
+        <div class="descri">
+            <h4>Description :</h4>
+        </div>
+        <div class="textarea">
+            <p>Breaking the mold of the classics, this offering will surprise and undoubtedly get tongues wagging with the hints of coffee and tobacco in
+                perfect alignment with more traditional notes. Breaking the mold of the classics, this offering will surprise and
+                undoubtedly get tongues wagging with the hints of coffee and tobacco in
+                perfect alignment with more traditional notes. Sure to please the late-night crowd with the slight jolt of adrenaline it brings.</p>
+        </div>
+    </div>
+</article>

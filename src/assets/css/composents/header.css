@@ -4,12 +4,12 @@
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger {
+#btn-burger, #icon-bottle-white {
   width: 40px;
   height: 40px; }
 
 #nav-rouge, #nav-blanc, #nav-rose {
-  padding-bottom: .2rem;
+  padding-bottom: .3rem;
   margin: 1rem 5vw;
   font-size: 2.5rem;
   transition: all 0.2s ease-in-out; }
@@ -47,7 +47,8 @@ nav ul {
     nav ul li:hover {
       transform: scale(1.07); }
     nav ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: 'jose'; }
 
 #nav-rouge {
   color: #88002d; }
@@ -68,7 +69,7 @@ nav ul {
     color: rgba(255, 123, 108, 0.5); }
 
 .current_page {
-  border-bottom: 4px solid #88002d; }
+  border-bottom: 3px solid #88002d; }
   .current_page:hover {
     border-bottom-color: rgba(136, 0, 45, 0.5); }
 
@@ -81,11 +82,36 @@ nav ul {
 #btn-burger {
   display: none; }
 
+#icon-bottle-white {
+  position: absolute;
+  top: 16px;
+  right: 21px;
+  margin: 0;
+  display: none;
+  transition: all 0.2s ease-in-out; }
+  #icon-bottle-white:hover {
+    transform: scale(1.07); }
+
+#icon-bottle-bx {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 160px;
+  right: 10px;
+  margin: 0;
+  transition: all 0.2s ease-in-out; }
+  #icon-bottle-bx:hover {
+    transform: scale(1.07); }
+
 @media only screen and (max-width: 1200px) {
   #nav-rouge, #nav-blanc, #nav-rose {
     margin: 1rem 3vw; } }
 
 @media only screen and (max-width: 992px) {
+  #icon-bottle-white {
+    display: block; }
+  #icon-bottle-bx {
+    display: none; }
   #nav-cont {
     flex-direction: column; }
   nav ul {
@@ -105,3 +131,9 @@ nav ul {
       background: url(../img/logos/icon_croix.svg); }
   header.isOpen {
     height: 633px; } }
+
+@media only screen and (max-width: 425px) {
+  header div img {
+    width: 200px; }
+  #icon-bottle-white {
+    right: 10px; } }

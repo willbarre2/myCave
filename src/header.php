@@ -57,7 +57,9 @@ endif;
                 </ul>
             </nav>
             <div id="btn-con">Connexion</div>
+            <img src="./assets/img/logos/icon_bottle_white.svg" alt="icon blanc d'ajout de bouteille" id="icon-bottle-white">
         </div>
     </header>
+    <img src="./assets/img/logos/icon_bottle.svg" alt="icon bordeaux d'ajout de bouteille" id="icon-bottle-bx">
 
     <main>
