@@ -1,12 +1,28 @@
+.del-creat-cont img {
+  width: 40px;
+  height: 40px; }
+
 .cards {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
 .cards {
+  position: relative;
   width: 90%;
   height: 600px;
   margin: 2.5rem auto;
   background: white;
   border-radius: 15px; }
+
+.del-creat-cont {
+  position: absolute;
+  top: 15px;
+  right: 0; }
+  .del-creat-cont img {
+    margin: 0 1rem;
+    transition: all 0.2s ease-in-out; }
+    .del-creat-cont img:hover {
+      transform: scale(1.07);
+      cursor: pointer; }
 
 .card-cont {
   margin-right: 2rem;
@@ -110,6 +126,8 @@
         margin-top: -3rem; } }
 
 @media only screen and (max-width: 768px) {
+  .del-creat-cont {
+    top: 202px; }
   .card-cont {
     grid-template-columns: 40% 60%;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr; }
@@ -144,6 +162,8 @@
         margin-top: -0.5rem; } }
 
 @media only screen and (max-width: 576px) {
+  .del-creat-cont {
+    top: 144px; }
   .card-cont div h4 {
     font-size: 1.2rem; }
   .card-cont div p {
@@ -155,6 +175,10 @@
     font-size: 1.5rem; } }
 
 @media only screen and (max-width: 425px) {
+  .del-creat-cont {
+    right: 5px; }
+    .del-creat-cont img {
+      margin: 0 0.3rem; }
   .card-cont div h4 {
     font-size: 1rem; }
   .card-cont div p {

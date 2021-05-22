@@ -1,6 +1,9 @@
 <div style="width: 100%; height: 150px;"></div> <!-- ratraper nav-bar -->
 
 <article class="cards">
+    <div class="del-creat-cont">
+        <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression"><img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition">
+    </div>
     <div class="card-cont">
         <img src="./assets/img/generic.jpg" alt="photo bouteille">
         <h2>CHATEAU DE SAINT COME DE PROUTPROUT</h2>
@@ -33,6 +36,9 @@
 </article>
 
 <article class="cards">
+    <div class="del-creat-cont">
+        <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression"><img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition">
+    </div>
     <div class="card-cont">
         <img src="./assets/img/generic.jpg" alt="photo bouteille">
         <h2>CHATEAU DE SAINT COME</h2>
@@ -62,6 +68,9 @@
 </article>
 
 <article class="cards">
+    <div class="del-creat-cont">
+        <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression"><img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition">
+    </div>
     <div class="card-cont">
         <img src="./assets/img/generic.jpg" alt="photo bouteille">
         <h2>CHATEAU DE SAINT COME</h2>

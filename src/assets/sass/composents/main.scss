@@ -6,12 +6,30 @@
 // }
 
 .cards{
+    position: relative;
     width: 90%;
     height: 600px;
     margin: 2.5rem auto;
     background: white;
     border-radius: 15px;
     @extend %shadow;
+}
+
+.del-creat-cont{
+    position: absolute;
+    top: 15px;
+    right: 0;
+
+    & img{
+        @extend %btn-close;
+        margin: 0 1rem;
+        transition: $animate;
+
+        &:hover{
+            transform: $scale;
+            cursor: pointer;
+        }
+    }
 }
 
 .card-cont{
@@ -174,6 +192,10 @@
 
 @media #{$md}{
 
+    .del-creat-cont{
+        top: 202px;
+    }
+
     .card-cont{
         grid-template-columns: 40% 60%;
         grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr ;
@@ -230,6 +252,11 @@
 }
 
 @media #{$sm}{
+
+    .del-creat-cont{
+        top: 144px;
+    }
+
     .card-cont{
 
         & div h4{
@@ -252,6 +279,14 @@
 }
 
 @media #{$xs}{
+
+    .del-creat-cont{
+        right: 5px;
+        & img {
+            margin: 0 0.3rem;
+        }
+    }
+
     .card-cont{
 
         & div h4{

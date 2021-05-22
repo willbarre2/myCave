@@ -108,6 +108,7 @@ nav ul{
 #icon-bottle-white{
    @extend %btn-close;
    position: absolute;
+   z-index: 4;
    top: 16px;
    right: 21px;
    margin: 0;
@@ -116,6 +117,7 @@ nav ul{
 
    &:hover{
        transform: $scale;
+       cursor: pointer;
    }
 }
 
@@ -123,6 +125,7 @@ nav ul{
     width: 50px;
     height: 50px;
     position: fixed;
+    z-index: 4;
     top: 160px;
     right: 10px;
     margin: 0;
@@ -130,6 +133,7 @@ nav ul{
 
     &:hover{
         transform: $scale;
+        cursor: pointer;
     }
 }
 
