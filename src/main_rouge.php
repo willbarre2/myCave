@@ -10,7 +10,7 @@ $req = $db->prepare("
         INNER JOIN type
         ON bottle.id_to_type = type.id_type
         INNER JOIN year
-        ON bottle.id_year = year.id
+        ON bottle.id_to_year = year.id_year
         WHERE type.type = 1
         ");
 $req->execute();
