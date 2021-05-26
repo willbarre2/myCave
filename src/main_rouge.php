@@ -4,17 +4,17 @@ require 'connect.php';
 <div style="width: 100%; height: 150px;"></div> <!-- ratraper nav-bar -->
 
 <?php
-$req = $db->prepare("
+$req = $db->query("
         SELECT *
         FROM bottle
-        INNER JOIN type
-        ON bottle.id_to_type = type.id_type
+        INNER JOIN category
+        ON bottle.id_to_category = category.id_category
         INNER JOIN year
         ON bottle.id_to_year = year.id_year
-        WHERE type.type = 1
+        WHERE category.id_category = 1
         ");
-$req->execute();
-var_dump($req->fetchAll())
+// $req->execute();
+// var_dump($req->fetchObject())
 ?>
 
 <?php while ($cards = $req->fetchObject()) {
