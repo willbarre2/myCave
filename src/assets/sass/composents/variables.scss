@@ -14,6 +14,13 @@ $xxs: "only screen and (max-width: 320px)";
 $animate: all 0.2s ease-in-out;
 $scale: scale(1.07);
 
+%hover{
+    &:hover{
+        cursor: pointer;
+        transform: $scale;
+    }
+}
+
 %cta{
     padding: 2px 15px;
     border-radius: 30px;
@@ -29,3 +36,17 @@ $scale: scale(1.07);
 %shadow{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
 }
+
+%inputs{
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    margin: 1rem 0;
+    font-family: 'source', sans-serif;
+    font-size: 1.5rem;
+    &::placeholder{
+        color: rgb(129, 129, 129);
+        
+    }
+}
+

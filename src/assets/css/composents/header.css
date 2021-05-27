@@ -1,4 +1,8 @@
-#btn-con {
+#btn-con:hover, #btn-decon:hover {
+  cursor: pointer;
+  transform: scale(1.07); }
+
+#btn-con, #btn-decon {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
@@ -13,10 +17,6 @@
   margin: 1rem 5vw;
   font-size: 2.5rem;
   transition: all 0.2s ease-in-out; }
-
-#btn-con:hover {
-  cursor: pointer;
-  transform: scale(1.07); }
 
 header {
   position: fixed;
@@ -73,11 +73,15 @@ nav ul {
   .current_page:hover {
     border-bottom-color: rgba(136, 0, 45, 0.5); }
 
-#btn-con {
+#btn-con, #btn-decon {
   margin: 3rem 0;
   background-color: white;
   color: #3e0018;
+  border: none;
   transition: all 0.2s ease-in-out; }
+  #btn-con a, #btn-decon a {
+    text-decoration: none;
+    color: #3e0018; }
 
 #btn-burger {
   display: none; }

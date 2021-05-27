@@ -1,4 +1,7 @@
 <?php
+if (empty(session_id())) {
+    session_start();
+};
 $domaine = "http://localhost/myCave2/myCave/src/";
 $page_rouge = $domaine;
 $page_blanc = $domaine . "blanc.php";
@@ -35,6 +38,7 @@ endif;
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php echo $title; ?> gestionnaire de cave à vin en ligne.</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -56,10 +60,23 @@ endif;
                     </li>
                 </ul>
             </nav>
-            <div id="btn-con">Connexion</div>
-            <img src="./assets/img/logos/icon_bottle_white.svg" alt="icon blanc d'ajout de bouteille" id="icon-bottle-white">
+            <?php if (isset($_SESSION['id'])) : ?>
+                <form action="deconnexion.php" method="post">
+                    <button type="submit" id="btn-decon">Déconnexion</button>
+                </form>
+            <?php else : ?>
+                <div id="btn-con">Connexion</div>
+            <?php endif; ?>
+            <?php if (isset($_SESSION['role'])) : ?>
+                <img src="./assets/img/logos/icon_bottle_white.svg" alt="icon blanc d'ajout de bouteille" id="icon-bottle-white">
+            <?php endif; ?>
         </div>
     </header>
-    <img src="./assets/img/logos/icon_bottle.svg" alt="icon bordeaux d'ajout de bouteille" id="icon-bottle-bx">
+    <?php if (isset($_SESSION['role'])) : ?>
+        <img src="./assets/img/logos/icon_bottle.svg" alt="icon bordeaux d'ajout de bouteille" id="icon-bottle-bx">
+    <?php endif; ?>
+
+    <?php require __DIR__ . '/modal_connexion.php'; ?>
+
 
     <main>

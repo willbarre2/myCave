@@ -1,0 +1,165 @@
+@import "./variables.scss";
+
+.connexion-modal-container{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+    opacity: 1;
+    transition: all 0.4s ease-in-out;
+}
+.hidden {
+    z-index: -1;
+    opacity: 0;
+}
+
+.pass_hide {
+	display: none;
+}
+
+#pass-eye{
+    display: flex;
+    align-items: center;
+    margin-right: -3rem;
+    & i{
+        margin: 0 1rem;
+    }
+}
+
+.connexion-modal{
+    text-align: center;
+    background-color: $rose;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend %shadow;
+
+    & img{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    & h2{
+        font-family: 'SourceB', sans-serif;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    & form{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & input{
+            @extend %inputs;
+        }
+
+        & button{
+            @extend %cta;
+            color: white;
+            background-color: $bx;
+            color: $rose;
+            border: none;
+            margin: 2rem 0;
+            transition: $animate;
+
+            @extend %hover;
+        }
+    }
+}
+
+.close-modal{
+    display: block;
+    @extend %btn-close;
+    transition: $animate;
+
+    @extend %hover;
+}
+
+@media #{$xl}{
+    .connexion-modal{
+       width: 50%; 
+    }
+}
+
+@media #{$md}{
+    .connexion-modal{
+
+        & h2{
+            font-size: 2.5rem;
+        }
+
+        & form{
+           width: 80%; 
+        }
+        
+    }
+
+    #pass-eye{
+        margin-right: -1.6rem;
+        & i{
+            margin: 0 0.3rem;
+        }
+    }
+}
+
+@media #{$sm}{
+    .connexion-modal{
+        width: 80%;
+    }
+}
+
+@media #{$xs}{
+    .connexion-modal{
+        width: 75%;
+        & h2{
+            font-size: 2rem;
+        }
+
+        & form{
+            & input{
+                font-size: 1rem;
+            } 
+
+            & button{
+            font-size: 1.5rem;
+            }
+        }
+
+        
+    }
+}
+
+@media #{$xxs}{
+    .connexion-modal{
+        & h2{
+            font-size: 1.5rem;
+        }
+
+        & form{
+            & input{
+                font-size: 1rem;
+            } 
+
+            & button{
+            font-size: 1.2rem;
+            }
+        }
+
+        
+    }
+}

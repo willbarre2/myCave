@@ -8,13 +8,6 @@
     transition: $animate;
 }
 
-%hover{
-    &:hover{
-        cursor: pointer;
-        transform: $scale;
-    }
-}
-
 header{
     position: fixed;
     z-index: 2;
@@ -90,14 +83,20 @@ nav ul{
     }
 }
 
-#btn-con{
+#btn-con, #btn-decon {
     margin: 3rem 0;
     background-color: white;
     color: $bx;
     @extend %cta;
+    border: none;
     transition: $animate;
 
     @extend %hover;
+
+    & a{
+        text-decoration: none;
+        color: $bx;
+    }
 }
 
 #btn-burger {

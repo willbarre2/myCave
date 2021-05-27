@@ -5,6 +5,21 @@
 .cards {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
+#msg_error {
+  color: red;
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  margin: 1rem;
+  font-size: 2rem; }
+
+#msg_success {
+  color: green;
+  width: 100%;
+  text-align: center;
+  margin: 1rem;
+  font-size: 2rem; }
+
 .cards {
   position: relative;
   width: 90%;
