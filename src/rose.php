@@ -3,7 +3,7 @@
 
 
 
-
+<?php require __DIR__ . '/main_rose.php'; ?>
 
 
 
