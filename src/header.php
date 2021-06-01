@@ -70,10 +70,17 @@ endif;
             <?php if (isset($_SESSION['role'])) : ?>
                 <img src="./assets/img/logos/icon_bottle_white.svg" alt="icon blanc d'ajout de bouteille" id="icon-bottle-white">
             <?php endif; ?>
+            <?php if ($_SESSION['role'] === 'admin') : ?>
+                <img src="./assets/img/logos/icon_user_plus_white.svg" alt="icon blanc d'ajout d'utilisateur" id="icon-user-white">
+            <?php endif; ?>
         </div>
     </header>
     <?php if (isset($_SESSION['role'])) : ?>
         <img src="./assets/img/logos/icon_bottle.svg" alt="icon bordeaux d'ajout de bouteille" id="icon-bottle-bx">
+
+    <?php endif; ?>
+    <?php if ($_SESSION['role'] === 'admin') : ?>
+        <img src="./assets/img/logos/icon_user_plus.svg" alt="icon bordeaux d'ajout d'utilisateur" id="icon-user-bx">
     <?php endif; ?>
 
     <?php require __DIR__ . '/modal_connexion.php'; ?>
