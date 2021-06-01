@@ -2,17 +2,10 @@
 @import "./variables.scss";
 
 %li-nav{
-    padding-bottom: .2rem;
+    padding-bottom: .3rem;
     margin: 1rem 5vw;
     font-size: 2.5rem;
     transition: $animate;
-}
-
-%hover{
-    &:hover{
-        cursor: pointer;
-        transform: scale(1.07);
-    }
 }
 
 header{
@@ -46,10 +39,11 @@ nav ul{
     list-style: none;
     transition: $animate;
         &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         }
        & a{
             text-decoration: none;
+            font-family: 'jose';
         } 
     }
 }
@@ -58,7 +52,7 @@ nav ul{
     color: $rouge;
     @extend %li-nav;
     &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         color:  transparentize($rouge, 0.5);
     }
 }
@@ -67,7 +61,7 @@ nav ul{
     color: $blanc;
     @extend %li-nav;
     &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         color:  transparentize($blanc, 0.5);
     }
     
@@ -77,26 +71,32 @@ nav ul{
     color: $rose;
     @extend %li-nav;
     &:hover{
-        transform: scale(1.07);
+        transform: $scale;
         color:  transparentize($rose, 0.5);
     }
 }
 
 .current_page{
-    border-bottom: 4px solid $rouge;
+    border-bottom: 3px solid $rouge;
     &:hover{
         border-bottom-color: transparentize($rouge, 0.5);
     }
 }
 
-#btn-con{
+#btn-con, #btn-decon {
     margin: 3rem 0;
     background-color: white;
     color: $bx;
     @extend %cta;
+    border: none;
     transition: $animate;
 
     @extend %hover;
+
+    & a{
+        text-decoration: none;
+        color: $bx;
+    }
 }
 
 #btn-burger {
@@ -104,13 +104,66 @@ nav ul{
     @extend %btn-close;
 }
 
+#icon-bottle-white{
+   @extend %btn-close;
+   position: absolute;
+   z-index: 4;
+   top: 16px;
+   right: 21px;
+   margin: 0;
+   display: none;
+   transition: $animate;
+
+   &:hover{
+       transform: $scale;
+       cursor: pointer;
+   }
+}
+
+#icon-user-white{
+    @extend #icon-bottle-white;
+    top: 75px;
+}
+
+#icon-bottle-bx{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 4;
+    top: 160px;
+    right: 10px;
+    margin: 0;
+    transition: $animate;
+
+    &:hover{
+        transform: $scale;
+        cursor: pointer;
+    }
+}
+
+#icon-user-bx{
+    @extend #icon-bottle-bx;
+    top: 220px;
+}
+
 @media #{$xl} {
     %li-nav{
         margin: 1rem 3vw;
     }
+
+    #icon-bottle-bx, #icon-user-bx{
+        right: 2px;
+    }
 }
 
 @media #{$lg} {
+    #icon-bottle-white{
+        display: block;
+    }
+    #icon-bottle-bx{
+        display: none;
+    }
+
     #nav-cont{
         flex-direction: column;
     }
@@ -143,4 +196,26 @@ nav ul{
     header.isOpen{
         height: 633px;
     }
+}
+
+@media #{$xs}{
+    header{
+        height: 75px;
+
+        &.isOpen{
+            height: 527px;
+        }
+
+        & div img{
+        margin: 1.2rem 0;
+        width: 150px;
+        }
+    }
+
+    
+
+    
+    #icon-bottle-white{
+        right: 10px;
+     }
 }

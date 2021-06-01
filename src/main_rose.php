@@ -1,21 +1,9 @@
 <?php
 require 'connect.php';
 ?>
-<div id="ratrape-header"></div> <!-- ratraper nav-bar -->
+<div style="width: 100%; height: 150px;"></div> <!-- ratraper nav-bar -->
 
-<!-- messages connexion -->
 <?php
-if (isset($_GET['msg_error'])) {
-    echo "<p id=\"msg_error\">{$_GET['msg_error']}</p>";
-} elseif (isset($_GET['msg_success'])) {
-    echo "<p id=\"msg_success\">{$_GET['msg_success']}</p>";
-}
-
-
-?>
-<?php
-
-// -----cards dynamiques-----
 $req = $db->query("
         SELECT *
         FROM bottle
@@ -23,7 +11,7 @@ $req = $db->query("
         ON bottle.id_to_category = category.id_category
         INNER JOIN year
         ON bottle.id_to_year = year.id_year
-        WHERE category.id_category = 1
+        WHERE category.id_category = 3
         ");
 // $req->execute();
 // var_dump($req->fetchObject());

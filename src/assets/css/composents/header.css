@@ -1,22 +1,22 @@
-#btn-con {
+#btn-con:hover, #btn-decon:hover {
+  cursor: pointer;
+  transform: scale(1.07); }
+
+#btn-con, #btn-decon {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger {
+#btn-burger, #icon-bottle-white, #icon-user-white {
   width: 40px;
   height: 40px; }
 
 #nav-rouge, #nav-blanc, #nav-rose {
-  padding-bottom: .2rem;
+  padding-bottom: .3rem;
   margin: 1rem 5vw;
   font-size: 2.5rem;
   transition: all 0.2s ease-in-out; }
-
-#btn-con:hover {
-  cursor: pointer;
-  transform: scale(1.07); }
 
 header {
   position: fixed;
@@ -47,7 +47,8 @@ nav ul {
     nav ul li:hover {
       transform: scale(1.07); }
     nav ul li a {
-      text-decoration: none; }
+      text-decoration: none;
+      font-family: 'jose'; }
 
 #nav-rouge {
   color: #88002d; }
@@ -68,24 +69,65 @@ nav ul {
     color: rgba(255, 123, 108, 0.5); }
 
 .current_page {
-  border-bottom: 4px solid #88002d; }
+  border-bottom: 3px solid #88002d; }
   .current_page:hover {
     border-bottom-color: rgba(136, 0, 45, 0.5); }
 
-#btn-con {
+#btn-con, #btn-decon {
   margin: 3rem 0;
   background-color: white;
   color: #3e0018;
+  border: none;
   transition: all 0.2s ease-in-out; }
+  #btn-con a, #btn-decon a {
+    text-decoration: none;
+    color: #3e0018; }
 
 #btn-burger {
   display: none; }
 
+#icon-bottle-white, #icon-user-white {
+  position: absolute;
+  z-index: 4;
+  top: 16px;
+  right: 21px;
+  margin: 0;
+  display: none;
+  transition: all 0.2s ease-in-out; }
+  #icon-bottle-white:hover, #icon-user-white:hover {
+    transform: scale(1.07);
+    cursor: pointer; }
+
+#icon-user-white {
+  top: 75px; }
+
+#icon-bottle-bx, #icon-user-bx {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  z-index: 4;
+  top: 160px;
+  right: 10px;
+  margin: 0;
+  transition: all 0.2s ease-in-out; }
+  #icon-bottle-bx:hover, #icon-user-bx:hover {
+    transform: scale(1.07);
+    cursor: pointer; }
+
+#icon-user-bx {
+  top: 220px; }
+
 @media only screen and (max-width: 1200px) {
   #nav-rouge, #nav-blanc, #nav-rose {
-    margin: 1rem 3vw; } }
+    margin: 1rem 3vw; }
+  #icon-bottle-bx, #icon-user-bx, #icon-user-bx {
+    right: 2px; } }
 
 @media only screen and (max-width: 992px) {
+  #icon-bottle-white, #icon-user-white {
+    display: block; }
+  #icon-bottle-bx, #icon-user-bx {
+    display: none; }
   #nav-cont {
     flex-direction: column; }
   nav ul {
@@ -105,3 +147,14 @@ nav ul {
       background: url(../img/logos/icon_croix.svg); }
   header.isOpen {
     height: 633px; } }
+
+@media only screen and (max-width: 425px) {
+  header {
+    height: 75px; }
+    header.isOpen {
+      height: 527px; }
+    header div img {
+      margin: 1.2rem 0;
+      width: 150px; }
+  #icon-bottle-white, #icon-user-white {
+    right: 10px; } }

@@ -2,7 +2,7 @@
 
 
 
-
+<?php require __DIR__ . '/main_blanc.php'; ?>
 
 
 
