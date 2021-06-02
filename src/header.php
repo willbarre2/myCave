@@ -60,6 +60,7 @@ endif;
                     </li>
                 </ul>
             </nav>
+
             <?php if (isset($_SESSION['id'])) : ?>
                 <form action="deconnexion.php" method="post">
                     <button type="submit" id="btn-decon">Déconnexion</button>
@@ -70,7 +71,7 @@ endif;
             <?php if (isset($_SESSION['role'])) : ?>
                 <img src="./assets/img/logos/icon_bottle_white.svg" alt="icon blanc d'ajout de bouteille" id="icon-bottle-white">
             <?php endif; ?>
-            <?php if ($_SESSION['role'] === 'admin') : ?>
+            <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') : ?>
                 <img src="./assets/img/logos/icon_user_plus_white.svg" alt="icon blanc d'ajout d'utilisateur" id="icon-user-white">
             <?php endif; ?>
         </div>
@@ -79,7 +80,7 @@ endif;
         <img src="./assets/img/logos/icon_bottle.svg" alt="icon bordeaux d'ajout de bouteille" id="icon-bottle-bx">
 
     <?php endif; ?>
-    <?php if ($_SESSION['role'] === 'admin') : ?>
+    <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') : ?>
         <img src="./assets/img/logos/icon_user_plus.svg" alt="icon bordeaux d'ajout d'utilisateur" id="icon-user-bx">
     <?php endif; ?>
 

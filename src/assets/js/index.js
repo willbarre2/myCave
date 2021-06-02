@@ -18,16 +18,16 @@ $(document).ready(function () {
 
 // ------modale connexion--------
 
-const modal = document.querySelector(".connexion-modal-container");
+const modalCont = document.querySelector(".connexion-modal-container");
 const closeModalBtn = document.querySelector(".close-modal");
 const connexionBtn = document.getElementById("btn-con");
 
 function showModal() {
-  modal.classList.remove("hidden");
+  modalCont.classList.remove("hidden");
 }
 
 function closeModal() {
-  modal.classList.add("hidden");
+  modalCont.classList.add("hidden");
 }
 
 //ouvre modal connexion
@@ -57,3 +57,30 @@ document.addEventListener("keydown", function (e) {
     });
   });
 })(jQuery);
+
+//submit post
+
+function reloadDelay() {
+  location.reload();
+}
+
+$("#submit").click(function () {
+  var login = $("#login").val();
+  var password = $("#password").val();
+  $.post(
+    "connexion_post.php",
+    {
+      login: login,
+      password: password,
+    },
+    function (response) {
+      $(".resultCon").html(response);
+      console.log(response);
+      if (
+        response === '<p class="msg_success">Merci, vous êtes connecté!</p>'
+      ) {
+        window.setTimeout(reloadDelay, 800);
+      }
+    }
+  );
+});

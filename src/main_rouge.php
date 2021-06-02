@@ -1,18 +1,10 @@
 <?php
 require 'connect.php';
 ?>
-<div id="ratrape-header"></div> <!-- ratraper nav-bar -->
 
-<!-- messages connexion -->
-<?php
-if (isset($_GET['msg_error'])) {
-    echo "<p id=\"msg_error\">{$_GET['msg_error']}</p>";
-} elseif (isset($_GET['msg_success'])) {
-    echo "<p id=\"msg_success\">{$_GET['msg_success']}</p>";
-}
+<!-- ratraper nav-bar -->
+<div id="ratrape-header"></div>
 
-
-?>
 <?php
 
 // -----cards dynamiques-----

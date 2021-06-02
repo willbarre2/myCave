@@ -30,7 +30,7 @@ if (in_array('', $_POST)) {
     } else {
 
         if (password_verify($password, $result->mot_de_passe)) {
-            $msg_success = 'Vous êtes connecté!';
+            $msg_success = 'Merci, vous êtes connecté!';
         } else {
             $msg_error = 'Votre identifiant ou mot de passe est inconnu';
         }
@@ -39,17 +39,11 @@ if (in_array('', $_POST)) {
 
 $msg = isset($msg_error);
 
-$last_url = $_SERVER['HTTP_REFERER']; // url d'où je viens
-if (strpos($last_url, '?') !== FALSE) {
-    $req_get = strrchr($last_url, '?');
-    $last_url = str_replace($req_get, '', $last_url);
-}
 if ($msg) {
-    header("Location: $last_url?msg_error=$msg_error");
+    echo "<p class=\"msg_error\">{$msg_error}</p>";
 } else {
     $_SESSION['id']         = $result->id_user;
     $_SESSION['id_role']         = $result->id_role;
     $_SESSION['role']     = $result->role;
-
-    header("Location: $last_url?msg_success=$msg_success");
+    echo "<p class=\"msg_success\">{$msg_success}</p>";
 }

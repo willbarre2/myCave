@@ -1,8 +1,8 @@
-.connexion-modal form button:hover, .close-modal:hover {
+.connexion-modal .form #submit:hover, .close-modal:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-.connexion-modal form button {
+.connexion-modal .form #submit {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
@@ -15,14 +15,14 @@
 .connexion-modal {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal form input {
+.connexion-modal .form input {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal form input::placeholder {
+  .connexion-modal .form input::placeholder {
     color: #818181; }
 
 .connexion-modal-container {
@@ -30,7 +30,7 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(5px);
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -71,14 +71,14 @@
     font-family: 'SourceB', sans-serif;
     font-size: 3rem;
     margin: 2rem 0; }
-  .connexion-modal form {
+  .connexion-modal .form {
     width: 60%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
-    .connexion-modal form button {
+    .connexion-modal .form #submit {
       color: white;
       background-color: #3e0018;
       color: #ff7b6c;
@@ -90,6 +90,19 @@
   display: block;
   transition: all 0.2s ease-in-out; }
 
+.msg_error {
+  color: red;
+  width: 100%;
+  text-decoration: underline;
+  margin: 1rem;
+  font-size: 2rem; }
+
+.msg_success {
+  color: #07dc2b;
+  width: 100%;
+  margin: 1rem;
+  font-size: 2rem; }
+
 @media only screen and (max-width: 1200px) {
   .connexion-modal {
     width: 50%; } }
@@ -97,7 +110,7 @@
 @media only screen and (max-width: 768px) {
   .connexion-modal h2 {
     font-size: 2.5rem; }
-  .connexion-modal form {
+  .connexion-modal .form {
     width: 80%; }
   #pass-eye {
     margin-right: -1.6rem; }
@@ -113,15 +126,15 @@
     width: 75%; }
     .connexion-modal h2 {
       font-size: 2rem; }
-    .connexion-modal form input {
+    .connexion-modal .form input {
       font-size: 1rem; }
-    .connexion-modal form button {
+    .connexion-modal .form #submit {
       font-size: 1.5rem; } }
 
 @media only screen and (max-width: 320px) {
   .connexion-modal h2 {
     font-size: 1.5rem; }
-  .connexion-modal form input {
+  .connexion-modal div input {
     font-size: 1rem; }
-  .connexion-modal form button {
+  .connexion-modal div #submit {
     font-size: 1.2rem; } }

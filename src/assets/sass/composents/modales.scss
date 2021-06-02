@@ -5,7 +5,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
     backdrop-filter: blur(5px);
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -56,7 +56,7 @@
         margin: 2rem 0;
     }
 
-    & form{
+    & .form{
         width: 60%;
         margin: 0 auto;
         display: flex;
@@ -68,7 +68,7 @@
             @extend %inputs;
         }
 
-        & button{
+        & #submit{
             @extend %cta;
             color: white;
             background-color: $bx;
@@ -90,6 +90,21 @@
     @extend %hover;
 }
 
+.msg_error{
+    color: $red;
+    width: 100%;
+    text-decoration: underline;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+.msg_success{
+    color: $vert;
+    width: 100%;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
 @media #{$xl}{
     .connexion-modal{
        width: 50%; 
@@ -103,7 +118,7 @@
             font-size: 2.5rem;
         }
 
-        & form{
+        & .form{
            width: 80%; 
         }
         
@@ -130,12 +145,12 @@
             font-size: 2rem;
         }
 
-        & form{
+        & .form{
             & input{
                 font-size: 1rem;
             } 
 
-            & button{
+            & #submit{
             font-size: 1.5rem;
             }
         }
@@ -150,12 +165,12 @@
             font-size: 1.5rem;
         }
 
-        & form{
+        & div{
             & input{
                 font-size: 1rem;
             } 
 
-            & button{
+            & #submit{
             font-size: 1.2rem;
             }
         }
