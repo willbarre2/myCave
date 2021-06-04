@@ -8,7 +8,7 @@
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, #icon-user-white {
+#btn-burger, #icon-bottle-white, .icon-user-white {
   width: 40px;
   height: 40px; }
 
@@ -86,7 +86,7 @@ nav ul {
 #btn-burger {
   display: none; }
 
-#icon-bottle-white, #icon-user-white {
+#icon-bottle-white, .icon-user-white {
   position: absolute;
   z-index: 4;
   top: 16px;
@@ -94,14 +94,15 @@ nav ul {
   margin: 0;
   display: none;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-white:hover, #icon-user-white:hover {
+  #icon-bottle-white:hover, .icon-user-white:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
-#icon-user-white {
+.icon-user-white {
+  background: url("../img/logos/icon_user_plus_white.svg");
   top: 75px; }
 
-#icon-bottle-bx, #icon-user-bx {
+#icon-bottle-bx, .icon-user-bx {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -110,23 +111,24 @@ nav ul {
   right: 10px;
   margin: 0;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-bx:hover, #icon-user-bx:hover {
+  #icon-bottle-bx:hover, .icon-user-bx:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
-#icon-user-bx {
+.icon-user-bx {
+  background: url("../img/logos/icon_user_plus.svg");
   top: 220px; }
 
 @media only screen and (max-width: 1200px) {
   #nav-rouge, #nav-blanc, #nav-rose {
     margin: 1rem 3vw; }
-  #icon-bottle-bx, #icon-user-bx, #icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx, .icon-user-bx {
     right: 2px; } }
 
 @media only screen and (max-width: 992px) {
-  #icon-bottle-white, #icon-user-white {
+  #icon-bottle-white, .icon-user-white {
     display: block; }
-  #icon-bottle-bx, #icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx {
     display: none; }
   #nav-cont {
     flex-direction: column; }
@@ -156,5 +158,5 @@ nav ul {
     header div img {
       margin: 1.2rem 0;
       width: 150px; }
-  #icon-bottle-white, #icon-user-white {
+  #icon-bottle-white, .icon-user-white {
     right: 10px; } }

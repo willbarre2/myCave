@@ -6,6 +6,7 @@
 
 <script src="./assets/libs/jquery_min.js"></script>
 <script src="./assets/js/index.js"></script>
+<script src="./assets/js/crea.js"></script>
 </body>
 
 </html>

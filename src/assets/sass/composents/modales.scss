@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.connexion-modal-container{
+.connexion-modal-container, .connexion-modal-crea-container{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -82,7 +82,61 @@
     }
 }
 
-.close-modal{
+.connexion-modal-crea{
+    text-align: center;
+    background-color: $rose;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend %shadow;
+
+    & img{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    & h2{
+        font-family: 'SourceB', sans-serif;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    & .form-crea{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        & input, & select{
+            @extend %inputs;
+        }
+
+        & select{
+            width: 305px;
+        }
+
+        & #submitCrea{
+            @extend %cta;
+            color: white;
+            background-color: $bx;
+            color: $rose;
+            border: none;
+            margin: 2rem 0;
+            transition: $animate;
+
+            @extend %hover;
+        }
+    }
+}
+
+.close-modal, .close-modal-crea{
     display: block;
     @extend %btn-close;
     transition: $animate;
@@ -106,7 +160,7 @@
 }
 
 @media #{$xl}{
-    .connexion-modal{
+    .connexion-modal, .connexion-modal-crea{
        width: 50%; 
     }
 }
@@ -124,6 +178,18 @@
         
     }
 
+    .connexion-modal-crea{
+
+        & h2{
+            font-size: 2.5rem;
+        }
+
+        & .form-crea{
+           width: 80%; 
+        }
+        
+    }
+
     #pass-eye{
         margin-right: -1.6rem;
         & i{
@@ -133,7 +199,7 @@
 }
 
 @media #{$sm}{
-    .connexion-modal{
+    .connexion-modal, .connexion-modal-crea{
         width: 80%;
     }
 }
@@ -157,6 +223,34 @@
 
         
     }
+
+    .connexion-modal-crea{
+        width: 75%;
+        & h2{
+            font-size: 2rem;
+        }
+
+        & .form-crea{
+            & input, & select{
+                font-size: 1rem;
+            } 
+
+            & select{
+                width: 210px;
+            }
+    
+
+            & #submitCrea{
+            font-size: 1.5rem;
+            }
+        }
+
+        
+    }
+
+    .msg_success, .msg_error{
+        font-size: 1.5rem;
+    }
 }
 
 @media #{$xxs}{
@@ -166,7 +260,7 @@
         }
 
         & div{
-            & input{
+            & input, & select{
                 font-size: 1rem;
             } 
 
@@ -176,5 +270,26 @@
         }
 
         
+    }
+    .connexion-modal-crea{
+        & h2{
+            font-size: 1.5rem;
+        }
+
+        & div{
+            & input, & select{
+                font-size: 1rem;
+            } 
+
+            & #submitCrea{
+            font-size: 1.2rem;
+            }
+        }
+
+        
+    }
+
+    .msg_success, .msg_error{
+        font-size: 1rem;
     }
 }

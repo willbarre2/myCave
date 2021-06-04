@@ -2,6 +2,7 @@
 if (empty(session_id())) {
     session_start();
 };
+
 $domaine = "http://localhost/myCave2/myCave/src/";
 $page_rouge = $domaine;
 $page_blanc = $domaine . "blanc.php";
@@ -72,19 +73,22 @@ endif;
                 <img src="./assets/img/logos/icon_bottle_white.svg" alt="icon blanc d'ajout de bouteille" id="icon-bottle-white">
             <?php endif; ?>
             <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') : ?>
-                <img src="./assets/img/logos/icon_user_plus_white.svg" alt="icon blanc d'ajout d'utilisateur" id="icon-user-white">
+                <div id="btn-crea-white" class="icon-user-white"></div>
             <?php endif; ?>
         </div>
     </header>
-    <?php if (isset($_SESSION['role'])) : ?>
-        <img src="./assets/img/logos/icon_bottle.svg" alt="icon bordeaux d'ajout de bouteille" id="icon-bottle-bx">
+    <div>
+        <?php if (isset($_SESSION['role'])) : ?>
+            <img src="./assets/img/logos/icon_bottle.svg" alt="icon bordeaux d'ajout de bouteille" id="icon-bottle-bx">
 
-    <?php endif; ?>
-    <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') : ?>
-        <img src="./assets/img/logos/icon_user_plus.svg" alt="icon bordeaux d'ajout d'utilisateur" id="icon-user-bx">
-    <?php endif; ?>
+        <?php endif; ?>
+        <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') : ?>
+            <div id="btn-crea" class="icon-user-bx"></div>
+        <?php endif; ?>
+    </div>
 
     <?php require __DIR__ . '/modal_connexion.php'; ?>
+    <?php require __DIR__ . '/modal_user_crea.php'; ?>
 
 
     <main>

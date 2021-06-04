@@ -43,3 +43,13 @@ body{
     margin: 1rem;
 }
 
+.red {
+	color: $red;
+}
+.green {
+	color: $vert;
+}
+.border_red {
+	border: 1px solid $red;
+}
+
