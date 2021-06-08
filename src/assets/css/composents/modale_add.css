@@ -14,11 +14,11 @@
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover {
+.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea {
+.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
@@ -28,18 +28,73 @@
   width: 40px;
   height: 40px; }
 
-.connexion-modal, .modal-crea {
+.connexion-modal, .modal-crea, .modal-add-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select {
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder {
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .field::placeholder {
     color: #818181; }
+
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
+
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
+.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
+  cursor: pointer;
+  transform: scale(1.07); }
+
+.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
+  padding: 2px 15px;
+  border-radius: 30px;
+  font-family: "sourceB";
+  font-size: 2rem; }
+
+.close-modal, .close-modal-crea, .close-modal-add {
+  width: 40px;
+  height: 40px; }
+
+.connexion-modal, .modal-crea, .modal-add-bottle {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .field {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-family: 'source', sans-serif;
+  font-size: 1.5rem; }
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .field::placeholder {
+    color: #818181; }
+
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
 
 .connexion-modal-container, .modal-crea-container, .modal-add-bottle-container {
   width: 100%;
@@ -213,3 +268,48 @@
     font-size: 1.2rem; }
   .msg_success, .msg_error {
     font-size: 1rem; } }
+
+.modal-add-bottle {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-add-bottle img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-add-bottle h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-add-bottle form {
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch; }
+    .modal-add-bottle form div {
+      display: flex; }
+    .modal-add-bottle form div div {
+      display: block; }
+
+#submitAdd {
+  align-self: center;
+  color: white;
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  transition: all 0.2s ease-in-out; }
+
+#champ-requis {
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
+  color: #88002d; }

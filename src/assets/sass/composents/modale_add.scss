@@ -1,0 +1,74 @@
+@import "./variables.scss";
+@import "./modales.scss";
+
+.modal-add-bottle{
+    text-align: center;
+    background-color: $rose;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend %shadow;
+
+    & img{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    & h2{
+        font-family: 'SourceB', sans-serif;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    & form{
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+
+        & div{
+            display: flex;
+        }
+
+        & div div{
+            display: block;
+        }
+
+        & label{
+            @extend %labels; 
+        }
+
+        
+    }
+}
+
+#submitAdd{
+    align-self: center;
+    @extend %cta;
+    color: white;
+    background-color: $bx;
+    color: $rose;
+    border: none;
+    margin: 2rem 0;
+    transition: $animate;
+
+    @extend %hover;
+}
+
+.field{
+    @extend %inputs;
+}
+
+#champ-requis{
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+    color: $rouge;
+}

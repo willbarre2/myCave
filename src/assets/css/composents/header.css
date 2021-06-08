@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
 #btn-con:hover, #btn-decon:hover {
   cursor: pointer;
   transform: scale(1.07); }

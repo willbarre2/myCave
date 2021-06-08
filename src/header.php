@@ -89,6 +89,7 @@ endif;
 
     <?php require __DIR__ . '/modal_connexion.php'; ?>
     <?php require __DIR__ . '/modal_user_crea.php'; ?>
+    <?php require __DIR__ . '/modal_bottle_add.php'; ?>
 
 
     <main>

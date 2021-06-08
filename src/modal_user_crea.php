@@ -1,6 +1,6 @@
 <!-- modal création user -->
-<div class="connexion-modal-crea-container hidden">
-    <div class="connexion-modal-crea">
+<div class="modal-crea-container hidden">
+    <div class="modal-crea">
         <img class="close-modal-crea" src="./assets/img/logos/icon_croix_bx.svg" alt="icon fermeture modale">
         <h2>Nouvel Utilisateur</h2>
         <div class="form-crea">

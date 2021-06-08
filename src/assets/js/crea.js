@@ -1,6 +1,6 @@
 // ------modale création user--------
 
-const modalCreaCont = document.querySelector(".connexion-modal-crea-container");
+const modalCreaCont = document.querySelector(".modal-crea-container");
 const closeModalCreaBtn = document.querySelector(".close-modal-crea");
 const creaBtn = document.getElementById("btn-crea");
 const creaBtnWhite = document.getElementById("btn-crea-white");
