@@ -6,6 +6,7 @@ const addBtn = document.getElementById("icon-bottle-bx");
 const addBtnWhite = document.getElementById("icon-bottle-white");
 
 function showModalCrea() {
+  window.scrollTo(0, 0);
   modalAddCont.classList.remove("hidden");
 }
 
