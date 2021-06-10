@@ -120,7 +120,8 @@ nav ul{
    }
 }
 
-#icon-user-white{
+.icon-user-white{
+    background: url("../img/logos/icon_user_plus_white.svg");
     @extend #icon-bottle-white;
     top: 75px;
 }
@@ -141,17 +142,25 @@ nav ul{
     }
 }
 
-#icon-user-bx{
+.icon-user-bx{
+    background: url("../img/logos/icon_user_plus.svg");
     @extend #icon-bottle-bx;
     top: 220px;
+    // opacity: 0;
+    // z-index: -100;
 }
+
+// .visible{
+//     opacity: 1;
+//     z-index: 4;
+// }
 
 @media #{$xl} {
     %li-nav{
         margin: 1rem 3vw;
     }
 
-    #icon-bottle-bx, #icon-user-bx{
+    #icon-bottle-bx, .icon-user-bx{
         right: 2px;
     }
 }

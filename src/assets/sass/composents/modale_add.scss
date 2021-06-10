@@ -1,0 +1,460 @@
+@import "./variables.scss";
+@import "./modales.scss";
+
+#submitAdd{
+    align-self: center;
+    @extend %cta;
+    background-color: $bx;
+    color: $rose;
+    border: none;
+    margin: 2rem 0;
+    transition: $animate;
+
+    @extend %hover;
+}
+
+#champ-requis{
+    position: absolute;
+    bottom: 1rem;
+    left: 4rem;
+    color: $rouge;
+}
+
+#resultAdd{
+    font-size: 1.5rem;
+}
+
+.modal-add-bottle{
+    text-align: center;
+    background-color: $rose;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 75%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend %shadow;
+
+    & img{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    & h2{
+        font-family: 'SourceB', sans-serif;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    & form{
+        width: 90%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        
+        & label{
+            @extend %labels; 
+        }
+        
+        & .field{
+            @extend %inputs;
+            width: 90%;
+        }
+
+        & #cont-form-add-bottle{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 2fr;
+            grid-template-rows: 1fr 1fr 1fr 2fr 1fr ;
+            justify-items: start;
+
+            & #name-label{
+                grid-column: 1;
+                grid-row: 1;
+                align-self: center;
+            }
+
+            & #year-label{
+                grid-column: 1;
+                grid-row: 2;
+                align-self: center;
+            }
+
+            & #grapes-label{
+                grid-column: 1;
+                grid-row: 3;
+                align-self: center;
+            }
+
+            & #country-label{
+                grid-column: 3;
+                grid-row: 2;
+                align-self: center;
+            }
+
+            & #region-label{
+                grid-column: 3;
+                grid-row: 3;
+                align-self: center;
+            }
+
+            & #description-label{
+                grid-column: 1;
+                grid-row: 4;
+                margin-top: 1rem;
+            }
+
+            & #photo-label{
+                grid-column: 1;
+                grid-row: 5;
+                align-self: center;
+            }
+
+            & #type-label{
+                grid-column: 3;
+                grid-row: 5;
+                align-self: center;
+            }
+
+            & #name{
+                grid-column: 2 / 5;
+                grid-row: 1;
+                width: 96%;
+            }
+
+            & #year{
+                grid-column: 2;
+                grid-row: 2;
+                width: 100%;
+            }
+
+            & #grapes{
+                grid-column: 2;
+                grid-row: 3;
+            }
+
+            & #country{
+                grid-column: 4;
+                grid-row: 2;
+            }
+
+            & #region{
+                grid-column: 4;
+                grid-row: 3;
+            }
+
+            & #description{
+                resize: none;
+                grid-column: 2 / 5;
+                grid-row: 4;
+                width: 96%;
+            }
+
+            & #photo{
+                grid-column: 2;
+                grid-row: 5;
+                padding: .8rem 0 0 0;
+                font-size: 1.1rem;
+                color: $rouge;
+            }
+            
+            & #type{
+                grid-column: 4;
+                grid-row: 5;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media #{$xl}{
+    .modal-add-bottle{
+        & form{
+            & .field{
+                font-size: 1rem;
+                padding: 0.4rem 0.8rem;
+            }
+            & #cont-form-add-bottle{
+    
+                & #name{
+                    width: 95%;
+                }
+    
+                & #grapes{
+                    width: 87%;
+                }
+    
+                & #country{
+                    width: 87%;
+                }
+    
+                & #region{
+                    width: 87%;
+                }
+    
+                & #description{
+                    width: 95%;
+                }
+    
+                & #photo{
+                    padding-top: 1rem;
+                    font-size: 0.8rem;
+
+                }
+                
+            }
+        }
+    }
+}
+
+@media #{$lg}{
+    .modal-add-bottle{
+        & form{
+            & .field{
+                font-size: 0.8rem;
+                padding: 0.3rem 0.6rem;
+            }
+
+            & #cont-form-add-bottle{
+                & #name{
+                    width: 94%;
+                }
+    
+                & #grapes{
+                    width: 84%;
+                }
+    
+                & #country{
+                    width: 84%;
+                }
+    
+                & #region{
+                    width: 84%;
+                }
+    
+                & #description{
+                    width: 94%;
+                }
+
+            }
+        }
+    }
+}
+
+@media #{$md}{
+    .modal-add-bottle{
+        width: 85%;
+        & h2{
+            font-size: 2.5rem;
+        }
+    
+        & form{
+            & .field{
+                font-size: 0.8rem;
+                padding: 0.2rem 0.5rem;
+            }
+            
+            & label{
+                font-size: 1.2rem; 
+            }
+    
+            & #cont-form-add-bottle{
+                & #name{
+                    width: 97%;
+                }
+    
+                & #grapes{
+                    width: 90%;
+                }
+    
+                & #country{
+                    width: 90%;
+                }
+    
+                & #region{
+                    width: 90%;
+                }
+    
+                & #description{
+                    width: 97%;
+                }
+                & #photo{
+                    padding-top: 0.6rem;
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media #{$sm}{
+    .modal-add-bottle-container{
+        position: absolute;
+        height: 300vh;
+    }
+    .modal-add-bottle{
+        top: 28%;
+        #submitAdd{
+            font-size: 1.5rem;
+            margin: 1.5rem 0;
+        }
+        
+        & h2{
+            font-size: 2rem;
+            margin: 1rem 0;
+        }
+    
+        & form{
+            & .field{
+                font-size: 0.7rem;
+                padding: 0.15rem 0.4rem;
+            }
+            
+            & label{
+                font-size: 1rem; 
+            }
+    
+            & #cont-form-add-bottle{
+                grid-template-columns: 1fr 4fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
+
+                & #name-label{
+                    grid-column: 1;
+                    grid-row: 1;
+                }
+
+                & #year-label{
+                    grid-column: 1;
+                    grid-row: 2;
+                }
+
+                & #grapes-label{
+                    grid-column: 1;
+                    grid-row: 3;
+                }
+
+                & #country-label{
+                    grid-column: 1;
+                    grid-row: 4;
+                }
+
+                & #region-label{
+                    grid-column: 1;
+                    grid-row: 5;
+                }
+
+                & #description-label{
+                    grid-column: 1;
+                    grid-row: 6;
+                }
+
+                & #photo-label{
+                    grid-column: 1;
+                    grid-row: 7;
+                }
+
+                & #type-label{
+                    grid-column: 1;
+                    grid-row: 8;
+                }
+
+                & #name{
+                    grid-column: 2;
+                    grid-row: 1;
+                    width: 96%;
+                }
+
+                & #year{
+                    grid-column: 2;
+                    grid-row: 2;
+                    width: 100%;
+                }
+
+                & #grapes{
+                    grid-column: 2;
+                    grid-row: 3;
+                    width: 96%;
+                }
+
+                & #country{
+                    grid-column: 2;
+                    grid-row: 4;
+                    width: 96%;
+                }
+
+                & #region{
+                    grid-column: 2;
+                    grid-row: 5;
+                    width: 96%;
+                }
+
+                & #description{
+                    grid-column: 2;
+                    grid-row: 6;
+                    width: 96%;
+                }
+
+                & #photo{
+                    grid-column: 2;
+                    grid-row: 7;
+                }
+                
+                & #type{
+                    grid-column: 2;
+                    grid-row: 8;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+@media #{$sm}{
+    #champ-requis{
+        bottom: .5rem;
+        left: 2rem;
+    }
+    .modal-add-bottle{
+        padding: 1rem;
+        text-align: left;
+
+        & h2{
+            margin: 1rem 1rem;
+        }
+    
+        & form{
+            & .field{
+                padding: .5rem 0;
+            }
+            & label{
+                font-size: 0.9rem; 
+                margin-left: 0;
+            }
+            & #cont-form-add-bottle{
+                display: block;
+
+                & #name{
+                    width: 100%;
+                }
+    
+                & #grapes{
+                    width: 100%;
+                }
+    
+                & #country{
+                    width: 100%;
+                }
+    
+                & #region{
+                    width: 100%;
+                }
+    
+                & #description{
+                    width: 100%;
+                    height: 100px;
+                }
+            }
+        }
+    }
+}

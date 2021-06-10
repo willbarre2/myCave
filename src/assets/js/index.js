@@ -30,8 +30,10 @@ function closeModal() {
   modalCont.classList.add("hidden");
 }
 
-//ouvre modal connexion
-connexionBtn.addEventListener("click", showModal);
+if (connexionBtn !== null && connexionBtn !== "") {
+  //ouvre modal connexion
+  connexionBtn.addEventListener("click", showModal);
+}
 
 //Ferme le modal connexion : clic, touche Echap
 closeModalBtn.addEventListener("click", closeModal);
@@ -60,15 +62,11 @@ document.addEventListener("keydown", function (e) {
 
 //submit post
 
-function reloadDelay() {
-  location.reload();
-}
-
 $("#submit").click(function () {
   var login = $("#login").val();
   var password = $("#password").val();
   $.post(
-    "connexion_post.php",
+    "ajax_php/connexion_post.php",
     {
       login: login,
       password: password,
@@ -79,7 +77,9 @@ $("#submit").click(function () {
       if (
         response === '<p class="msg_success">Merci, vous êtes connecté!</p>'
       ) {
-        window.setTimeout(reloadDelay, 800);
+        setTimeout(function () {
+          window.location.reload();
+        }, 800);
       }
     }
   );

@@ -1,29 +1,62 @@
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .close-modal:hover {
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, #icon-user-white, .del-creat-cont img, .close-modal {
+#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal {
+.cards, .connexion-modal, .modal-crea, .modal-add-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input {
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder {
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder {
     color: #818181; }
+
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "source",sans-serif;
+  color: #3e0018;
+  background-image: url(../img/bg-bouteilles.jpg);
+  background-size: cover;
+  background-attachment: fixed; }
 
 @font-face {
   font-family: "source";
@@ -41,43 +74,38 @@
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-* {
-  margin: 0;
-  padding: 0; }
-
-body {
-  font-family: "source",sans-serif;
-  color: #3e0018;
-  background-image: url(../img/bg-bouteilles.jpg);
-  background-size: cover;
-  background-attachment: fixed; }
-
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .close-modal:hover {
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, #icon-user-white, .del-creat-cont img, .close-modal {
+#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal {
+.cards, .connexion-modal, .modal-crea, .modal-add-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input {
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder {
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder {
     color: #818181; }
+
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
 
 #nav-rouge, #nav-blanc, #nav-rose {
   padding-bottom: .3rem;
@@ -153,7 +181,7 @@ nav ul {
 #btn-burger {
   display: none; }
 
-#icon-bottle-white, #icon-user-white {
+#icon-bottle-white, .icon-user-white {
   position: absolute;
   z-index: 4;
   top: 16px;
@@ -161,14 +189,15 @@ nav ul {
   margin: 0;
   display: none;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-white:hover, #icon-user-white:hover {
+  #icon-bottle-white:hover, .icon-user-white:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
-#icon-user-white {
+.icon-user-white {
+  background: url("../img/logos/icon_user_plus_white.svg");
   top: 75px; }
 
-#icon-bottle-bx, #icon-user-bx {
+#icon-bottle-bx, .icon-user-bx {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -177,23 +206,24 @@ nav ul {
   right: 10px;
   margin: 0;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-bx:hover, #icon-user-bx:hover {
+  #icon-bottle-bx:hover, .icon-user-bx:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
-#icon-user-bx {
+.icon-user-bx {
+  background: url("../img/logos/icon_user_plus.svg");
   top: 220px; }
 
 @media only screen and (max-width: 1200px) {
   #nav-rouge, #nav-blanc, #nav-rose {
     margin: 1rem 3vw; }
-  #icon-bottle-bx, #icon-user-bx, #icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx, .icon-user-bx {
     right: 2px; } }
 
 @media only screen and (max-width: 992px) {
-  #icon-bottle-white, #icon-user-white {
+  #icon-bottle-white, .icon-user-white {
     display: block; }
-  #icon-bottle-bx, #icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx {
     display: none; }
   #nav-cont {
     flex-direction: column; }
@@ -223,35 +253,57 @@ nav ul {
     header div img {
       margin: 1.2rem 0;
       width: 150px; }
-  #icon-bottle-white, #icon-user-white {
+  #icon-bottle-white, .icon-user-white {
     right: 10px; } }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .close-modal:hover {
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, #icon-user-white, .del-creat-cont img, .close-modal {
+#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal {
+.cards, .connexion-modal, .modal-crea, .modal-add-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input {
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder {
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder {
     color: #818181; }
+
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
 
 #ratrape-header {
   width: 100%;
@@ -451,34 +503,56 @@ nav ul {
   .card-cont h2 {
     font-size: 1.2rem; } }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .close-modal:hover {
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, #icon-user-white, .del-creat-cont img, .close-modal {
+#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal {
+.cards, .connexion-modal, .modal-crea, .modal-add-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input {
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder {
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder {
     color: #818181; }
 
-.connexion-modal-container {
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
+
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -539,7 +613,42 @@ nav ul {
       margin: 2rem 0;
       transition: all 0.2s ease-in-out; }
 
-.close-modal {
+.modal-crea {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-crea img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-crea h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-crea .form-crea {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .modal-crea .form-crea select {
+      width: 305px; }
+    .modal-crea .form-crea #submitCrea {
+      color: white;
+      background-color: #3e0018;
+      color: #ff7b6c;
+      border: none;
+      margin: 2rem 0;
+      transition: all 0.2s ease-in-out; }
+
+.close-modal, .close-modal-crea, .close-modal-add {
   display: block;
   transition: all 0.2s ease-in-out; }
 
@@ -551,13 +660,13 @@ nav ul {
   font-size: 2rem; }
 
 .msg_success {
-  color: #07dc2b;
+  color: #add400;
   width: 100%;
   margin: 1rem;
   font-size: 2rem; }
 
 @media only screen and (max-width: 1200px) {
-  .connexion-modal {
+  .connexion-modal, .modal-crea {
     width: 50%; } }
 
 @media only screen and (max-width: 768px) {
@@ -565,13 +674,17 @@ nav ul {
     font-size: 2.5rem; }
   .connexion-modal .form {
     width: 80%; }
+  .modal-crea h2 {
+    font-size: 2.5rem; }
+  .modal-crea .form-crea {
+    width: 80%; }
   #pass-eye {
     margin-right: -1.6rem; }
     #pass-eye i {
       margin: 0 0.3rem; } }
 
 @media only screen and (max-width: 576px) {
-  .connexion-modal {
+  .connexion-modal, .modal-crea {
     width: 80%; } }
 
 @media only screen and (max-width: 425px) {
@@ -582,16 +695,589 @@ nav ul {
     .connexion-modal .form input {
       font-size: 1rem; }
     .connexion-modal .form #submit {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  .modal-crea {
+    width: 75%; }
+    .modal-crea h2 {
+      font-size: 2rem; }
+    .modal-crea .form-crea input, .modal-crea .form-crea select {
+      font-size: 1rem; }
+    .modal-crea .form-crea select {
+      width: 210px; }
+    .modal-crea .form-crea #submitCrea {
+      font-size: 1.5rem; }
+  .msg_success, .msg_error {
+    font-size: 1.5rem; } }
 
 @media only screen and (max-width: 320px) {
   .connexion-modal h2 {
     font-size: 1.5rem; }
-  .connexion-modal div input {
+  .connexion-modal div input, .connexion-modal div select {
     font-size: 1rem; }
   .connexion-modal div #submit {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .modal-crea h2 {
+    font-size: 1.5rem; }
+  .modal-crea div input, .modal-crea div select {
+    font-size: 1rem; }
+  .modal-crea div #submitCrea {
+    font-size: 1.2rem; }
+  .msg_success, .msg_error {
+    font-size: 1rem; } }
+
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
+  cursor: pointer;
+  transform: scale(1.07); }
+
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
+  padding: 2px 15px;
+  border-radius: 30px;
+  font-family: "sourceB";
+  font-size: 2rem; }
+
+#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add {
+  width: 40px;
+  height: 40px; }
+
+.cards, .connexion-modal, .modal-crea, .modal-add-bottle {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-family: 'source', sans-serif;
+  font-size: 1.5rem; }
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder {
+    color: #818181; }
+
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
+
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, #submitAdd:hover {
+  cursor: pointer;
+  transform: scale(1.07); }
+
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd {
+  padding: 2px 15px;
+  border-radius: 30px;
+  font-family: "sourceB";
+  font-size: 2rem; }
+
+#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add {
+  width: 40px;
+  height: 40px; }
+
+.cards, .connexion-modal, .modal-crea, .modal-add-bottle {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  margin: 1rem 0;
+  font-family: 'source', sans-serif;
+  font-size: 1.5rem; }
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder {
+    color: #818181; }
+
+.modal-add-bottle form label {
+  font-family: 'sourceB';
+  font-size: 1.5rem;
+  color: #88002d;
+  margin: 0 1rem; }
+
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(5px);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  opacity: 1;
+  transition: all 0.4s ease-in-out; }
+
+.hidden {
+  z-index: -1;
+  opacity: 0; }
+
+.pass_hide {
+  display: none; }
+
+#pass-eye {
+  display: flex;
+  align-items: center;
+  margin-right: -3rem; }
+  #pass-eye i {
+    margin: 0 1rem; }
+
+.connexion-modal {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .connexion-modal img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .connexion-modal h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .connexion-modal .form {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .connexion-modal .form #submit {
+      color: white;
+      background-color: #3e0018;
+      color: #ff7b6c;
+      border: none;
+      margin: 2rem 0;
+      transition: all 0.2s ease-in-out; }
+
+.modal-crea {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-crea img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-crea h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-crea .form-crea {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .modal-crea .form-crea select {
+      width: 305px; }
+    .modal-crea .form-crea #submitCrea {
+      color: white;
+      background-color: #3e0018;
+      color: #ff7b6c;
+      border: none;
+      margin: 2rem 0;
+      transition: all 0.2s ease-in-out; }
+
+.close-modal, .close-modal-crea, .close-modal-add {
+  display: block;
+  transition: all 0.2s ease-in-out; }
+
+.msg_error {
+  color: red;
+  width: 100%;
+  text-decoration: underline;
+  margin: 1rem;
+  font-size: 2rem; }
+
+.msg_success {
+  color: #add400;
+  width: 100%;
+  margin: 1rem;
+  font-size: 2rem; }
+
+@media only screen and (max-width: 1200px) {
+  .connexion-modal, .modal-crea {
+    width: 50%; } }
+
+@media only screen and (max-width: 768px) {
+  .connexion-modal h2 {
+    font-size: 2.5rem; }
+  .connexion-modal .form {
+    width: 80%; }
+  .modal-crea h2 {
+    font-size: 2.5rem; }
+  .modal-crea .form-crea {
+    width: 80%; }
+  #pass-eye {
+    margin-right: -1.6rem; }
+    #pass-eye i {
+      margin: 0 0.3rem; } }
+
+@media only screen and (max-width: 576px) {
+  .connexion-modal, .modal-crea {
+    width: 80%; } }
+
+@media only screen and (max-width: 425px) {
+  .connexion-modal {
+    width: 75%; }
+    .connexion-modal h2 {
+      font-size: 2rem; }
+    .connexion-modal .form input {
+      font-size: 1rem; }
+    .connexion-modal .form #submit {
+      font-size: 1.5rem; }
+  .modal-crea {
+    width: 75%; }
+    .modal-crea h2 {
+      font-size: 2rem; }
+    .modal-crea .form-crea input, .modal-crea .form-crea select {
+      font-size: 1rem; }
+    .modal-crea .form-crea select {
+      width: 210px; }
+    .modal-crea .form-crea #submitCrea {
+      font-size: 1.5rem; }
+  .msg_success, .msg_error {
+    font-size: 1.5rem; } }
+
+@media only screen and (max-width: 320px) {
+  .connexion-modal h2 {
+    font-size: 1.5rem; }
+  .connexion-modal div input, .connexion-modal div select {
+    font-size: 1rem; }
+  .connexion-modal div #submit {
+    font-size: 1.2rem; }
+  .modal-crea h2 {
+    font-size: 1.5rem; }
+  .modal-crea div input, .modal-crea div select {
+    font-size: 1rem; }
+  .modal-crea div #submitCrea {
+    font-size: 1.2rem; }
+  .msg_success, .msg_error {
+    font-size: 1rem; } }
+
+#submitAdd {
+  align-self: center;
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  transition: all 0.2s ease-in-out; }
+
+#champ-requis {
+  position: absolute;
+  bottom: 1rem;
+  left: 4rem;
+  color: #88002d; }
+
+#resultAdd {
+  font-size: 1.5rem; }
+
+.modal-add-bottle {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 75%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-add-bottle img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-add-bottle h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-add-bottle form {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column; }
+    .modal-add-bottle form .field {
+      width: 90%; }
+    .modal-add-bottle form #cont-form-add-bottle {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr 2fr;
+      grid-template-rows: 1fr 1fr 1fr 2fr 1fr;
+      justify-items: start; }
+      .modal-add-bottle form #cont-form-add-bottle #name-label {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-bottle #year-label {
+        grid-column: 1;
+        grid-row: 2;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-bottle #grapes-label {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-bottle #country-label {
+        grid-column: 3;
+        grid-row: 2;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-bottle #region-label {
+        grid-column: 3;
+        grid-row: 3;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-bottle #description-label {
+        grid-column: 1;
+        grid-row: 4;
+        margin-top: 1rem; }
+      .modal-add-bottle form #cont-form-add-bottle #photo-label {
+        grid-column: 1;
+        grid-row: 5;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-bottle #type-label {
+        grid-column: 3;
+        grid-row: 5;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-bottle #name {
+        grid-column: 2 / 5;
+        grid-row: 1;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-bottle #year {
+        grid-column: 2;
+        grid-row: 2;
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-bottle #grapes {
+        grid-column: 2;
+        grid-row: 3; }
+      .modal-add-bottle form #cont-form-add-bottle #country {
+        grid-column: 4;
+        grid-row: 2; }
+      .modal-add-bottle form #cont-form-add-bottle #region {
+        grid-column: 4;
+        grid-row: 3; }
+      .modal-add-bottle form #cont-form-add-bottle #description {
+        resize: none;
+        grid-column: 2 / 5;
+        grid-row: 4;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-bottle #photo {
+        grid-column: 2;
+        grid-row: 5;
+        padding: .8rem 0 0 0;
+        font-size: 1.1rem;
+        color: #88002d; }
+      .modal-add-bottle form #cont-form-add-bottle #type {
+        grid-column: 4;
+        grid-row: 5;
+        width: 100%; }
+
+@media only screen and (max-width: 1200px) {
+  .modal-add-bottle form .field {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem; }
+  .modal-add-bottle form #cont-form-add-bottle #name {
+    width: 95%; }
+  .modal-add-bottle form #cont-form-add-bottle #grapes {
+    width: 87%; }
+  .modal-add-bottle form #cont-form-add-bottle #country {
+    width: 87%; }
+  .modal-add-bottle form #cont-form-add-bottle #region {
+    width: 87%; }
+  .modal-add-bottle form #cont-form-add-bottle #description {
+    width: 95%; }
+  .modal-add-bottle form #cont-form-add-bottle #photo {
+    padding-top: 1rem;
+    font-size: 0.8rem; } }
+
+@media only screen and (max-width: 992px) {
+  .modal-add-bottle form .field {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem; }
+  .modal-add-bottle form #cont-form-add-bottle #name {
+    width: 94%; }
+  .modal-add-bottle form #cont-form-add-bottle #grapes {
+    width: 84%; }
+  .modal-add-bottle form #cont-form-add-bottle #country {
+    width: 84%; }
+  .modal-add-bottle form #cont-form-add-bottle #region {
+    width: 84%; }
+  .modal-add-bottle form #cont-form-add-bottle #description {
+    width: 94%; } }
+
+@media only screen and (max-width: 768px) {
+  .modal-add-bottle {
+    width: 85%; }
+    .modal-add-bottle h2 {
+      font-size: 2.5rem; }
+    .modal-add-bottle form .field {
+      font-size: 0.8rem;
+      padding: 0.2rem 0.5rem; }
+    .modal-add-bottle form label {
+      font-size: 1.2rem; }
+    .modal-add-bottle form #cont-form-add-bottle #name {
+      width: 97%; }
+    .modal-add-bottle form #cont-form-add-bottle #grapes {
+      width: 90%; }
+    .modal-add-bottle form #cont-form-add-bottle #country {
+      width: 90%; }
+    .modal-add-bottle form #cont-form-add-bottle #region {
+      width: 90%; }
+    .modal-add-bottle form #cont-form-add-bottle #description {
+      width: 97%; }
+    .modal-add-bottle form #cont-form-add-bottle #photo {
+      padding-top: 0.6rem;
+      font-size: 0.7rem; } }
+
+@media only screen and (max-width: 576px) {
+  .modal-add-bottle-container {
+    position: absolute;
+    height: 300vh; }
+  .modal-add-bottle {
+    top: 28%; }
+    .modal-add-bottle #submitAdd {
+      font-size: 1.5rem;
+      margin: 1.5rem 0; }
+    .modal-add-bottle h2 {
+      font-size: 2rem;
+      margin: 1rem 0; }
+    .modal-add-bottle form .field {
+      font-size: 0.7rem;
+      padding: 0.15rem 0.4rem; }
+    .modal-add-bottle form label {
+      font-size: 1rem; }
+    .modal-add-bottle form #cont-form-add-bottle {
+      grid-template-columns: 1fr 4fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr; }
+      .modal-add-bottle form #cont-form-add-bottle #name-label {
+        grid-column: 1;
+        grid-row: 1; }
+      .modal-add-bottle form #cont-form-add-bottle #year-label {
+        grid-column: 1;
+        grid-row: 2; }
+      .modal-add-bottle form #cont-form-add-bottle #grapes-label {
+        grid-column: 1;
+        grid-row: 3; }
+      .modal-add-bottle form #cont-form-add-bottle #country-label {
+        grid-column: 1;
+        grid-row: 4; }
+      .modal-add-bottle form #cont-form-add-bottle #region-label {
+        grid-column: 1;
+        grid-row: 5; }
+      .modal-add-bottle form #cont-form-add-bottle #description-label {
+        grid-column: 1;
+        grid-row: 6; }
+      .modal-add-bottle form #cont-form-add-bottle #photo-label {
+        grid-column: 1;
+        grid-row: 7; }
+      .modal-add-bottle form #cont-form-add-bottle #type-label {
+        grid-column: 1;
+        grid-row: 8; }
+      .modal-add-bottle form #cont-form-add-bottle #name {
+        grid-column: 2;
+        grid-row: 1;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-bottle #year {
+        grid-column: 2;
+        grid-row: 2;
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-bottle #grapes {
+        grid-column: 2;
+        grid-row: 3;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-bottle #country {
+        grid-column: 2;
+        grid-row: 4;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-bottle #region {
+        grid-column: 2;
+        grid-row: 5;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-bottle #description {
+        grid-column: 2;
+        grid-row: 6;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-bottle #photo {
+        grid-column: 2;
+        grid-row: 7; }
+      .modal-add-bottle form #cont-form-add-bottle #type {
+        grid-column: 2;
+        grid-row: 8;
+        width: 100%; } }
+
+@media only screen and (max-width: 576px) {
+  #champ-requis {
+    bottom: .5rem;
+    left: 2rem; }
+  .modal-add-bottle {
+    padding: 1rem;
+    text-align: left; }
+    .modal-add-bottle h2 {
+      margin: 1rem 1rem; }
+    .modal-add-bottle form .field {
+      padding: .5rem 0; }
+    .modal-add-bottle form label {
+      font-size: 0.9rem;
+      margin-left: 0; }
+    .modal-add-bottle form #cont-form-add-bottle {
+      display: block; }
+      .modal-add-bottle form #cont-form-add-bottle #name {
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-bottle #grapes {
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-bottle #country {
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-bottle #region {
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-bottle #description {
+        width: 100%;
+        height: 100px; } }
 
 #footer {
   font-size: 1.5rem;
   margin: 1rem; }
+
+.red {
+  color: red; }
+
+.green {
+  color: #add400; }
+
+.border_red {
+  border: 1px solid red; }

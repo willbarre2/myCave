@@ -1,31 +1,47 @@
-.connexion-modal .form #submit:hover, .close-modal:hover {
+@font-face {
+  font-family: "source";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+
+@font-face {
+  font-family: "sourceB";
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+
+@font-face {
+  font-family: "jose";
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+
+@font-face {
+  font-family: "joseB";
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+
+.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-.connexion-modal .form #submit {
+.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-.close-modal {
+.close-modal, .close-modal-crea, .close-modal-add {
   width: 40px;
   height: 40px; }
 
-.connexion-modal {
+.connexion-modal, .modal-crea {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input {
+.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder {
+  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder {
     color: #818181; }
 
-.connexion-modal-container {
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -86,7 +102,42 @@
       margin: 2rem 0;
       transition: all 0.2s ease-in-out; }
 
-.close-modal {
+.modal-crea {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-crea img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-crea h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-crea .form-crea {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .modal-crea .form-crea select {
+      width: 305px; }
+    .modal-crea .form-crea #submitCrea {
+      color: white;
+      background-color: #3e0018;
+      color: #ff7b6c;
+      border: none;
+      margin: 2rem 0;
+      transition: all 0.2s ease-in-out; }
+
+.close-modal, .close-modal-crea, .close-modal-add {
   display: block;
   transition: all 0.2s ease-in-out; }
 
@@ -98,13 +149,13 @@
   font-size: 2rem; }
 
 .msg_success {
-  color: #07dc2b;
+  color: #add400;
   width: 100%;
   margin: 1rem;
   font-size: 2rem; }
 
 @media only screen and (max-width: 1200px) {
-  .connexion-modal {
+  .connexion-modal, .modal-crea {
     width: 50%; } }
 
 @media only screen and (max-width: 768px) {
@@ -112,13 +163,17 @@
     font-size: 2.5rem; }
   .connexion-modal .form {
     width: 80%; }
+  .modal-crea h2 {
+    font-size: 2.5rem; }
+  .modal-crea .form-crea {
+    width: 80%; }
   #pass-eye {
     margin-right: -1.6rem; }
     #pass-eye i {
       margin: 0 0.3rem; } }
 
 @media only screen and (max-width: 576px) {
-  .connexion-modal {
+  .connexion-modal, .modal-crea {
     width: 80%; } }
 
 @media only screen and (max-width: 425px) {
@@ -129,12 +184,32 @@
     .connexion-modal .form input {
       font-size: 1rem; }
     .connexion-modal .form #submit {
-      font-size: 1.5rem; } }
+      font-size: 1.5rem; }
+  .modal-crea {
+    width: 75%; }
+    .modal-crea h2 {
+      font-size: 2rem; }
+    .modal-crea .form-crea input, .modal-crea .form-crea select {
+      font-size: 1rem; }
+    .modal-crea .form-crea select {
+      width: 210px; }
+    .modal-crea .form-crea #submitCrea {
+      font-size: 1.5rem; }
+  .msg_success, .msg_error {
+    font-size: 1.5rem; } }
 
 @media only screen and (max-width: 320px) {
   .connexion-modal h2 {
     font-size: 1.5rem; }
-  .connexion-modal div input {
+  .connexion-modal div input, .connexion-modal div select {
     font-size: 1rem; }
   .connexion-modal div #submit {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem; }
+  .modal-crea h2 {
+    font-size: 1.5rem; }
+  .modal-crea div input, .modal-crea div select {
+    font-size: 1rem; }
+  .modal-crea div #submitCrea {
+    font-size: 1.2rem; }
+  .msg_success, .msg_error {
+    font-size: 1rem; } }
