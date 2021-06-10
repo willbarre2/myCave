@@ -7,10 +7,10 @@
 
             <div id="cont-form-add-bottle">
                 <label for="name" id="name-label">Nom*: </label>
-                <input class="field" type="text" name="name" id="name" required>
+                <input class="field" type="text" name="name" id="name">
 
                 <label for="year" id="year-label">Année: </label>
-                <select class="field" name="year" id="year" required>
+                <select class="field" name="year" id="year">
                     <option value="0"></option>;
                     <?php
                     $actual_year = (date('Y') - 1);
@@ -33,17 +33,17 @@
                 <textarea class="field" name="description" id="description"></textarea>
 
                 <label for="photo" id="photo-label">Photo: </label>
-                <input class="field" type="file" name="photo" id="photo">
+                <input class="field" type="file" name="photo" id="photo" accept=".png, .jpg, .jpeg">
 
                 <label for="type" id="type-label">Type*: </label>
-                <select class="field" name="type" id="type" required>
+                <select class="field" name="type" id="type">
                     <option value="1">Rouge</option>;
                     <option value="2">Blanc</option>;
                     <option value="3">Rosé</option>;
                 </select>
             </div>
 
-            <div id="submitAdd">Ajouter</div>
+            <button type="submit" id="submitAdd">Ajouter</button>
         </form>
         <!-- messages bouteille -->
         <div id="resultAdd"></div>

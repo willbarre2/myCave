@@ -204,7 +204,7 @@
   font-size: 2rem; }
 
 .msg_success {
-  color: #047c36;
+  color: #add400;
   width: 100%;
   margin: 1rem;
   font-size: 2rem; }
@@ -282,6 +282,9 @@
   bottom: 1rem;
   left: 4rem;
   color: #88002d; }
+
+#resultAdd {
+  font-size: 1.5rem; }
 
 .modal-add-bottle {
   text-align: center;

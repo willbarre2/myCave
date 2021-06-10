@@ -14,13 +14,14 @@ if (in_array('', $_POST)) {
     $login = htmlentities(trim(mb_strtolower($login)), ENT_QUOTES); // faille XSS
     $password = htmlentities(trim($password), ENT_QUOTES);
 
-    $req = $db->prepare("
-		SELECT *
+    $req = $db->prepare(
+        "SELECT *
 		FROM user u
 		INNER JOIN role r
 		ON u.id_to_role = r.id_role
 		WHERE u.identifiant = :identifiant
-	");
+	"
+    );
     $req->bindValue(':identifiant', $login, PDO::PARAM_STR);
 
     $req->execute();

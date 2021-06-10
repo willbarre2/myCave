@@ -61,7 +61,6 @@ $("#submitCrea").click(function () {
       role: role,
     },
     function (response) {
-      console.log(response);
       if (response.error) {
         msg.html(response.msg).addClass("red");
         var field = response.field;
@@ -79,7 +78,6 @@ $("#submitCrea").click(function () {
           $("#role").addClass("border_red");
         }
       } else {
-        console.log("coucou");
         $("#resultCrea").html(response.msg).addClass("green");
         setTimeout(function () {
           window.location.reload();
