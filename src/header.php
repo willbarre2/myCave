@@ -13,7 +13,8 @@ $blanc_name = "myCave / Blanc";
 $rose_name = "myCave / Rosé";
 
 
-$current_url = 'http://localhost' . $_SERVER['REQUEST_URI']; // url courante
+$current_url = strtok(('http://localhost' . $_SERVER['REQUEST_URI']), '?');
+
 
 if ($page_rouge === $current_url) :
 

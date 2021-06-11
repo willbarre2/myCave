@@ -98,6 +98,33 @@
       margin-top: -1rem;
       margin-bottom: 2rem; }
 
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'joseB';
+  font-size: 2rem;
+  margin-top: 2rem; }
+
+.navigation li {
+  margin: 0 20px;
+  list-style: none; }
+
+.navigation li a {
+  color: #3e0018; }
+
+.disabled a {
+  opacity: 0.4;
+  cursor: not-allowed; }
+
+.active {
+  color: red;
+  transform: scale(1.1);
+  cursor: not-allowed; }
+
+.active a {
+  color: red !important; }
+
 @media only screen and (max-width: 1200px) {
   .card-cont div h4 {
     font-size: 1.3rem; }
