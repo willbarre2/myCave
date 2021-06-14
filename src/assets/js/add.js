@@ -44,9 +44,6 @@ $("#form-add-bottle").submit(function (e) {
   $(".field").on("input", function () {
     $(this).removeClass("border_red");
   });
-  $(".field-re").on("input", function () {
-    $(this).removeClass("border_red");
-  });
   $.ajax({
     url: url,
     data: data,

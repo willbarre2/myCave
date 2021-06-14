@@ -87,7 +87,7 @@ $req->execute();
     <article class="cards">
         <?php if (isset($_SESSION['role'])) : ?>
             <div class="del-creat-cont">
-                <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression" class="btn-del" data-id="<?php echo $cards->id_bottle ?>"><img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition">
+                <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression" class="btn-del" data-id="<?php echo $cards->id_bottle ?>"><img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition" class="btn-up" data-id="<?php echo $cards->id_bottle ?>">
             </div>
         <?php endif; ?>
         <div class="card-cont">

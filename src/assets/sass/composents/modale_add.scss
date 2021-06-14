@@ -1,7 +1,7 @@
 @import "./variables.scss";
 @import "./modales.scss";
 
-#submitAdd{
+#submitAdd, #submitUp{
     align-self: center;
     @extend %cta;
     background-color: $bx;
@@ -12,6 +12,10 @@
 
     @extend %hover;
 }
+#content-photo{
+    width: 125px;
+    height: 150px;
+}
 
 #champ-requis{
     position: absolute;
@@ -20,7 +24,7 @@
     color: $rouge;
 }
 
-#resultAdd{
+#resultAdd, #resultUp{
     font-size: 1.5rem;
 }
 
@@ -117,41 +121,41 @@
                 align-self: center;
             }
 
-            & #name{
+            & #name, #name-up {
                 grid-column: 2 / 5;
                 grid-row: 1;
                 width: 96%;
             }
 
-            & #year{
+            & #year, #year-up{
                 grid-column: 2;
                 grid-row: 2;
                 width: 100%;
             }
 
-            & #grapes{
+            & #grapes, #grapes-up{
                 grid-column: 2;
                 grid-row: 3;
             }
 
-            & #country{
+            & #country, #country-up{
                 grid-column: 4;
                 grid-row: 2;
             }
 
-            & #region{
+            & #region, #region-up{
                 grid-column: 4;
                 grid-row: 3;
             }
 
-            & #description{
+            & #description, #description-up{
                 resize: none;
                 grid-column: 2 / 5;
                 grid-row: 4;
                 width: 96%;
             }
 
-            & #photo{
+            & #photo, #photo-up{
                 grid-column: 2;
                 grid-row: 5;
                 padding: .8rem 0 0 0;
@@ -159,7 +163,7 @@
                 color: $rouge;
             }
             
-            & #type{
+            & #type, #type-up{
                 grid-column: 4;
                 grid-row: 5;
                 width: 100%;
@@ -177,27 +181,27 @@
             }
             & #cont-form-add-bottle{
     
-                & #name{
+                & #name, #name-up{
                     width: 95%;
                 }
     
-                & #grapes{
+                & #grapes, #grapes-up{
                     width: 87%;
                 }
     
-                & #country{
+                & #country, #country-up{
                     width: 87%;
                 }
     
-                & #region{
+                & #region, #region-up{
                     width: 87%;
                 }
     
-                & #description{
+                & #description, #description-up{
                     width: 95%;
                 }
     
-                & #photo{
+                & #photo, #photo-up{
                     padding-top: 1rem;
                     font-size: 0.8rem;
 
@@ -217,23 +221,23 @@
             }
 
             & #cont-form-add-bottle{
-                & #name{
+                & #name, #name-up{
                     width: 94%;
                 }
     
-                & #grapes{
+                & #grapes, #grapes-up{
                     width: 84%;
                 }
     
-                & #country{
+                & #country, #country-up{
                     width: 84%;
                 }
     
-                & #region{
+                & #region, #region-up{
                     width: 84%;
                 }
     
-                & #description{
+                & #description, #description-up{
                     width: 94%;
                 }
 
@@ -260,26 +264,26 @@
             }
     
             & #cont-form-add-bottle{
-                & #name{
+                & #name, #name-up{
                     width: 97%;
                 }
     
-                & #grapes{
+                & #grapes, #grapes-up{
                     width: 90%;
                 }
     
-                & #country{
+                & #country, #country-up{
                     width: 90%;
                 }
     
-                & #region{
+                & #region, #region-up{
                     width: 90%;
                 }
     
-                & #description{
+                & #description, #description-up{
                     width: 97%;
                 }
-                & #photo{
+                & #photo, #photo-up{
                     padding-top: 0.6rem;
                     font-size: 0.7rem;
                 }
@@ -295,7 +299,7 @@
     }
     .modal-add-bottle{
         top: 28%;
-        #submitAdd{
+        #submitAdd, #submitUp{
             font-size: 1.5rem;
             margin: 1.5rem 0;
         }
@@ -359,48 +363,48 @@
                     grid-row: 8;
                 }
 
-                & #name{
+                & #name, #name-up{
                     grid-column: 2;
                     grid-row: 1;
                     width: 96%;
                 }
 
-                & #year{
+                & #year, #year-up{
                     grid-column: 2;
                     grid-row: 2;
                     width: 100%;
                 }
 
-                & #grapes{
+                & #grapes, #grapes-up{
                     grid-column: 2;
                     grid-row: 3;
                     width: 96%;
                 }
 
-                & #country{
+                & #country, #country-up{
                     grid-column: 2;
                     grid-row: 4;
                     width: 96%;
                 }
 
-                & #region{
+                & #region, #region-up{
                     grid-column: 2;
                     grid-row: 5;
                     width: 96%;
                 }
 
-                & #description{
+                & #description, #description-up{
                     grid-column: 2;
                     grid-row: 6;
                     width: 96%;
                 }
 
-                & #photo{
+                & #photo, #photo-up{
                     grid-column: 2;
                     grid-row: 7;
                 }
                 
-                & #type{
+                & #type, #type-up{
                     grid-column: 2;
                     grid-row: 8;
                     width: 100%;
@@ -434,23 +438,23 @@
             & #cont-form-add-bottle{
                 display: block;
 
-                & #name{
+                & #name, #name-up{
                     width: 100%;
                 }
     
-                & #grapes{
+                & #grapes, #grapes-up{
                     width: 100%;
                 }
     
-                & #country{
+                & #country, #country-up {
                     width: 100%;
                 }
     
-                & #region{
+                & #region, #region-up{
                     width: 100%;
                 }
     
-                & #description{
+                & #description, #description-up{
                     width: 100%;
                     height: 100px;
                 }

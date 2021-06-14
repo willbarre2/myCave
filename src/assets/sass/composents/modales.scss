@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container{
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -136,7 +136,7 @@
     }
 }
 
-.close-modal, .close-modal-crea, .close-modal-add{
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up{
     display: block;
     @extend %btn-close;
     transition: $animate;
