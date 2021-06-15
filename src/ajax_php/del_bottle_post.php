@@ -18,7 +18,7 @@ $req = $db->prepare(
 $req->bindValue(':id', $bottle_id, PDO::PARAM_INT);
 $req->execute();
 $resultat = $req->fetchObject();
-$tof = dirname("/assets/img/photo/$resultat->photo");
+$tof = "../assets/img/photos/$resultat->photo";
 
 if ($resultat->photo != 'generic.jpg') {
     unlink($tof);

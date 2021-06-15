@@ -31,7 +31,7 @@ if (".btn-up" !== null && ".btn-up" !== "") {
 
         if (data.photo) {
           $(".container-photo").html(
-            '<img src="./assets/img/photos/' +
+            '<img src="../img/photos/' +
               data.photo +
               '" alt="photo d\'une bouteille de: ' +
               data.nom +
