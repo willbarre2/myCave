@@ -79,10 +79,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  .connexion-modal img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
   .connexion-modal h2 {
     font-family: 'SourceB', sans-serif;
     font-size: 3rem;
@@ -138,7 +134,9 @@
       transition: all 0.2s ease-in-out; }
 
 .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
-  display: block;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   transition: all 0.2s ease-in-out; }
 
 .msg_error {

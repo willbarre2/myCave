@@ -1,6 +1,6 @@
 <!-- modal modif bouteille -->
 <div class="modal-up-bottle-container hidden">
-    <div class="modal-add-bottle">
+    <div class="modal-up-bottle">
         <img class="close-modal-up" src="./assets/img/logos/icon_croix_bx.svg" alt="icon fermeture modale">
         <h2>Modification bouteille</h2>
         <form class="form-add" action="ajax_php/up_bottle_post.php" method="POST" id="form-up-bottle" enctype="multipart/form-data">
@@ -33,6 +33,7 @@
                 <textarea class="field" name="description" id="description-up"></textarea>
 
                 <label for="photo" id="photo-label">Photo: </label>
+                <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                 <input class="field" type="file" name="photo" id="photo-up" accept=".png, .jpg, .jpeg">
 
                 <label for="type" id="type-label">Type*: </label>

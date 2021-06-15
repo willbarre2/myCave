@@ -10,7 +10,6 @@ if (".btn-up" !== null && ".btn-up" !== "") {
       function (data) {
         window.scrollTo(0, 0);
         $(".modal-up-bottle-container").removeClass("hidden");
-        console.log(data);
 
         $("#name-up").val(data.nom);
         $("#year-up>option[value='" + data.annee + "']").prop("selected", true);
@@ -18,26 +17,23 @@ if (".btn-up" !== null && ".btn-up" !== "") {
         $("#country-up").val(data.pays);
         $("#region-up").val(data.region);
         $("#description-up").val(data.descri);
-        $("#photo-up").val(data.photo);
 
         if (data.type === "rouge") {
-          data.type = "1";
+          data.type = 1;
         } else if (data.type === "blanc") {
-          data.type = "2";
-        } else if (data.type === "rose") {
-          data.type = "3";
+          data.type = 2;
+        } else if (data.type === "rosé") {
+          data.type = 3;
         }
         $("#type-up>option[value='" + data.type + "']").prop("selected", true);
 
-        if (data.photo) {
-          $(".container-photo").html(
-            '<img src="../img/photos/' +
-              data.photo +
-              '" alt="photo d\'une bouteille de: ' +
-              data.nom +
-              '" class="content-photo">'
-          );
-        }
+        $("#container-photo").html(
+          '<img src="./assets/img/photos/' +
+            data.photo +
+            '" alt="photo d\'une bouteille de: ' +
+            data.nom +
+            '" class="content-photo">'
+        );
       },
       "json"
     );

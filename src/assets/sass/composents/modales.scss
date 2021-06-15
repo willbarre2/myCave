@@ -44,11 +44,6 @@
     transform: translate(-50%, -50%);
     @extend %shadow;
 
-    & img{
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
 
     & h2{
         font-family: 'SourceB', sans-serif;
@@ -137,7 +132,9 @@
 }
 
 .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up{
-    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     @extend %btn-close;
     transition: $animate;
 

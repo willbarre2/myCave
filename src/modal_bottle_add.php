@@ -33,6 +33,7 @@
                 <textarea class="field" name="description" id="description"></textarea>
 
                 <label for="photo" id="photo-label">Photo: </label>
+                <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
                 <input class="field" type="file" name="photo" id="photo" accept=".png, .jpg, .jpeg">
 
                 <label for="type" id="type-label">Type*: </label>

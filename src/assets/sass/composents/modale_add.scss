@@ -12,10 +12,6 @@
 
     @extend %hover;
 }
-#content-photo{
-    width: 125px;
-    height: 150px;
-}
 
 #champ-requis{
     position: absolute;
@@ -28,7 +24,7 @@
     font-size: 1.5rem;
 }
 
-.modal-add-bottle{
+.modal-add-bottle, .modal-up-bottle{
     text-align: center;
     background-color: $rose;
     border-radius: 30px;
@@ -39,12 +35,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     @extend %shadow;
-
-    & img{
-        position: absolute;
-        top: 1rem;
-        right: 1rem;
-    }
 
     & h2{
         font-family: 'SourceB', sans-serif;
@@ -172,8 +162,14 @@
     }
 }
 
+#container-photo img{
+    display: block;
+    width: 125px;
+    height: 150px;
+}
+
 @media #{$xl}{
-    .modal-add-bottle{
+    .modal-add-bottle, .modal-up-bottle{
         & form{
             & .field{
                 font-size: 1rem;
@@ -213,7 +209,7 @@
 }
 
 @media #{$lg}{
-    .modal-add-bottle{
+    .modal-add-bottle, .modal-up-bottle{
         & form{
             & .field{
                 font-size: 0.8rem;
@@ -247,7 +243,7 @@
 }
 
 @media #{$md}{
-    .modal-add-bottle{
+    .modal-add-bottle, .modal-up-bottle{
         width: 85%;
         & h2{
             font-size: 2.5rem;
@@ -293,11 +289,11 @@
 }
 
 @media #{$sm}{
-    .modal-add-bottle-container{
+    .modal-add-bottle-container, .modal-up-bottle-container{
         position: absolute;
         height: 300vh;
     }
-    .modal-add-bottle{
+    .modal-add-bottle, .modal-up-bottle{
         top: 28%;
         #submitAdd, #submitUp{
             font-size: 1.5rem;
@@ -414,7 +410,7 @@
     }
 }
 
-@media #{$sm}{
+@media #{$xs}{
     #champ-requis{
         bottom: .5rem;
         left: 2rem;
@@ -422,6 +418,51 @@
     .modal-add-bottle{
         padding: 1rem;
         text-align: left;
+        top: 28%;
+
+        & h2{
+            margin: 1rem 1rem;
+        }
+    
+        & form{
+            & .field{
+                padding: .5rem 0;
+            }
+            & label{
+                font-size: 0.9rem; 
+                margin-left: 0;
+            }
+            & #cont-form-add-bottle{
+                display: block;
+
+                & #name, #name-up{
+                    width: 100%;
+                }
+    
+                & #grapes, #grapes-up{
+                    width: 100%;
+                }
+    
+                & #country, #country-up {
+                    width: 100%;
+                }
+    
+                & #region, #region-up{
+                    width: 100%;
+                }
+    
+                & #description, #description-up{
+                    width: 100%;
+                    height: 100px;
+                }
+            }
+        }
+    }
+
+    .modal-up-bottle{
+        padding: 1rem;
+        text-align: left;
+        top: 34%;
 
         & h2{
             margin: 1rem 1rem;
