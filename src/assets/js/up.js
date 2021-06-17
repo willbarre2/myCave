@@ -35,6 +35,7 @@ if (".btn-up" !== null && ".btn-up" !== "") {
             '" class="content-photo">'
         );
         $("#current_picture").val(data.photo);
+        $("#current_id").val(data.id_bottle);
       },
       "json"
     );
