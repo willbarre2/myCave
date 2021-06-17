@@ -34,6 +34,7 @@ if (".btn-up" !== null && ".btn-up" !== "") {
             data.nom +
             '" class="content-photo">'
         );
+        $("#current_picture").val(data.photo);
       },
       "json"
     );

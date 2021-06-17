@@ -42,6 +42,8 @@
                     <option value="2">Blanc</option>;
                     <option value="3">Rosé</option>;
                 </select>
+
+                <input type="hidden" name="current_picture" id="current_picture">
             </div>
             <div id="container-photo"></div>
 

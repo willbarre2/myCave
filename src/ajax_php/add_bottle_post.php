@@ -25,7 +25,7 @@ if ($name == '') {
     $error = 1;
 } else {
     if ($photo_error > 0 && $photo_error < 3) {
-        $msg_error = 'Votre fichier est trop grand';
+        $msg_error = 'Votre fichier est trop grand (3Mo max)';
         $error = 2;
     } elseif ($photo_error == 3 || $photo_error > 4) {
         $msg_error = 'Oups une erreur s\'est produite 1';
@@ -34,11 +34,11 @@ if ($name == '') {
         if ($photo['size'] > 3000000) {
             $msg_error = 'Votre fichier est trop grand (3Mo max)';
             $error = 2;
-        } elseif (!empty($photo['name']) && !in_array(pathinfo($photo['name'], PATHINFO_EXTENSION), $ext)) {
+        } elseif ($photo_error == 0 && !in_array(pathinfo($photo['name'], PATHINFO_EXTENSION), $ext)) {
             $msg_error = 'Votre fichier n\'est pas une image (.jpg, .jpeg, .png)';
             $error = 2;
         } else {
-            if (!empty($photo['name'])) {
+            if ($photo_error == 0) {
                 $photo_name = uniqid() . '_' . $photo['name'];
                 @mkdir(dirname(__DIR__) . '/assets/img/photos/', 0775);
                 $photo_folder = dirname(__DIR__) . '/assets/img/photos/';
@@ -46,7 +46,7 @@ if ($name == '') {
                 $move_file = @move_uploaded_file($photo['tmp_name'], $dir);
             }
 
-            if (!empty($photo['name']) && !$move_file) {
+            if ($photo_error == 0 && !$move_file) {
                 $msg_error = 'Oups une erreur s\'est produite 2';
                 $error = 2;
             } else {
