@@ -14,31 +14,31 @@
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, #submitAdd:hover, #submitUp:hover {
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd, #submitUp {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal, .modal-crea, .modal-add-bottle, .modal-up-bottle {
+.cards, .connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
     color: #818181; }
 
 .modal-add-bottle form label, .modal-up-bottle form label {
@@ -74,31 +74,31 @@ body {
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, #submitAdd:hover, #submitUp:hover {
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd, #submitUp {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal, .modal-crea, .modal-add-bottle, .modal-up-bottle {
+.cards, .connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
     color: #818181; }
 
 .modal-add-bottle form label, .modal-up-bottle form label {
@@ -181,23 +181,27 @@ nav ul {
 #btn-burger {
   display: none; }
 
-#icon-bottle-white, .icon-user-white {
+#icon-bottle-white, .icon-user-white, .icon-user-del-white {
   position: absolute;
   z-index: 4;
-  top: 16px;
+  top: 25px;
   right: 21px;
   margin: 0;
   display: none;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-white:hover, .icon-user-white:hover {
+  #icon-bottle-white:hover, .icon-user-white:hover, .icon-user-del-white:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
 .icon-user-white {
   background: url("../img/logos/icon_user_plus_white.svg");
-  top: 75px; }
+  top: 87px; }
 
-#icon-bottle-bx, .icon-user-bx {
+.icon-user-del-white {
+  background: url("../img/logos/icon_user_del_white.svg");
+  top: 150px; }
+
+#icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -206,7 +210,7 @@ nav ul {
   right: 10px;
   margin: 0;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-bx:hover, .icon-user-bx:hover {
+  #icon-bottle-bx:hover, .icon-user-bx:hover, .icon-user-del-bx:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
@@ -214,16 +218,20 @@ nav ul {
   background: url("../img/logos/icon_user_plus.svg");
   top: 220px; }
 
+.icon-user-del-bx {
+  background: url("../img/logos/icon_user_del.svg");
+  top: 281px; }
+
 @media only screen and (max-width: 1200px) {
   #nav-rouge, #nav-blanc, #nav-rose {
     margin: 1rem 3vw; }
-  #icon-bottle-bx, .icon-user-bx, .icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx, .icon-user-bx {
     right: 2px; } }
 
 @media only screen and (max-width: 992px) {
-  #icon-bottle-white, .icon-user-white {
+  #icon-bottle-white, .icon-user-white, .icon-user-del-white {
     display: block; }
-  #icon-bottle-bx, .icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
     display: none; }
   #nav-cont {
     flex-direction: column; }
@@ -253,8 +261,19 @@ nav ul {
     header div img {
       margin: 1.2rem 0;
       width: 150px; }
-  #icon-bottle-white, .icon-user-white {
-    right: 10px; } }
+  #icon-bottle-white, .icon-user-white, .icon-user-del-white {
+    right: 10px;
+    top: 25px; }
+  .icon-user-white {
+    top: 87px; }
+  .icon-user-del-white {
+    top: 150px; }
+  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
+    top: 160px; }
+  .icon-user-bx {
+    top: 220px; }
+  .icon-user-del-bx {
+    top: 281px; } }
 
 @font-face {
   font-family: "source";
@@ -272,31 +291,31 @@ nav ul {
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, #submitAdd:hover, #submitUp:hover {
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd, #submitUp {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal, .modal-crea, .modal-add-bottle, .modal-up-bottle {
+.cards, .connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
     color: #818181; }
 
 .modal-add-bottle form label, .modal-up-bottle form label {
@@ -546,31 +565,31 @@ nav ul {
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, #submitAdd:hover, #submitUp:hover {
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd, #submitUp {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal, .modal-crea, .modal-add-bottle, .modal-up-bottle {
+.cards, .connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
     color: #818181; }
 
 .modal-add-bottle form label, .modal-up-bottle form label {
@@ -579,7 +598,7 @@ nav ul {
   color: #88002d;
   margin: 0 1rem; }
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container {
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -606,6 +625,18 @@ nav ul {
   margin-right: -3rem; }
   #pass-eye i {
     margin: 0 1rem; }
+
+.result_ac {
+  position: relative; }
+  .result_ac .content_result_ac {
+    position: absolute;
+    top: -32px;
+    left: -152px;
+    font-size: 1rem;
+    background-color: white;
+    text-align: start; }
+    .result_ac .content_result_ac > div {
+      cursor: pointer; }
 
 .connexion-modal {
   text-align: center;
@@ -671,7 +702,42 @@ nav ul {
       margin: 2rem 0;
       transition: all 0.2s ease-in-out; }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+.modal-del {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-del img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-del h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-del .form-del {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .modal-del .form-del select {
+      width: 305px; }
+    .modal-del .form-del #submitDel {
+      color: white;
+      background-color: #3e0018;
+      color: #ff7b6c;
+      border: none;
+      margin: 2rem 0;
+      transition: all 0.2s ease-in-out; }
+
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -691,7 +757,7 @@ nav ul {
   font-size: 2rem; }
 
 @media only screen and (max-width: 1200px) {
-  .connexion-modal, .modal-crea {
+  .connexion-modal, .modal-crea, .modal-del {
     width: 50%; } }
 
 @media only screen and (max-width: 768px) {
@@ -703,16 +769,22 @@ nav ul {
     font-size: 2.5rem; }
   .modal-crea .form-crea {
     width: 80%; }
+  .modal-del h2 {
+    font-size: 2.5rem; }
+  .modal-del .form-del {
+    width: 80%; }
   #pass-eye {
     margin-right: -1.6rem; }
     #pass-eye i {
       margin: 0 0.3rem; } }
 
 @media only screen and (max-width: 576px) {
-  .connexion-modal, .modal-crea {
+  .connexion-modal, .modal-crea, .modal-del {
     width: 80%; } }
 
 @media only screen and (max-width: 425px) {
+  .result_ac .content_result_ac {
+    left: -104px; }
   .connexion-modal {
     width: 75%; }
     .connexion-modal h2 {
@@ -731,6 +803,16 @@ nav ul {
       width: 210px; }
     .modal-crea .form-crea #submitCrea {
       font-size: 1.5rem; }
+  .modal-del {
+    width: 75%; }
+    .modal-del h2 {
+      font-size: 2rem; }
+    .modal-del .form-del input, .modal-del .form-del select {
+      font-size: 1rem; }
+    .modal-del .form-del select {
+      width: 210px; }
+    .modal-del .form-del #submitDel {
+      font-size: 1.5rem; }
   .msg_success, .msg_error {
     font-size: 1.5rem; } }
 
@@ -746,6 +828,12 @@ nav ul {
   .modal-crea div input, .modal-crea div select {
     font-size: 1rem; }
   .modal-crea div #submitCrea {
+    font-size: 1.2rem; }
+  .modal-del h2 {
+    font-size: 1.5rem; }
+  .modal-del div input, .modal-del div select {
+    font-size: 1rem; }
+  .modal-del div #submitDel {
     font-size: 1.2rem; }
   .msg_success, .msg_error {
     font-size: 1rem; } }
@@ -766,31 +854,31 @@ nav ul {
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, #submitAdd:hover, #submitUp:hover {
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd, #submitUp {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal, .modal-crea, .modal-add-bottle, .modal-up-bottle {
+.cards, .connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
     color: #818181; }
 
 .modal-add-bottle form label, .modal-up-bottle form label {
@@ -815,31 +903,31 @@ nav ul {
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, #submitAdd:hover, #submitUp:hover {
+#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, #submitAdd, #submitUp {
+#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   width: 40px;
   height: 40px; }
 
-.cards, .connexion-modal, .modal-crea, .modal-add-bottle, .modal-up-bottle {
+.cards, .connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
     color: #818181; }
 
 .modal-add-bottle form label, .modal-up-bottle form label {
@@ -848,7 +936,7 @@ nav ul {
   color: #88002d;
   margin: 0 1rem; }
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container {
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -875,6 +963,18 @@ nav ul {
   margin-right: -3rem; }
   #pass-eye i {
     margin: 0 1rem; }
+
+.result_ac {
+  position: relative; }
+  .result_ac .content_result_ac {
+    position: absolute;
+    top: -32px;
+    left: -152px;
+    font-size: 1rem;
+    background-color: white;
+    text-align: start; }
+    .result_ac .content_result_ac > div {
+      cursor: pointer; }
 
 .connexion-modal {
   text-align: center;
@@ -940,7 +1040,42 @@ nav ul {
       margin: 2rem 0;
       transition: all 0.2s ease-in-out; }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up {
+.modal-del {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-del img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-del h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-del .form-del {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .modal-del .form-del select {
+      width: 305px; }
+    .modal-del .form-del #submitDel {
+      color: white;
+      background-color: #3e0018;
+      color: #ff7b6c;
+      border: none;
+      margin: 2rem 0;
+      transition: all 0.2s ease-in-out; }
+
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -960,7 +1095,7 @@ nav ul {
   font-size: 2rem; }
 
 @media only screen and (max-width: 1200px) {
-  .connexion-modal, .modal-crea {
+  .connexion-modal, .modal-crea, .modal-del {
     width: 50%; } }
 
 @media only screen and (max-width: 768px) {
@@ -972,16 +1107,22 @@ nav ul {
     font-size: 2.5rem; }
   .modal-crea .form-crea {
     width: 80%; }
+  .modal-del h2 {
+    font-size: 2.5rem; }
+  .modal-del .form-del {
+    width: 80%; }
   #pass-eye {
     margin-right: -1.6rem; }
     #pass-eye i {
       margin: 0 0.3rem; } }
 
 @media only screen and (max-width: 576px) {
-  .connexion-modal, .modal-crea {
+  .connexion-modal, .modal-crea, .modal-del {
     width: 80%; } }
 
 @media only screen and (max-width: 425px) {
+  .result_ac .content_result_ac {
+    left: -104px; }
   .connexion-modal {
     width: 75%; }
     .connexion-modal h2 {
@@ -1000,6 +1141,16 @@ nav ul {
       width: 210px; }
     .modal-crea .form-crea #submitCrea {
       font-size: 1.5rem; }
+  .modal-del {
+    width: 75%; }
+    .modal-del h2 {
+      font-size: 2rem; }
+    .modal-del .form-del input, .modal-del .form-del select {
+      font-size: 1rem; }
+    .modal-del .form-del select {
+      width: 210px; }
+    .modal-del .form-del #submitDel {
+      font-size: 1.5rem; }
   .msg_success, .msg_error {
     font-size: 1.5rem; } }
 
@@ -1015,6 +1166,12 @@ nav ul {
   .modal-crea div input, .modal-crea div select {
     font-size: 1rem; }
   .modal-crea div #submitCrea {
+    font-size: 1.2rem; }
+  .modal-del h2 {
+    font-size: 1.5rem; }
+  .modal-del div input, .modal-del div select {
+    font-size: 1rem; }
+  .modal-del div #submitDel {
     font-size: 1.2rem; }
   .msg_success, .msg_error {
     font-size: 1rem; } }
