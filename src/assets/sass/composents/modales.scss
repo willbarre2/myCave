@@ -39,11 +39,16 @@
 		top: -32px;
 		left: -152px;
         @extend %inputs;
-        font-size: 1rem;
+        font-size: 1.5rem;
 		background-color: white;
         text-align: start;
         &>div {
-		    cursor: pointer;
+		    transition: $animate;
+
+            &:hover{
+                transform: $scale;
+                cursor: pointer;
+            }
 	    } 
 	}
 }
@@ -286,6 +291,7 @@
     .result_ac {
         .content_result_ac {  
             left: -104px;
+            font-size: 1rem;
         }
     }
 

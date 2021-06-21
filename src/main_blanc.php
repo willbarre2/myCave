@@ -89,7 +89,7 @@ $req->execute();
             </div>
         <?php endif; ?>
         <div class="card-cont">
-            <img src="./assets/img/photos/<?php echo $cards->photo; ?>" alt="photo de bouteille : <?php echo $cards->nom; ?>">
+            <div class="photos-bottles" style="background: center / cover url('./assets/img/photos/<?php echo $cards->photo; ?>');"></div>
             <h2><?php echo $cards->nom; ?></h2>
             <div class="annee">
                 <h4>Année :</h4>

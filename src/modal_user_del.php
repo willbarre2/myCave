@@ -6,10 +6,11 @@
         <div class="form-del">
             <label for="autocomplete">Renseigner un identifiant</label>
             <input type="text" name="autocomplete" id="autocomplete">
+            <input type="hidden" name="currentUserId" id="currentUserId">
             <div class="result_ac"></div>
             <div id="submitDel">Effacer</div>
         </div>
-        <!-- messages créa -->
+        <!-- message delete -->
         <div id="resultDel"></div>
     </div>
 </div>

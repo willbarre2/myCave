@@ -361,13 +361,14 @@ nav ul {
   .card-cont div p {
     margin-left: 1rem;
     font-size: 1.3rem; }
-  .card-cont img {
+  .card-cont .photos-bottles {
     grid-column: 1;
     grid-row: 1 / 6;
     place-self: center;
     border-radius: 15px;
     width: 250px;
-    height: 300px; }
+    height: 300px;
+    margin: 0 2rem; }
   .card-cont h2 {
     grid-column: 2 / 5;
     grid-row: 1;
@@ -433,7 +434,7 @@ nav ul {
     font-size: 1.3rem; }
   .card-cont div p {
     font-size: 1rem; }
-  .card-cont img {
+  .card-cont .photos-bottles {
     width: 200px;
     height: 240px; }
   .card-cont h2 {
@@ -445,7 +446,7 @@ nav ul {
     align-items: center;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr 1fr 1fr 1fr 2fr; }
-    .card-cont img {
+    .card-cont .photos-bottles {
       grid-column: 1;
       grid-row: 1;
       width: 150px;
@@ -481,7 +482,7 @@ nav ul {
   .card-cont {
     grid-template-columns: 40% 60%;
     grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr; }
-    .card-cont img {
+    .card-cont .photos-bottles {
       grid-column: 1;
       grid-row: 1;
       width: 150px;
@@ -518,7 +519,7 @@ nav ul {
     font-size: 1.2rem; }
   .card-cont div p {
     font-size: 0.90rem; }
-  .card-cont img {
+  .card-cont .photos-bottles {
     width: 100px;
     height: 120px; }
   .card-cont h2 {
@@ -535,11 +536,12 @@ nav ul {
     font-size: 1rem; }
   .card-cont div p {
     font-size: 0.75rem; }
-  .card-cont img {
+  .card-cont .photos-bottles {
     width: 100px;
     height: 120px; }
   .card-cont h2 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem;
+    margin-left: 1rem; } }
 
 @media only screen and (max-width: 320px) {
   .card-cont div h4 {
@@ -547,7 +549,8 @@ nav ul {
   .card-cont div p {
     font-size: 0.75rem; }
   .card-cont h2 {
-    font-size: 1.2rem; } }
+    font-size: 1.2rem;
+    margin-left: 1.5rem; } }
 
 @font-face {
   font-family: "source";
@@ -632,11 +635,14 @@ nav ul {
     position: absolute;
     top: -32px;
     left: -152px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: white;
     text-align: start; }
     .result_ac .content_result_ac > div {
-      cursor: pointer; }
+      transition: all 0.2s ease-in-out; }
+      .result_ac .content_result_ac > div:hover {
+        transform: scale(1.07);
+        cursor: pointer; }
 
 .connexion-modal {
   text-align: center;
@@ -784,7 +790,8 @@ nav ul {
 
 @media only screen and (max-width: 425px) {
   .result_ac .content_result_ac {
-    left: -104px; }
+    left: -104px;
+    font-size: 1rem; }
   .connexion-modal {
     width: 75%; }
     .connexion-modal h2 {
@@ -970,11 +977,14 @@ nav ul {
     position: absolute;
     top: -32px;
     left: -152px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: white;
     text-align: start; }
     .result_ac .content_result_ac > div {
-      cursor: pointer; }
+      transition: all 0.2s ease-in-out; }
+      .result_ac .content_result_ac > div:hover {
+        transform: scale(1.07);
+        cursor: pointer; }
 
 .connexion-modal {
   text-align: center;
@@ -1122,7 +1132,8 @@ nav ul {
 
 @media only screen and (max-width: 425px) {
   .result_ac .content_result_ac {
-    left: -104px; }
+    left: -104px;
+    font-size: 1rem; }
   .connexion-modal {
     width: 75%; }
     .connexion-modal h2 {

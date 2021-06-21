@@ -75,11 +75,14 @@
     position: absolute;
     top: -32px;
     left: -152px;
-    font-size: 1rem;
+    font-size: 1.5rem;
     background-color: white;
     text-align: start; }
     .result_ac .content_result_ac > div {
-      cursor: pointer; }
+      transition: all 0.2s ease-in-out; }
+      .result_ac .content_result_ac > div:hover {
+        transform: scale(1.07);
+        cursor: pointer; }
 
 .connexion-modal {
   text-align: center;
@@ -227,7 +230,8 @@
 
 @media only screen and (max-width: 425px) {
   .result_ac .content_result_ac {
-    left: -104px; }
+    left: -104px;
+    font-size: 1rem; }
   .connexion-modal {
     width: 75%; }
     .connexion-modal h2 {

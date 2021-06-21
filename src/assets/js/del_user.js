@@ -69,43 +69,45 @@ $("#autocomplete").on("input", function () {
   }
 });
 
+// validation de l'autocomplet
+
+$(document).on("click", ".content_result_ac>div", function () {
+  var userID = $(this).data("id");
+  $.post(
+    "ajax_php/display_user_del_post.php",
+    {
+      userID: userID,
+    },
+    function (data) {
+      $(".result_ac").slideUp();
+      $("#autocomplete").val(data.identifiant);
+      $("#currentUserId").val(data.id_user);
+    },
+    "json"
+  );
+});
+
 //submit post
 
-// $("#submitCrea").click(function () {
-//   var login = $("#loginCrea").val();
-//   var password = $("#passwordCrea").val();
-//   var role = $("#role").val();
-//   $.post(
-//     "ajax_php/crea_post.php",
-//     {
-//       login: login,
-//       password: password,
-//       role: role,
-//     },
-//     function (response) {
-//       if (response.error) {
-//         msg.html(response.msg).addClass("red");
-//         var field = response.field;
-//         if (field === 1) {
-//           $(".field").each(function () {
-//             if ($(this).val() === "") {
-//               $(this).addClass("border_red");
-//             }
-//           });
-//         } else if (field === 2) {
-//           $("#loginCrea").addClass("border_red");
-//         } else if (field === 3) {
-//           $("#passwordCrea").addClass("border_red");
-//         } else if (field === 4) {
-//           $("#role").addClass("border_red");
-//         }
-//       } else {
-//         $("#resultCrea").html(response.msg).addClass("green");
-//         setTimeout(function () {
-//           window.location.reload();
-//         }, 800);
-//       }
-//     },
-//     "json"
-//   );
-// });
+$("#submitDel").click(function () {
+  var userId = $("#currentUserId").val();
+  var resultDel = $(".resultDel");
+  $.post(
+    "ajax_php/del_user_post.php",
+    {
+      userId: userId,
+    },
+    function (response) {
+      if (response.error === false) {
+        resultDel.html(response.msg).addClass("green");
+      } else {
+        resultDel.html(response.msg).addClass("red");
+      }
+
+      setTimeout(function () {
+        window.location.reload();
+      }, 800);
+    },
+    "json"
+  );
+});
