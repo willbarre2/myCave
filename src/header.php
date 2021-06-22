@@ -13,7 +13,8 @@ $blanc_name = "myCave / Blanc";
 $rose_name = "myCave / Rosé";
 
 
-$current_url = 'http://localhost' . $_SERVER['REQUEST_URI']; // url courante
+$current_url = strtok(('http://localhost' . $_SERVER['REQUEST_URI']), '?');
+
 
 if ($page_rouge === $current_url) :
 
@@ -75,6 +76,7 @@ endif;
             <?php endif; ?>
             <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') : ?>
                 <div id="btn-crea-white" class="icon-user-white"></div>
+                <div id="btn-del-white" class="icon-user-del-white"></div>
             <?php endif; ?>
         </div>
     </header>
@@ -85,11 +87,14 @@ endif;
         <?php endif; ?>
         <?php if (isset($_SESSION['role']) && $_SESSION['role'] === 'admin') : ?>
             <div id="btn-crea" class="icon-user-bx"></div>
+            <div id="btn-del" class="icon-user-del-bx"></div>
         <?php endif; ?>
     </div>
 
     <?php require __DIR__ . '/modal_connexion.php'; ?>
     <?php require __DIR__ . '/modal_user_crea.php'; ?>
+    <?php require __DIR__ . '/modal_user_del.php'; ?>
     <?php require __DIR__ . '/modal_bottle_add.php'; ?>
+    <?php require __DIR__ . '/modal_update_bottle.php'; ?>
 
     <main>

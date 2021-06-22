@@ -1,5 +1,4 @@
 <?php
-
 require dirname(__DIR__) . '/connect.php';
 
 mb_internal_encoding("UTF-8");
@@ -17,6 +16,9 @@ $region = htmlentities(mb_ucfirst(trim($_POST['region'])), ENT_QUOTES);
 $description = htmlentities(trim($_POST['description']), ENT_QUOTES);
 $photo = $_FILES['photo'];
 $photo_error = $photo['error'];
+$current_picture = $_POST['current_picture'];
+$current_id = intval($_POST['current_id']);
+$generic = 'generic.jpg';
 $ext = array('png', 'jpg', 'jpeg');
 $type = intval($_POST['type']);
 
@@ -25,10 +27,10 @@ if ($name == '') {
     $error = 1;
 } else {
     if ($photo_error > 0 && $photo_error < 3) {
-        $msg_error = 'Votre fichier est trop grand (3Mo max)';
+        $msg_error = 'Votre fichier est trop grand';
         $error = 2;
     } elseif ($photo_error == 3 || $photo_error > 4) {
-        $msg_error = 'Oups une erreur s\'est produite 1';
+        $msg_error = 'Oups une erreur s\'est produite';
         $error = 2;
     } else {
         if ($photo['size'] > 3000000) {
@@ -38,7 +40,9 @@ if ($name == '') {
             $msg_error = 'Votre fichier n\'est pas une image (.jpg, .jpeg, .png)';
             $error = 2;
         } else {
-            if ($photo_error == 0) {
+
+            if ($photo_error == 0 && $current_picture != $generic) {
+                unlink("../assets/img/photos/$current_picture");
                 $photo_name = uniqid() . '_' . $photo['name'];
                 @mkdir(dirname(__DIR__) . '/assets/img/photos/', 0775);
                 $photo_folder = dirname(__DIR__) . '/assets/img/photos/';
@@ -46,43 +50,51 @@ if ($name == '') {
                 $move_file = @move_uploaded_file($photo['tmp_name'], $dir);
             }
 
-            if ($photo_error == 0 && !$move_file) {
-                $msg_error = 'Oups une erreur s\'est produite 2';
-                $error = 2;
-            } else {
-                $id_session = intval($_SESSION['id']);
-                $generic = 'generic.jpg';
-                $req = $db->prepare(
-                    "INSERT INTO bottle(nom, cepage, region, pays, id_to_user, id_to_category)
-					VALUES (:nom, :cepage, :region, :pays, :iduser, :idcat);
-                    INSERT INTO year(annee, descri, id_to_bottle, photo)
-					VALUES (:annee, :descri, LAST_INSERT_ID(), :photo)
-				"
-                );
+            $sql_cepage = !empty($grapes) ? ', cepage = :cepage' : '';
+            $sql_region = !empty($region) ? ', region = :region' : '';
+            $sql_pays = !empty($country) ? ', pays = :pays' : '';
+            $sql_descri = !empty($description) ? ', descri = :descri' : '';
+            $req = $db->prepare(
+                "UPDATE bottle
+                SET nom = :nom$sql_cepage$sql_region$sql_pays, id_to_user = :iduser, id_to_category = :idcat
+                WHERE id_bottle = $current_id;
+                UPDATE year
+                SET annee = :annee$sql_descri, id_to_bottle = $current_id, photo = :photo
+                WHERE id_year = $current_id
+            "
+            );
 
-                $req->bindValue(':nom', $name, PDO::PARAM_STR);
+            $req->bindValue(':nom', $name, PDO::PARAM_STR);
+            if (!empty($grapes)) {
                 $req->bindValue(':cepage', $grapes, PDO::PARAM_STR);
+            }
+            if (!empty($region)) {
                 $req->bindValue(':region', $region, PDO::PARAM_STR);
+            }
+            if (!empty($country)) {
                 $req->bindValue(':pays', $country, PDO::PARAM_STR);
-                $req->bindValue(':iduser', $id_session, PDO::PARAM_INT);
-                $req->bindValue(':idcat', $type, PDO::PARAM_INT);
+            }
+            $req->bindValue(':iduser', $_SESSION['id'], PDO::PARAM_INT);
+            $req->bindValue(':idcat', $type, PDO::PARAM_INT);
 
-                $req->bindValue(':annee', $year, PDO::PARAM_INT);
+            $req->bindValue(':annee', $year, PDO::PARAM_INT);
+            if (!empty($description)) {
                 $req->bindValue(':descri', $description, PDO::PARAM_STR);
-                if (!empty($photo['name'])) {
-                    $req->bindValue(':photo', $photo_name, PDO::PARAM_STR);
-                } else {
-                    $req->bindValue(':photo', $generic, PDO::PARAM_STR);
-                }
+            }
+
+            if ($photo_error == 0 && $current_picture != $generic) {
+                $req->bindValue(':photo', $photo_name, PDO::PARAM_STR);
+            } else {
+                $req->bindValue(':photo', $current_picture, PDO::PARAM_STR);
+            }
 
 
-                $result_request = $req->execute();
-                if ($result_request) {
-                    $msg_success = 'Bouteille Ajouté';
-                } else {
-                    $msg_error = 'Oups, une erreur s\'est produite';
-                    $error = 0;
-                }
+            $result_request = $req->execute();
+            if ($result_request) {
+                $msg_success = 'Bouteille Modifié';
+            } else {
+                $msg_error = 'Oups, une erreur s\'est produite';
+                $error = 0;
             }
         }
     }

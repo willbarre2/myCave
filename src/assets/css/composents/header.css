@@ -24,7 +24,7 @@
   font-family: "sourceB";
   font-size: 2rem; }
 
-#btn-burger, #icon-bottle-white, .icon-user-white {
+#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white {
   width: 40px;
   height: 40px; }
 
@@ -102,23 +102,27 @@ nav ul {
 #btn-burger {
   display: none; }
 
-#icon-bottle-white, .icon-user-white {
+#icon-bottle-white, .icon-user-white, .icon-user-del-white {
   position: absolute;
   z-index: 4;
-  top: 16px;
+  top: 25px;
   right: 21px;
   margin: 0;
   display: none;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-white:hover, .icon-user-white:hover {
+  #icon-bottle-white:hover, .icon-user-white:hover, .icon-user-del-white:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
 .icon-user-white {
   background: url("../img/logos/icon_user_plus_white.svg");
-  top: 75px; }
+  top: 87px; }
 
-#icon-bottle-bx, .icon-user-bx {
+.icon-user-del-white {
+  background: url("../img/logos/icon_user_del_white.svg");
+  top: 150px; }
+
+#icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -127,7 +131,7 @@ nav ul {
   right: 10px;
   margin: 0;
   transition: all 0.2s ease-in-out; }
-  #icon-bottle-bx:hover, .icon-user-bx:hover {
+  #icon-bottle-bx:hover, .icon-user-bx:hover, .icon-user-del-bx:hover {
     transform: scale(1.07);
     cursor: pointer; }
 
@@ -135,16 +139,20 @@ nav ul {
   background: url("../img/logos/icon_user_plus.svg");
   top: 220px; }
 
+.icon-user-del-bx {
+  background: url("../img/logos/icon_user_del.svg");
+  top: 281px; }
+
 @media only screen and (max-width: 1200px) {
   #nav-rouge, #nav-blanc, #nav-rose {
     margin: 1rem 3vw; }
-  #icon-bottle-bx, .icon-user-bx, .icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx, .icon-user-bx {
     right: 2px; } }
 
 @media only screen and (max-width: 992px) {
-  #icon-bottle-white, .icon-user-white {
+  #icon-bottle-white, .icon-user-white, .icon-user-del-white {
     display: block; }
-  #icon-bottle-bx, .icon-user-bx {
+  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
     display: none; }
   #nav-cont {
     flex-direction: column; }
@@ -174,5 +182,16 @@ nav ul {
     header div img {
       margin: 1.2rem 0;
       width: 150px; }
-  #icon-bottle-white, .icon-user-white {
-    right: 10px; } }
+  #icon-bottle-white, .icon-user-white, .icon-user-del-white {
+    right: 10px;
+    top: 25px; }
+  .icon-user-white {
+    top: 87px; }
+  .icon-user-del-white {
+    top: 150px; }
+  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
+    top: 160px; }
+  .icon-user-bx {
+    top: 220px; }
+  .icon-user-del-bx {
+    top: 281px; } }

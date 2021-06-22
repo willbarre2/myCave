@@ -14,34 +14,34 @@
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover {
+.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea {
+.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-.close-modal, .close-modal-crea, .close-modal-add {
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
   width: 40px;
   height: 40px; }
 
-.connexion-modal, .modal-crea {
+.connexion-modal, .modal-crea, .modal-del {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder {
     color: #818181; }
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container {
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -69,6 +69,21 @@
   #pass-eye i {
     margin: 0 1rem; }
 
+.result_ac {
+  position: relative; }
+  .result_ac .content_result_ac {
+    position: absolute;
+    top: -32px;
+    left: -152px;
+    font-size: 1.5rem;
+    background-color: white;
+    text-align: start; }
+    .result_ac .content_result_ac > div {
+      transition: all 0.2s ease-in-out; }
+      .result_ac .content_result_ac > div:hover {
+        transform: scale(1.07);
+        cursor: pointer; }
+
 .connexion-modal {
   text-align: center;
   background-color: #ff7b6c;
@@ -79,10 +94,6 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  .connexion-modal img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
   .connexion-modal h2 {
     font-family: 'SourceB', sans-serif;
     font-size: 3rem;
@@ -137,8 +148,45 @@
       margin: 2rem 0;
       transition: all 0.2s ease-in-out; }
 
-.close-modal, .close-modal-crea, .close-modal-add {
-  display: block;
+.modal-del {
+  text-align: center;
+  background-color: #ff7b6c;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 35%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+  .modal-del img {
+    position: absolute;
+    top: 1rem;
+    right: 1rem; }
+  .modal-del h2 {
+    font-family: 'SourceB', sans-serif;
+    font-size: 3rem;
+    margin: 2rem 0; }
+  .modal-del .form-del {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .modal-del .form-del select {
+      width: 305px; }
+    .modal-del .form-del #submitDel {
+      color: white;
+      background-color: #3e0018;
+      color: #ff7b6c;
+      border: none;
+      margin: 2rem 0;
+      transition: all 0.2s ease-in-out; }
+
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
   transition: all 0.2s ease-in-out; }
 
 .msg_error {
@@ -155,7 +203,7 @@
   font-size: 2rem; }
 
 @media only screen and (max-width: 1200px) {
-  .connexion-modal, .modal-crea {
+  .connexion-modal, .modal-crea, .modal-del {
     width: 50%; } }
 
 @media only screen and (max-width: 768px) {
@@ -167,16 +215,23 @@
     font-size: 2.5rem; }
   .modal-crea .form-crea {
     width: 80%; }
+  .modal-del h2 {
+    font-size: 2.5rem; }
+  .modal-del .form-del {
+    width: 80%; }
   #pass-eye {
     margin-right: -1.6rem; }
     #pass-eye i {
       margin: 0 0.3rem; } }
 
 @media only screen and (max-width: 576px) {
-  .connexion-modal, .modal-crea {
+  .connexion-modal, .modal-crea, .modal-del {
     width: 80%; } }
 
 @media only screen and (max-width: 425px) {
+  .result_ac .content_result_ac {
+    left: -104px;
+    font-size: 1rem; }
   .connexion-modal {
     width: 75%; }
     .connexion-modal h2 {
@@ -195,6 +250,16 @@
       width: 210px; }
     .modal-crea .form-crea #submitCrea {
       font-size: 1.5rem; }
+  .modal-del {
+    width: 75%; }
+    .modal-del h2 {
+      font-size: 2rem; }
+    .modal-del .form-del input, .modal-del .form-del select {
+      font-size: 1rem; }
+    .modal-del .form-del select {
+      width: 210px; }
+    .modal-del .form-del #submitDel {
+      font-size: 1.5rem; }
   .msg_success, .msg_error {
     font-size: 1.5rem; } }
 
@@ -210,6 +275,12 @@
   .modal-crea div input, .modal-crea div select {
     font-size: 1rem; }
   .modal-crea div #submitCrea {
+    font-size: 1.2rem; }
+  .modal-del h2 {
+    font-size: 1.5rem; }
+  .modal-del div input, .modal-del div select {
+    font-size: 1rem; }
+  .modal-del div #submitDel {
     font-size: 1.2rem; }
   .msg_success, .msg_error {
     font-size: 1rem; } }

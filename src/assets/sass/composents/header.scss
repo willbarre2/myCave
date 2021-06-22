@@ -108,7 +108,7 @@ nav ul{
    @extend %btn-close;
    position: absolute;
    z-index: 4;
-   top: 16px;
+   top: 25px;
    right: 21px;
    margin: 0;
    display: none;
@@ -123,7 +123,13 @@ nav ul{
 .icon-user-white{
     background: url("../img/logos/icon_user_plus_white.svg");
     @extend #icon-bottle-white;
-    top: 75px;
+    top: 87px;
+}
+
+.icon-user-del-white{
+    background: url("../img/logos/icon_user_del_white.svg");
+    @extend #icon-bottle-white;
+    top: 150px;
 }
 
 #icon-bottle-bx{
@@ -146,14 +152,15 @@ nav ul{
     background: url("../img/logos/icon_user_plus.svg");
     @extend #icon-bottle-bx;
     top: 220px;
-    // opacity: 0;
-    // z-index: -100;
 }
 
-// .visible{
-//     opacity: 1;
-//     z-index: 4;
-// }
+.icon-user-del-bx{
+    background: url("../img/logos/icon_user_del.svg");
+    @extend #icon-bottle-bx;
+    top: 281px;
+}
+
+
 
 @media #{$xl} {
     %li-nav{
@@ -226,5 +233,26 @@ nav ul{
     
     #icon-bottle-white{
         right: 10px;
-     }
+        top: 25px;
+    }
+     
+     .icon-user-white{
+         top: 87px;
+    }
+     
+    .icon-user-del-white{
+         top: 150px;
+    }
+     
+    #icon-bottle-bx{
+         top: 160px;
+    }
+     
+    .icon-user-bx{
+         top: 220px;
+    }
+     
+    .icon-user-del-bx{
+         top: 281px;
+    }    
 }
