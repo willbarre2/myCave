@@ -16,6 +16,7 @@ $region = htmlentities(mb_ucfirst(trim($_POST['region'])), ENT_QUOTES);
 $description = htmlentities(trim($_POST['description']), ENT_QUOTES);
 $photo = $_FILES['photo'];
 $photo_error = $photo['error'];
+$photo_name = uniqid() . '_' . $photo['name'];
 $current_picture = $_POST['current_picture'];
 $current_id = intval($_POST['current_id']);
 $generic = 'generic.jpg';
@@ -37,13 +38,17 @@ if ($name == '') {
             $msg_error = 'Votre fichier est trop grand (3Mo max)';
             $error = 2;
         } elseif ($photo_error == 0 && !in_array(pathinfo($photo['name'], PATHINFO_EXTENSION), $ext)) {
-            $msg_error = 'Votre fichier n\'est pas une image (.jpg, .jpeg, .png)';
+            $msg_error = 'Votre fichier n\'est pas au bon format (.jpg, .jpeg, .png)';
             $error = 2;
         } else {
 
             if ($photo_error == 0 && $current_picture != $generic) {
                 unlink("../assets/img/photos/$current_picture");
-                $photo_name = uniqid() . '_' . $photo['name'];
+                @mkdir(dirname(__DIR__) . '/assets/img/photos/', 0775);
+                $photo_folder = dirname(__DIR__) . '/assets/img/photos/';
+                $dir = $photo_folder . $photo_name;
+                $move_file = @move_uploaded_file($photo['tmp_name'], $dir);
+            } elseif ($photo_error == 0 && $current_picture = $generic) {
                 @mkdir(dirname(__DIR__) . '/assets/img/photos/', 0775);
                 $photo_folder = dirname(__DIR__) . '/assets/img/photos/';
                 $dir = $photo_folder . $photo_name;
@@ -82,7 +87,7 @@ if ($name == '') {
                 $req->bindValue(':descri', $description, PDO::PARAM_STR);
             }
 
-            if ($photo_error == 0 && $current_picture != $generic) {
+            if ($photo_error == 0) {
                 $req->bindValue(':photo', $photo_name, PDO::PARAM_STR);
             } else {
                 $req->bindValue(':photo', $current_picture, PDO::PARAM_STR);

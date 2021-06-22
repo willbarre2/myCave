@@ -4,12 +4,10 @@ $login = $_POST['login'];
 $password = $_POST['password'];
 if (in_array('', $_POST)) {
     $msg_error = 'Merci de renseigner votre identifiant et votre mot de passe';
-    if (empty($login)) {
-        $msg_error .= 'Merci de renseigner votre identifiant<br>';
-    }
-    if (empty($password)) {
-        $msg_error .= 'Merci de renseigner votre mot de passe<br>';
-    }
+} elseif (empty($login)) {
+    $msg_error .= 'Merci de renseigner votre identifiant';
+} elseif (empty($password)) {
+    $msg_error .= 'Merci de renseigner votre mot de passe<br>';
 } else {
     $login = htmlentities(trim(mb_strtolower($login)), ENT_QUOTES); // faille XSS
     $password = htmlentities(trim($password), ENT_QUOTES);

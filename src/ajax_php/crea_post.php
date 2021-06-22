@@ -6,21 +6,15 @@ $password = $_POST['password'];
 $role = $_POST['role'];
 
 
-if (in_array('', $_POST)) {
-    $msg_error = 'Merci de renseigner l\'identifiant, le mot de passe et le role';
+if (empty($login) && empty($password)) {
+    $msg_error = 'Merci de renseigner l\'identifiant et le mot de passe';
     $error = 1;
-    if (empty($login)) {
-        $msg_error .= 'Merci de renseigner l\'identifiant<br>';
-        $error = 2;
-    }
-    if (empty($password)) {
-        $msg_error .= 'Merci de renseigner le mot de passe<br>';
-        $error = 3;
-    }
-    if (empty($role)) {
-        $msg_error .= 'Merci de renseigner le role<br>';
-        $error = 4;
-    }
+} elseif (empty($login)) {
+    $msg_error = 'Merci de renseigner l\'identifiant';
+    $error = 2;
+} elseif (empty($password)) {
+    $msg_error = 'Merci de renseigner le mot de passe';
+    $error = 3;
 } else {
     $login = htmlentities(trim(mb_strtolower($login)), ENT_QUOTES); // faille XSS
     $password = htmlentities(trim($password), ENT_QUOTES);

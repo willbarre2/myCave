@@ -44,6 +44,8 @@ $("#form-add-bottle").submit(function (e) {
   $(".field").on("input", function () {
     $(this).removeClass("border_red");
   });
+  var btnSubmit = $(this).children("button");
+  btnSubmit.prop("disabled", true);
   $.ajax({
     url: url,
     data: data,
@@ -55,13 +57,10 @@ $("#form-add-bottle").submit(function (e) {
     success: function (data) {
       if (data.error) {
         msg.html(data.msg).addClass("red");
+        btnSubmit.prop("disabled", false);
         var field = data.field;
         if (field === 1) {
-          $("#name").each(function () {
-            if ($(this).val() === "") {
-              $(this).addClass("border_red");
-            }
-          });
+          $("#name").addClass("border_red");
         } else if (field === 2) {
           $("#photo").addClass("border_red");
         }

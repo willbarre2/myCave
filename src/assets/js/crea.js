@@ -53,6 +53,13 @@ $("#submitCrea").click(function () {
   var login = $("#loginCrea").val();
   var password = $("#passwordCrea").val();
   var role = $("#role").val();
+  $("#resultCrea").removeClass("red green");
+  $("#resultCrea").empty();
+  $(".field").on("input", function () {
+    $(this).removeClass("border_red");
+  });
+  var btnSubmit = $(this);
+  btnSubmit.prop("disabled", true);
   $.post(
     "ajax_php/crea_post.php",
     {
@@ -62,20 +69,23 @@ $("#submitCrea").click(function () {
     },
     function (response) {
       if (response.error) {
-        msg.html(response.msg).addClass("red");
+        $("#resultCrea").html(response.msg).addClass("red");
+        $(".field").on("input", function () {
+          $(this).removeClass("border_red");
+        });
         var field = response.field;
         if (field === 1) {
+          btnSubmit.prop("disabled", false);
           $(".field").each(function () {
-            if ($(this).val() === "") {
-              $(this).addClass("border_red");
-            }
+            $("#loginCrea").addClass("border_red");
+            $("#passwordCrea").addClass("border_red");
           });
         } else if (field === 2) {
+          btnSubmit.prop("disabled", false);
           $("#loginCrea").addClass("border_red");
         } else if (field === 3) {
+          btnSubmit.prop("disabled", false);
           $("#passwordCrea").addClass("border_red");
-        } else if (field === 4) {
-          $("#role").addClass("border_red");
         }
       } else {
         $("#resultCrea").html(response.msg).addClass("green");

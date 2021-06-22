@@ -92,6 +92,10 @@ $(document).on("click", ".content_result_ac>div", function () {
 $("#submitDel").click(function () {
   var userId = $("#currentUserId").val();
   var resultDel = $("#resultDel");
+  resultDel.removeClass("red green");
+  resultDel.empty();
+  var btnSubmit = $(this);
+  btnSubmit.prop("disabled", true);
   $.post(
     "ajax_php/del_user_post.php",
     {
