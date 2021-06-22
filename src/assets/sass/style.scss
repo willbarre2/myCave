@@ -1,12 +1,12 @@
 @import "./composents/variables.scss";
 
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    font-family: "source",sans-serif;
+body {
+    font-family: "source", sans-serif;
     color: $bx;
     background-image: url(../img/bg-bouteilles.jpg);
     background-size: cover;
@@ -19,18 +19,32 @@ body{
 @import "./composents/modale_add.scss";
 
 
-#footer{
+#footer {
     font-size: 1.5rem;
     margin: 1rem;
 }
 
 .red {
-	color: $red;
-}
-.green {
-	color: $vert;
-}
-.border_red {
-	border: 1px solid $red;
+    color: $red;
+    text-decoration: underline;
+    font-size: 1.5rem;
 }
 
+.green {
+    color: $vert;
+    font-size: 1.5rem;
+}
+
+.border_red {
+    border: 3px solid $red !important;
+}
+
+@media #{$xs} {
+    .red {
+        font-size: 1rem;
+    }
+
+    .green {
+        font-size: 1rem;
+    }
+}

@@ -35,7 +35,7 @@ if ($name == '') {
             $msg_error = 'Votre fichier est trop grand (3Mo max)';
             $error = 2;
         } elseif ($photo_error == 0 && !in_array(pathinfo($photo['name'], PATHINFO_EXTENSION), $ext)) {
-            $msg_error = 'Votre fichier n\'est pas une image (.jpg, .jpeg, .png)';
+            $msg_error = 'Votre fichier n\'est pas au bon format (.jpg, .jpeg, .png)';
             $error = 2;
         } else {
             if ($photo_error == 0) {
