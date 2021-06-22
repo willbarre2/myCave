@@ -91,7 +91,7 @@ $(document).on("click", ".content_result_ac>div", function () {
 
 $("#submitDel").click(function () {
   var userId = $("#currentUserId").val();
-  var resultDel = $(".resultDel");
+  var resultDel = $("#resultDel");
   $.post(
     "ajax_php/del_user_post.php",
     {

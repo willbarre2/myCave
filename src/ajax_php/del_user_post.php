@@ -7,8 +7,8 @@ $user_id = intval($_POST['userId']);
 
 $req = $db->prepare(
     "DELETE
-	FROM user u 
-	WHERE u.id_user = :id
+	FROM user  
+	WHERE user.id_user = :id
 "
 );
 
