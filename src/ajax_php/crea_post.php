@@ -16,8 +16,8 @@ if (empty($login) && empty($password)) {
     $msg_error = 'Merci de renseigner le mot de passe';
     $error = 3;
 } else {
-    $login = htmlentities(trim(mb_strtolower($login)), ENT_QUOTES); // faille XSS
-    $password = htmlentities(trim($password), ENT_QUOTES);
+    $login = htmlspecialchars(trim(mb_strtolower($login)), ENT_QUOTES); // faille XSS
+    $password = htmlspecialchars(trim($password), ENT_QUOTES);
     $role = intval($_POST['role']);
 
     $req = $db->prepare(

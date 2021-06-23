@@ -9,12 +9,12 @@ function mb_ucfirst($string)
     return mb_strtoupper(mb_substr($string, 0, 1)) . mb_substr($string, 1);
 }
 
-$name = htmlentities(mb_strtoupper(trim($_POST['name'])), ENT_QUOTES);
+$name = htmlspecialchars(mb_strtoupper(trim($_POST['name'])), ENT_QUOTES);
 $year = intval($_POST['year']);
-$grapes = htmlentities(mb_ucfirst(trim($_POST['grapes'])), ENT_QUOTES);
-$country = htmlentities(mb_ucfirst(trim($_POST['country'])), ENT_QUOTES);
-$region = htmlentities(mb_ucfirst(trim($_POST['region'])), ENT_QUOTES);
-$description = htmlentities(trim($_POST['description']), ENT_QUOTES);
+$grapes = htmlspecialchars(mb_ucfirst(trim($_POST['grapes'])), ENT_QUOTES);
+$country = htmlspecialchars(mb_ucfirst(trim($_POST['country'])), ENT_QUOTES);
+$region = htmlspecialchars(mb_ucfirst(trim($_POST['region'])), ENT_QUOTES);
+$description = htmlspecialchars(trim($_POST['description']), ENT_QUOTES);
 $photo = $_FILES['photo'];
 $photo_error = $photo['error'];
 $ext = array('png', 'jpg', 'jpeg');
