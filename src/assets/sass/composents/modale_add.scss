@@ -60,7 +60,7 @@
         & #cont-form-add-bottle{
             display: grid;
             grid-template-columns: 1fr 2fr 1fr 2fr;
-            grid-template-rows: 1fr 1fr 1fr 2fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr ;
             justify-items: start;
 
             & #name-label{
@@ -110,6 +110,12 @@
                 grid-row: 5;
                 align-self: center;
             }
+            
+            & #stock-label{
+                grid-column: 1;
+                grid-row: 6;
+                align-self: center;
+            }
 
             & #name, #name-up {
                 grid-column: 2 / 5;
@@ -157,6 +163,12 @@
                 grid-column: 4;
                 grid-row: 5;
                 width: 100%;
+            }
+
+            & #stock{
+                grid-column: 2;
+                grid-row: 6;
+                width: 4rem;
             }
         }
     }
@@ -317,7 +329,7 @@
     
             & #cont-form-add-bottle{
                 grid-template-columns: 1fr 4fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
 
                 & #name-label{
                     grid-column: 1;
@@ -357,6 +369,11 @@
                 & #type-label{
                     grid-column: 1;
                     grid-row: 8;
+                }
+
+                & #stock-label{
+                    grid-column: 1;
+                    grid-row: 9;
                 }
 
                 & #name, #name-up{
@@ -404,6 +421,11 @@
                     grid-column: 2;
                     grid-row: 8;
                     width: 100%;
+                }
+
+                & #stock{
+                    grid-column: 2;
+                    grid-row: 9;
                 }
             }
         }
@@ -454,6 +476,10 @@
                 & #description, #description-up{
                     width: 100%;
                     height: 100px;
+                }
+
+                & #stock{
+                    padding: .5rem .5rem;
                 }
             }
         }
