@@ -60,7 +60,7 @@
         & #cont-form-add-bottle{
             display: grid;
             grid-template-columns: 1fr 2fr 1fr 2fr;
-            grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr ;
+            grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr;
             justify-items: start;
 
             & #name-label{
@@ -115,6 +115,30 @@
                 grid-column: 1;
                 grid-row: 6;
                 align-self: center;
+            }
+
+            & #cont-tof-stock{
+                grid-column: 1/5;
+                grid-row: 6;
+                align-self: center;
+                display: flex;
+            
+                & #container-photo img{
+                    display: block;
+                    width: 62.5px;
+                    height: 75px;
+                    margin-left: 1rem;
+                }
+            
+                & #cont-stock-up{
+                    margin-left: 8rem;
+                    align-self: center;  
+                }
+            
+                & #cont-stock-up #stock-up{
+                    width: 4rem;
+                }
+            
             }
 
             & #name, #name-up {
@@ -174,11 +198,7 @@
     }
 }
 
-#container-photo img{
-    display: block;
-    width: 125px;
-    height: 150px;
-}
+
 
 @media #{$xl}{
     .modal-add-bottle, .modal-up-bottle{
@@ -360,13 +380,13 @@
                     grid-column: 1;
                     grid-row: 6;
                 }
-
-                & #photo-label{
+                
+                & #type-label{
                     grid-column: 1;
                     grid-row: 7;
                 }
 
-                & #type-label{
+                & #photo-label{
                     grid-column: 1;
                     grid-row: 8;
                 }
@@ -374,6 +394,20 @@
                 & #stock-label{
                     grid-column: 1;
                     grid-row: 9;
+                }
+
+                & #cont-tof-stock{
+                    grid-column: 1/3;
+                    grid-row: 9;
+                
+                    & #cont-stock-up{
+                        margin-left: 3rem;  
+                    }
+                
+                    & #cont-stock-up #stock-up{
+                        width: 3rem;
+                    }
+                
                 }
 
                 & #name, #name-up{
@@ -411,18 +445,18 @@
                     grid-row: 6;
                     width: 96%;
                 }
-
-                & #photo, #photo-up{
-                    grid-column: 2;
-                    grid-row: 7;
-                }
                 
                 & #type, #type-up{
                     grid-column: 2;
-                    grid-row: 8;
+                    grid-row: 7;
                     width: 100%;
                 }
 
+                & #photo, #photo-up{
+                    grid-column: 2;
+                    grid-row: 8;
+                }
+                
                 & #stock{
                     grid-column: 2;
                     grid-row: 9;
@@ -448,7 +482,7 @@
     
         & form{
             & .field{
-                padding: .5rem 0;
+                padding: .5rem .5rem;
             }
             & label{
                 font-size: 0.9rem; 
@@ -493,10 +527,12 @@
         & h2{
             margin: 1rem 1rem;
         }
+
+        
     
         & form{
             & .field{
-                padding: .5rem 0;
+                padding: .5rem .5rem;
             }
             & label{
                 font-size: 0.9rem; 
@@ -504,6 +540,10 @@
             }
             & #cont-form-add-bottle{
                 display: block;
+                
+                & #cont-tof-stock #container-photo img{
+                    margin-left: 0;
+                }
 
                 & #name, #name-up{
                     width: 100%;

@@ -32,10 +32,6 @@
                 <label for="description" id="description-label">Description: </label>
                 <textarea class="field" name="description" id="description-up"></textarea>
 
-                <label for="photo" id="photo-label">Photo: </label>
-                <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
-                <input class="field" type="file" name="photo" id="photo-up" accept=".png, .jpg, .jpeg">
-
                 <label for="type" id="type-label">Type*: </label>
                 <select class="field" name="type" id="type-up">
                     <option value="1">Rouge</option>;
@@ -43,10 +39,20 @@
                     <option value="3">Rosé</option>;
                 </select>
 
+                <label for="photo" id="photo-label">Photo: </label>
+                <input type="hidden" name="MAX_FILE_SIZE" value="3145728">
+                <input class="field" type="file" name="photo" id="photo-up" accept=".png, .jpg, .jpeg">
+
+                <div id="cont-tof-stock">
+                    <div id="container-photo"></div>
+                    <div id="cont-stock-up">
+                        <label for="stock" id="stock-label-up">Stock: </label>
+                        <input class="field" type="number" name="stock" id="stock-up" min="0" value="1">
+                    </div>
+                </div>
                 <input type="hidden" name="current_picture" id="current_picture">
                 <input type="hidden" name="current_id" id="current_id">
             </div>
-            <div id="container-photo"></div>
 
             <button type="submit" id="submitUp">Modifier</button>
         </form>
