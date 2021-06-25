@@ -3,7 +3,7 @@ if (empty(session_id())) {
     session_start();
 };
 
-$domaine = "http://localhost/myCave2/myCave/dist/";
+$domaine = "https://mycavewb.com/";
 $page_rouge = $domaine;
 $page_blanc = $domaine . "blanc.php";
 $page_rose = $domaine . "rose.php";
@@ -13,7 +13,7 @@ $blanc_name = "myCave / Blanc";
 $rose_name = "myCave / Rosé";
 
 
-$current_url = strtok(('http://localhost' . $_SERVER['REQUEST_URI']), '?');
+$current_url = strtok(('https://mycavewb.com' . $_SERVER['REQUEST_URI']), '?');
 
 
 if ($page_rouge === $current_url) :
