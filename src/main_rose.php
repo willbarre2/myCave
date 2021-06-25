@@ -116,7 +116,11 @@ $req->execute();
             </div>
             <div class="stock">
                 <h4>Stock :</h4>
-                <p><?php echo $cards->stock; ?> bouteille(s)</p>
+                <p><?php if ($cards->stock == "0") {
+                        echo "en rupture";
+                    } else {
+                        echo $cards->stock . " bouteille(s)";
+                    } ?></p>
             </div>
         </div>
     </article>
