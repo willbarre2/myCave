@@ -114,6 +114,10 @@ $req->execute();
             <div class="textarea">
                 <p><?php echo $cards->descri ?></p>
             </div>
+            <div class="stock">
+                <h4>Stock :</h4>
+                <p><?php echo $cards->stock; ?> bouteille(s)</p>
+            </div>
         </div>
     </article>
     <!-- message delete bouteille -->

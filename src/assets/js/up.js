@@ -34,6 +34,7 @@ if (".btn-up" !== null && ".btn-up" !== "") {
             data.nom +
             '" class="content-photo">'
         );
+        $("#stock-up").val(data.stock);
         $("#current_picture").val(data.photo);
         $("#current_id").val(data.id_bottle);
       },

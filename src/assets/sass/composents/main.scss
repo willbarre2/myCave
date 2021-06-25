@@ -32,13 +32,17 @@
     }
 }
 
+.stock p{
+    color: $rose;
+}
+
 .card-cont{
     margin-right: 2rem;
     height: 600px;
     display: grid;
-    align-items: end;
+    align-items: center;
     grid-template-columns: 1fr 1fr 1fr 2fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 2fr ;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 
     & div h4{
         color: $rouge;
@@ -99,14 +103,20 @@
 
     & .textarea{
         grid-column: 3 / 5;
-        grid-row: 5;
+        grid-row: 5/6;
         align-self: start;
 
         & p{
-            margin-left: 0;
-            margin-top: -1rem;
+            margin-left: -2rem;
+            margin-top: -4.5rem;
             margin-bottom: 2rem;
         }
+    }
+
+    & .stock{
+        grid-column: 2/4;
+        grid-row: 5;
+        display: flex;
     }
 }
 
@@ -152,6 +162,10 @@
         & div p{
             font-size: 1rem;
         }
+
+        & .textarea p{
+            margin-left: -1rem;
+        }
     
         & .photos-bottles{
             width: 200px;
@@ -170,7 +184,7 @@
         margin: 2rem;
         align-items: center;
         grid-template-columns: 40% 60%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 2fr ;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr ;
     
 
     
@@ -214,11 +228,18 @@
     
         & .textarea{
             grid-column: 2;
-            grid-row: 5;
+            grid-row: 4/6;
+            align-self: center;
     
             & p{
-                margin-top: -3rem;
+                margin-left: 0;
+                margin-top: -1.5rem;
             }
+        }
+
+        & .stock{
+            grid-column: 1;
+            grid-row: 5;
         }
     }
 }
@@ -231,7 +252,7 @@
 
     .card-cont{
         grid-template-columns: 40% 60%;
-        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr ;
+        grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr ;
     
 
     
@@ -280,6 +301,12 @@
             & p{
                 margin-top: -0.5rem;
             }
+        }
+
+        & .stock{
+            grid-column: 1 / 3;
+            grid-row: 8;
+            align-self: start;
         }
     }
 }

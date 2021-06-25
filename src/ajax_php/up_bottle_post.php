@@ -22,6 +22,7 @@ $current_id = intval($_POST['current_id']);
 $generic = 'generic.jpg';
 $ext = array('png', 'jpg', 'jpeg');
 $type = intval($_POST['type']);
+$stock = intval($_POST['stock']);
 
 if ($name == '') {
     $msg_error = 'Merci de renseigner le Nom';
@@ -64,7 +65,7 @@ if ($name == '') {
                 SET nom = :nom$sql_cepage$sql_region$sql_pays, id_to_user = :iduser, id_to_category = :idcat
                 WHERE id_bottle = $current_id;
                 UPDATE year
-                SET annee = :annee$sql_descri, id_to_bottle = $current_id, photo = :photo
+                SET annee = :annee$sql_descri, id_to_bottle = $current_id, photo = :photo, stock = :stock
                 WHERE id_year = $current_id
             "
             );
@@ -92,6 +93,8 @@ if ($name == '') {
             } else {
                 $req->bindValue(':photo', $current_picture, PDO::PARAM_STR);
             }
+
+            $req->bindValue(':stock', $stock, PDO::PARAM_INT);
 
 
             $result_request = $req->execute();

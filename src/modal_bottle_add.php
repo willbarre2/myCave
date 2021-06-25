@@ -42,6 +42,10 @@
                     <option value="2">Blanc</option>;
                     <option value="3">Rosé</option>;
                 </select>
+
+                <label for="stock" id="stock-label">Stock: </label>
+                <input class="field" type="number" name="stock" id="stock" min="0" value="1">
+
             </div>
 
             <button type="submit" id="submitAdd">Ajouter</button>

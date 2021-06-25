@@ -19,6 +19,7 @@ $photo = $_FILES['photo'];
 $photo_error = $photo['error'];
 $ext = array('png', 'jpg', 'jpeg');
 $type = intval($_POST['type']);
+$stock = intval($_POST['stock']);
 
 if ($name == '') {
     $msg_error = 'Merci de renseigner le Nom';
@@ -55,8 +56,8 @@ if ($name == '') {
                 $req = $db->prepare(
                     "INSERT INTO bottle(nom, cepage, region, pays, id_to_user, id_to_category)
 					VALUES (:nom, :cepage, :region, :pays, :iduser, :idcat);
-                    INSERT INTO year(annee, descri, id_to_bottle, photo)
-					VALUES (:annee, :descri, LAST_INSERT_ID(), :photo)
+                    INSERT INTO year(annee, stock, descri, id_to_bottle, photo)
+					VALUES (:annee, :stock, :descri, LAST_INSERT_ID(), :photo)
 				"
                 );
 
@@ -68,6 +69,7 @@ if ($name == '') {
                 $req->bindValue(':idcat', $type, PDO::PARAM_INT);
 
                 $req->bindValue(':annee', $year, PDO::PARAM_INT);
+                $req->bindValue(':stock', $stock, PDO::PARAM_INT);
                 $req->bindValue(':descri', $description, PDO::PARAM_STR);
                 if (!empty($photo['name'])) {
                     $req->bindValue(':photo', $photo_name, PDO::PARAM_STR);
