@@ -30,7 +30,7 @@
 
             </div>
 
-            <input type="hidden" name="current_id_bottle" id="current_id_bottle">
+            <input type="hidden" name="current_id_bottle_add" id="current_id_bottle_add">
 
             <button type="submit" id="submitAddYear">Ajouter</button>
         </form>

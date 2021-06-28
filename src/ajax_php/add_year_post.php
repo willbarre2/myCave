@@ -8,7 +8,7 @@ $photo = $_FILES['photo-add-year'];
 $photo_error = $photo['error'];
 $ext = array('png', 'jpg', 'jpeg');
 $stock = intval($_POST['stock-add-year']);
-$id_bottle = intval($_POST['current_id_bottle']);
+$id_bottle = intval($_POST['current_id_bottle_add']);
 
 
 if ($photo_error > 0 && $photo_error < 3) {

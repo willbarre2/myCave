@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container, .modal-add-year-container{
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container, .modal-add-year-container, .modal-del-bottle-container{
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -86,7 +86,6 @@
 
         & #submit{
             @extend %cta;
-            color: white;
             background-color: $bx;
             color: $rose;
             border: none;
@@ -140,7 +139,6 @@
 
         & #submitCrea{
             @extend %cta;
-            color: white;
             background-color: $bx;
             color: $rose;
             border: none;
@@ -194,7 +192,6 @@
 
         & #submitDel{
             @extend %cta;
-            color: white;
             background-color: $bx;
             color: $rose;
             border: none;
@@ -206,7 +203,52 @@
     }
 }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year{
+.modal-del-bottle{
+    text-align: center;
+    background-color: $rose;
+    border-radius: 30px;
+    padding: 1rem 2rem;
+    width: 35%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    @extend %shadow;
+
+    & img{
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    & h2{
+        font-family: 'SourceB', sans-serif;
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    & .form-del-bottle{
+        width: 60%;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        & #submitDelBottle, #submitDelYear{
+            @extend %cta;
+            background-color: $bx;
+            color: $rose;
+            border: none;
+            margin: 2rem 0;
+            transition: $animate;
+
+            @extend %hover;
+        }
+    }
+}
+
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle{
     position: absolute;
     top: 1rem;
     right: 1rem;

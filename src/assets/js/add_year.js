@@ -4,7 +4,7 @@ if (".btn-add-year" !== null && ".btn-add-year" !== "") {
     window.scrollTo(0, 0);
     $(".modal-add-year-container").removeClass("hidden");
     var bottleID = $(this).data("id");
-    $("#current_id_bottle").val(bottleID);
+    $("#current_id_bottle_add").val(bottleID);
   });
 }
 
