@@ -14,7 +14,7 @@
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover {
+.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
@@ -24,7 +24,7 @@
   font-family: "sourceB";
   font-size: 2rem; }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year {
   width: 40px;
   height: 40px; }
 
@@ -41,7 +41,7 @@
   .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder {
     color: #818181; }
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container {
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container, .modal-add-year-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -183,7 +183,7 @@
       margin: 2rem 0;
       transition: all 0.2s ease-in-out; }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year {
   position: absolute;
   top: 1rem;
   right: 1rem;

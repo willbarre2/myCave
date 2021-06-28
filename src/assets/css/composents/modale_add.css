@@ -14,34 +14,34 @@
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
+.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
+.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year {
   width: 40px;
   height: 40px; }
 
-.connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
+.connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
-.modal-add-bottle form label, .modal-up-bottle form label {
+.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
@@ -63,40 +63,40 @@
   font-family: "joseB";
   src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
 
-.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, #submitAdd:hover, #submitUp:hover {
+.connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
   transform: scale(1.07); }
 
-.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp {
+.connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
   font-size: 2rem; }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year {
   width: 40px;
   height: 40px; }
 
-.connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle {
+.connexion-modal, .modal-crea, .modal-del, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field {
+.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder {
+  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
-.modal-add-bottle form label, .modal-up-bottle form label {
+.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
   margin: 0 1rem; }
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container {
+.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container, .modal-add-year-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
@@ -238,7 +238,7 @@
       margin: 2rem 0;
       transition: all 0.2s ease-in-out; }
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del {
+.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year {
   position: absolute;
   top: 1rem;
   right: 1rem;
@@ -340,7 +340,7 @@
   .msg_success, .msg_error {
     font-size: 1rem; } }
 
-#submitAdd, #submitUp {
+#submitAdd, #submitUp, #submitAddYear {
   align-self: center;
   background-color: #3e0018;
   color: #ff7b6c;
@@ -354,10 +354,10 @@
   left: 4rem;
   color: #88002d; }
 
-#resultAdd, #resultUp {
+#resultAdd, #resultUp, #resultAddYear {
   font-size: 1.5rem; }
 
-.modal-add-bottle, .modal-up-bottle {
+.modal-add-bottle, .modal-up-bottle, .modal-add-year {
   text-align: center;
   background-color: #ff7b6c;
   border-radius: 30px;
@@ -367,125 +367,165 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%); }
-  .modal-add-bottle h2, .modal-up-bottle h2 {
+  .modal-add-bottle h2, .modal-up-bottle h2, .modal-add-year h2 {
     font-family: 'SourceB', sans-serif;
     font-size: 3rem;
     margin: 2rem 0; }
-  .modal-add-bottle form, .modal-up-bottle form {
+  .modal-add-bottle form, .modal-up-bottle form, .modal-add-year form {
     width: 90%;
     margin: 0 auto;
     display: flex;
     flex-direction: column; }
-    .modal-add-bottle form .field, .modal-up-bottle form .field {
+    .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
       width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle, .modal-up-bottle form #cont-form-add-bottle {
+    .modal-add-bottle form #cont-form-add-bottle, .modal-up-bottle form #cont-form-add-bottle, .modal-add-year form #cont-form-add-bottle {
       display: grid;
       grid-template-columns: 1fr 2fr 1fr 2fr;
       grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr;
       justify-items: start; }
-      .modal-add-bottle form #cont-form-add-bottle #name-label, .modal-up-bottle form #cont-form-add-bottle #name-label {
+      .modal-add-bottle form #cont-form-add-bottle #name-label, .modal-up-bottle form #cont-form-add-bottle #name-label, .modal-add-year form #cont-form-add-bottle #name-label {
         grid-column: 1;
         grid-row: 1;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #year-label, .modal-up-bottle form #cont-form-add-bottle #year-label {
+      .modal-add-bottle form #cont-form-add-bottle #year-label, .modal-up-bottle form #cont-form-add-bottle #year-label, .modal-add-year form #cont-form-add-bottle #year-label {
         grid-column: 1;
         grid-row: 2;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes-label, .modal-up-bottle form #cont-form-add-bottle #grapes-label {
+      .modal-add-bottle form #cont-form-add-bottle #grapes-label, .modal-up-bottle form #cont-form-add-bottle #grapes-label, .modal-add-year form #cont-form-add-bottle #grapes-label {
         grid-column: 1;
         grid-row: 3;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #country-label, .modal-up-bottle form #cont-form-add-bottle #country-label {
+      .modal-add-bottle form #cont-form-add-bottle #country-label, .modal-up-bottle form #cont-form-add-bottle #country-label, .modal-add-year form #cont-form-add-bottle #country-label {
         grid-column: 3;
         grid-row: 2;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #region-label, .modal-up-bottle form #cont-form-add-bottle #region-label {
+      .modal-add-bottle form #cont-form-add-bottle #region-label, .modal-up-bottle form #cont-form-add-bottle #region-label, .modal-add-year form #cont-form-add-bottle #region-label {
         grid-column: 3;
         grid-row: 3;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #description-label, .modal-up-bottle form #cont-form-add-bottle #description-label {
+      .modal-add-bottle form #cont-form-add-bottle #description-label, .modal-up-bottle form #cont-form-add-bottle #description-label, .modal-add-year form #cont-form-add-bottle #description-label {
         grid-column: 1;
         grid-row: 4;
         margin-top: 1rem; }
-      .modal-add-bottle form #cont-form-add-bottle #photo-label, .modal-up-bottle form #cont-form-add-bottle #photo-label {
+      .modal-add-bottle form #cont-form-add-bottle #photo-label, .modal-up-bottle form #cont-form-add-bottle #photo-label, .modal-add-year form #cont-form-add-bottle #photo-label {
         grid-column: 1;
         grid-row: 5;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #type-label, .modal-up-bottle form #cont-form-add-bottle #type-label {
+      .modal-add-bottle form #cont-form-add-bottle #type-label, .modal-up-bottle form #cont-form-add-bottle #type-label, .modal-add-year form #cont-form-add-bottle #type-label {
         grid-column: 3;
         grid-row: 5;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #stock-label, .modal-up-bottle form #cont-form-add-bottle #stock-label {
+      .modal-add-bottle form #cont-form-add-bottle #stock-label, .modal-up-bottle form #cont-form-add-bottle #stock-label, .modal-add-year form #cont-form-add-bottle #stock-label {
         grid-column: 1;
         grid-row: 6;
         align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock {
+      .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-add-year form #cont-form-add-bottle #cont-tof-stock {
         grid-column: 1/5;
         grid-row: 6;
         align-self: center;
         display: flex; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img {
+        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #container-photo img {
           display: block;
           width: 62.5px;
           height: 75px;
           margin-left: 1rem; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
+        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
           margin-left: 8rem;
           align-self: center; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
+        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
           width: 4rem; }
-      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up {
+      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
         grid-column: 2 / 5;
         grid-row: 1;
         width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #year, .modal-add-bottle form #cont-form-add-bottle #year-up, .modal-up-bottle form #cont-form-add-bottle #year, .modal-up-bottle form #cont-form-add-bottle #year-up {
+      .modal-add-bottle form #cont-form-add-bottle #year, .modal-add-bottle form #cont-form-add-bottle #year-up, .modal-up-bottle form #cont-form-add-bottle #year, .modal-up-bottle form #cont-form-add-bottle #year-up, .modal-add-year form #cont-form-add-bottle #year, .modal-add-year form #cont-form-add-bottle #year-up {
         grid-column: 2;
         grid-row: 2;
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up {
+      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
         grid-column: 2;
         grid-row: 3; }
-      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up {
+      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
         grid-column: 4;
         grid-row: 2; }
-      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up {
+      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
         grid-column: 4;
         grid-row: 3; }
-      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up {
+      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
         resize: none;
         grid-column: 2 / 5;
         grid-row: 4;
         width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up {
+      .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
         grid-column: 2;
         grid-row: 5;
         padding: .8rem 0 0 0;
         font-size: 1.1rem;
         color: #88002d; }
-      .modal-add-bottle form #cont-form-add-bottle #type, .modal-add-bottle form #cont-form-add-bottle #type-up, .modal-up-bottle form #cont-form-add-bottle #type, .modal-up-bottle form #cont-form-add-bottle #type-up {
+      .modal-add-bottle form #cont-form-add-bottle #type, .modal-add-bottle form #cont-form-add-bottle #type-up, .modal-up-bottle form #cont-form-add-bottle #type, .modal-up-bottle form #cont-form-add-bottle #type-up, .modal-add-year form #cont-form-add-bottle #type, .modal-add-year form #cont-form-add-bottle #type-up {
         grid-column: 4;
         grid-row: 5;
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-up-bottle form #cont-form-add-bottle #stock {
+      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-up-bottle form #cont-form-add-bottle #stock, .modal-add-year form #cont-form-add-bottle #stock {
         grid-column: 2;
         grid-row: 6;
         width: 4rem; }
+    .modal-add-bottle form #cont-form-add-year, .modal-up-bottle form #cont-form-add-year, .modal-add-year form #cont-form-add-year {
+      display: grid;
+      grid-template-columns: 1fr 2fr 1fr 2fr;
+      grid-template-rows: 1fr 2fr 1fr;
+      justify-items: start; }
+      .modal-add-bottle form #cont-form-add-year #year-add-year-label, .modal-up-bottle form #cont-form-add-year #year-add-year-label, .modal-add-year form #cont-form-add-year #year-add-year-label {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-year #description-add-year-label, .modal-up-bottle form #cont-form-add-year #description-add-year-label, .modal-add-year form #cont-form-add-year #description-add-year-label {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 1rem; }
+      .modal-add-bottle form #cont-form-add-year #photo-add-year-label, .modal-up-bottle form #cont-form-add-year #photo-add-year-label, .modal-add-year form #cont-form-add-year #photo-add-year-label {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-year #stock-add-year-label, .modal-up-bottle form #cont-form-add-year #stock-add-year-label, .modal-add-year form #cont-form-add-year #stock-add-year-label {
+        grid-column: 3;
+        grid-row: 1;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-year #year-add-year, .modal-up-bottle form #cont-form-add-year #year-add-year, .modal-add-year form #cont-form-add-year #year-add-year {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-year #description-add-year, .modal-up-bottle form #cont-form-add-year #description-add-year, .modal-add-year form #cont-form-add-year #description-add-year {
+        resize: none;
+        grid-column: 2 / 5;
+        grid-row: 2;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-year #photo-add-year, .modal-up-bottle form #cont-form-add-year #photo-add-year, .modal-add-year form #cont-form-add-year #photo-add-year {
+        grid-column: 2/5;
+        grid-row: 3;
+        padding: .8rem 0 0 0;
+        font-size: 1.1rem;
+        color: #88002d; }
+      .modal-add-bottle form #cont-form-add-year #stock-add-year, .modal-up-bottle form #cont-form-add-year #stock-add-year, .modal-add-year form #cont-form-add-year #stock-add-year {
+        grid-column: 4;
+        grid-row: 1;
+        width: 4rem; }
 
 @media only screen and (max-width: 1200px) {
-  .modal-add-bottle form .field, .modal-up-bottle form .field {
+  .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
     font-size: 1rem;
     padding: 0.4rem 0.8rem; }
-  .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up {
+  .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
     width: 95%; }
-  .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up {
+  .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
     width: 87%; }
-  .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up {
+  .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
     width: 87%; }
-  .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up {
+  .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
     width: 87%; }
-  .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up {
+  .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
     width: 95%; }
-  .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up {
+  .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
     padding-top: 1rem;
     font-size: 0.8rem; } }
 
@@ -505,115 +545,155 @@
     width: 94%; } }
 
 @media only screen and (max-width: 768px) {
-  .modal-add-bottle, .modal-up-bottle {
+  .modal-add-bottle, .modal-up-bottle, .modal-add-year {
     width: 85%; }
-    .modal-add-bottle h2, .modal-up-bottle h2 {
+    .modal-add-bottle h2, .modal-up-bottle h2, .modal-add-year h2 {
       font-size: 2.5rem; }
-    .modal-add-bottle form .field, .modal-up-bottle form .field {
+    .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
       font-size: 0.8rem;
       padding: 0.2rem 0.5rem; }
-    .modal-add-bottle form label, .modal-up-bottle form label {
+    .modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
       font-size: 1.2rem; }
-    .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up {
+    .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
       width: 97%; }
-    .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up {
+    .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
       width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up {
+    .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
       width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up {
+    .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
       width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up {
+    .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
       width: 97%; }
-    .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up {
+    .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
       padding-top: 0.6rem;
-      font-size: 0.7rem; } }
+      font-size: 0.7rem; }
+    .modal-add-bottle form #cont-form-add-year, .modal-up-bottle form #cont-form-add-year, .modal-add-year form #cont-form-add-year {
+      display: grid;
+      grid-template-columns: 1fr 3fr;
+      grid-template-rows: 1fr 2fr 1fr 1fr;
+      justify-items: start; }
+      .modal-add-bottle form #cont-form-add-year #year-add-year-label, .modal-up-bottle form #cont-form-add-year #year-add-year-label, .modal-add-year form #cont-form-add-year #year-add-year-label {
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-year #description-add-year-label, .modal-up-bottle form #cont-form-add-year #description-add-year-label, .modal-add-year form #cont-form-add-year #description-add-year-label {
+        grid-column: 1;
+        grid-row: 2;
+        margin-top: 1rem; }
+      .modal-add-bottle form #cont-form-add-year #photo-add-year-label, .modal-up-bottle form #cont-form-add-year #photo-add-year-label, .modal-add-year form #cont-form-add-year #photo-add-year-label {
+        grid-column: 1;
+        grid-row: 3;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-year #stock-add-year-label, .modal-up-bottle form #cont-form-add-year #stock-add-year-label, .modal-add-year form #cont-form-add-year #stock-add-year-label {
+        grid-column: 1;
+        grid-row: 4;
+        align-self: center; }
+      .modal-add-bottle form #cont-form-add-year #year-add-year, .modal-up-bottle form #cont-form-add-year #year-add-year, .modal-add-year form #cont-form-add-year #year-add-year {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%; }
+      .modal-add-bottle form #cont-form-add-year #description-add-year, .modal-up-bottle form #cont-form-add-year #description-add-year, .modal-add-year form #cont-form-add-year #description-add-year {
+        resize: none;
+        grid-column: 2;
+        grid-row: 2;
+        width: 96%; }
+      .modal-add-bottle form #cont-form-add-year #photo-add-year, .modal-up-bottle form #cont-form-add-year #photo-add-year, .modal-add-year form #cont-form-add-year #photo-add-year {
+        grid-column: 2;
+        grid-row: 3;
+        padding: .6rem 0 0 0;
+        font-size: 0.7rem;
+        color: #88002d; }
+      .modal-add-bottle form #cont-form-add-year #stock-add-year, .modal-up-bottle form #cont-form-add-year #stock-add-year, .modal-add-year form #cont-form-add-year #stock-add-year {
+        grid-column: 2;
+        grid-row: 4;
+        width: 4rem; } }
 
 @media only screen and (max-width: 576px) {
-  .modal-add-bottle-container, .modal-up-bottle-container {
+  .modal-add-bottle-container, .modal-up-bottle-container, .modal-add-year-container {
     position: absolute;
     height: 300vh; }
-  .modal-add-bottle, .modal-up-bottle {
+  .modal-add-bottle, .modal-up-bottle, .modal-add-year {
     top: 28%; }
-    .modal-add-bottle #submitAdd, .modal-add-bottle #submitUp, .modal-up-bottle #submitAdd, .modal-up-bottle #submitUp {
+    .modal-add-bottle #submitAdd, .modal-add-bottle #submitUp, .modal-add-bottle #submitAddYear, .modal-up-bottle #submitAdd, .modal-up-bottle #submitUp, .modal-up-bottle #submitAddYear, .modal-add-year #submitAdd, .modal-add-year #submitUp, .modal-add-year #submitAddYear {
       font-size: 1.5rem;
       margin: 1.5rem 0; }
-    .modal-add-bottle h2, .modal-up-bottle h2 {
+    .modal-add-bottle h2, .modal-up-bottle h2, .modal-add-year h2 {
       font-size: 2rem;
       margin: 1rem 0; }
-    .modal-add-bottle form .field, .modal-up-bottle form .field {
+    .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
       font-size: 0.7rem;
       padding: 0.15rem 0.4rem; }
-    .modal-add-bottle form label, .modal-up-bottle form label {
+    .modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
       font-size: 1rem; }
-    .modal-add-bottle form #cont-form-add-bottle, .modal-up-bottle form #cont-form-add-bottle {
+    .modal-add-bottle form #cont-form-add-bottle, .modal-up-bottle form #cont-form-add-bottle, .modal-add-year form #cont-form-add-bottle {
       grid-template-columns: 1fr 4fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr; }
-      .modal-add-bottle form #cont-form-add-bottle #name-label, .modal-up-bottle form #cont-form-add-bottle #name-label {
+      .modal-add-bottle form #cont-form-add-bottle #name-label, .modal-up-bottle form #cont-form-add-bottle #name-label, .modal-add-year form #cont-form-add-bottle #name-label {
         grid-column: 1;
         grid-row: 1; }
-      .modal-add-bottle form #cont-form-add-bottle #year-label, .modal-up-bottle form #cont-form-add-bottle #year-label {
+      .modal-add-bottle form #cont-form-add-bottle #year-label, .modal-up-bottle form #cont-form-add-bottle #year-label, .modal-add-year form #cont-form-add-bottle #year-label {
         grid-column: 1;
         grid-row: 2; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes-label, .modal-up-bottle form #cont-form-add-bottle #grapes-label {
+      .modal-add-bottle form #cont-form-add-bottle #grapes-label, .modal-up-bottle form #cont-form-add-bottle #grapes-label, .modal-add-year form #cont-form-add-bottle #grapes-label {
         grid-column: 1;
         grid-row: 3; }
-      .modal-add-bottle form #cont-form-add-bottle #country-label, .modal-up-bottle form #cont-form-add-bottle #country-label {
+      .modal-add-bottle form #cont-form-add-bottle #country-label, .modal-up-bottle form #cont-form-add-bottle #country-label, .modal-add-year form #cont-form-add-bottle #country-label {
         grid-column: 1;
         grid-row: 4; }
-      .modal-add-bottle form #cont-form-add-bottle #region-label, .modal-up-bottle form #cont-form-add-bottle #region-label {
+      .modal-add-bottle form #cont-form-add-bottle #region-label, .modal-up-bottle form #cont-form-add-bottle #region-label, .modal-add-year form #cont-form-add-bottle #region-label {
         grid-column: 1;
         grid-row: 5; }
-      .modal-add-bottle form #cont-form-add-bottle #description-label, .modal-up-bottle form #cont-form-add-bottle #description-label {
+      .modal-add-bottle form #cont-form-add-bottle #description-label, .modal-up-bottle form #cont-form-add-bottle #description-label, .modal-add-year form #cont-form-add-bottle #description-label {
         grid-column: 1;
         grid-row: 6; }
-      .modal-add-bottle form #cont-form-add-bottle #type-label, .modal-up-bottle form #cont-form-add-bottle #type-label {
+      .modal-add-bottle form #cont-form-add-bottle #type-label, .modal-up-bottle form #cont-form-add-bottle #type-label, .modal-add-year form #cont-form-add-bottle #type-label {
         grid-column: 1;
         grid-row: 7; }
-      .modal-add-bottle form #cont-form-add-bottle #photo-label, .modal-up-bottle form #cont-form-add-bottle #photo-label {
+      .modal-add-bottle form #cont-form-add-bottle #photo-label, .modal-up-bottle form #cont-form-add-bottle #photo-label, .modal-add-year form #cont-form-add-bottle #photo-label {
         grid-column: 1;
         grid-row: 8; }
-      .modal-add-bottle form #cont-form-add-bottle #stock-label, .modal-up-bottle form #cont-form-add-bottle #stock-label {
+      .modal-add-bottle form #cont-form-add-bottle #stock-label, .modal-up-bottle form #cont-form-add-bottle #stock-label, .modal-add-year form #cont-form-add-bottle #stock-label {
         grid-column: 1;
         grid-row: 9; }
-      .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock {
+      .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-add-year form #cont-form-add-bottle #cont-tof-stock {
         grid-column: 1/3;
         grid-row: 9; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
+        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
           margin-left: 3rem; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
+        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
           width: 3rem; }
-      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up {
+      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
         grid-column: 2;
         grid-row: 1;
         width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #year, .modal-add-bottle form #cont-form-add-bottle #year-up, .modal-up-bottle form #cont-form-add-bottle #year, .modal-up-bottle form #cont-form-add-bottle #year-up {
+      .modal-add-bottle form #cont-form-add-bottle #year, .modal-add-bottle form #cont-form-add-bottle #year-up, .modal-up-bottle form #cont-form-add-bottle #year, .modal-up-bottle form #cont-form-add-bottle #year-up, .modal-add-year form #cont-form-add-bottle #year, .modal-add-year form #cont-form-add-bottle #year-up {
         grid-column: 2;
         grid-row: 2;
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up {
+      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
         grid-column: 2;
         grid-row: 3;
         width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up {
+      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
         grid-column: 2;
         grid-row: 4;
         width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up {
+      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
         grid-column: 2;
         grid-row: 5;
         width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up {
+      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
         grid-column: 2;
         grid-row: 6;
         width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #type, .modal-add-bottle form #cont-form-add-bottle #type-up, .modal-up-bottle form #cont-form-add-bottle #type, .modal-up-bottle form #cont-form-add-bottle #type-up {
+      .modal-add-bottle form #cont-form-add-bottle #type, .modal-add-bottle form #cont-form-add-bottle #type-up, .modal-up-bottle form #cont-form-add-bottle #type, .modal-up-bottle form #cont-form-add-bottle #type-up, .modal-add-year form #cont-form-add-bottle #type, .modal-add-year form #cont-form-add-bottle #type-up {
         grid-column: 2;
         grid-row: 7;
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up {
+      .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
         grid-column: 2;
         grid-row: 8; }
-      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-up-bottle form #cont-form-add-bottle #stock {
+      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-up-bottle form #cont-form-add-bottle #stock, .modal-add-year form #cont-form-add-bottle #stock {
         grid-column: 2;
         grid-row: 9; } }
 
@@ -621,32 +701,37 @@
   #champ-requis {
     bottom: .5rem;
     left: 2rem; }
-  .modal-add-bottle {
+  .modal-add-bottle, .modal-add-year {
     padding: 1rem;
     text-align: left;
     top: 28%; }
-    .modal-add-bottle h2 {
+    .modal-add-bottle h2, .modal-add-year h2 {
       margin: 1rem 1rem; }
-    .modal-add-bottle form .field {
+    .modal-add-bottle form .field, .modal-add-year form .field {
       padding: .5rem .5rem; }
-    .modal-add-bottle form label {
+    .modal-add-bottle form label, .modal-add-year form label {
       font-size: 0.9rem;
       margin-left: 0; }
-    .modal-add-bottle form #cont-form-add-bottle {
+    .modal-add-bottle form #cont-form-add-bottle, .modal-add-year form #cont-form-add-bottle {
       display: block; }
-      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up {
+      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up {
+      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up {
+      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up {
+      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
         width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up {
+      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
         width: 100%;
         height: 100px; }
-      .modal-add-bottle form #cont-form-add-bottle #stock {
+      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-add-year form #cont-form-add-bottle #stock {
         padding: .5rem .5rem; }
+    .modal-add-bottle form #cont-form-add-year, .modal-add-year form #cont-form-add-year {
+      display: block; }
+      .modal-add-bottle form #cont-form-add-year #description-add-year, .modal-add-year form #cont-form-add-year #description-add-year {
+        height: 50px;
+        width: 93%; }
   .modal-up-bottle {
     padding: 1rem;
     text-align: left;

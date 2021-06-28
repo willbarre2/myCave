@@ -18,11 +18,11 @@
 .del-creat-cont{
     position: absolute;
     top: 15px;
-    right: 0;
+    right: 0.4rem;
 
     & img{
         @extend %btn-close;
-        margin: 0 1rem;
+        margin: 0 .4rem;
         transition: $animate;
 
         &:hover{
@@ -347,7 +347,7 @@
     .del-creat-cont{
         right: 5px;
         & img {
-            margin: 0 0.3rem;
+            margin: 0 0.2rem;
         }
     }
 

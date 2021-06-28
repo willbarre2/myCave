@@ -36,9 +36,9 @@
 .del-creat-cont {
   position: absolute;
   top: 15px;
-  right: 0; }
+  right: 0.4rem; }
   .del-creat-cont img {
-    margin: 0 1rem;
+    margin: 0 .4rem;
     transition: all 0.2s ease-in-out; }
     .del-creat-cont img:hover {
       transform: scale(1.07);
@@ -246,7 +246,7 @@
   .del-creat-cont {
     right: 5px; }
     .del-creat-cont img {
-      margin: 0 0.3rem; }
+      margin: 0 0.2rem; }
   .card-cont div h4 {
     font-size: 1rem; }
   .card-cont div p {

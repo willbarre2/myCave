@@ -1,11 +1,11 @@
 // ------modale modif bouteille--------
 if (".btn-up" !== null && ".btn-up" !== "") {
   $(".btn-up").on("click", function () {
-    var bottleID = $(this).data("id");
+    var yearID = $(this).data("id");
     $.post(
       "ajax_php/display_up_bottle_post.php",
       {
-        bottleID: bottleID,
+        yearID: yearID,
       },
       function (data) {
         window.scrollTo(0, 0);
@@ -36,7 +36,8 @@ if (".btn-up" !== null && ".btn-up" !== "") {
         );
         $("#stock-up").val(data.stock);
         $("#current_picture").val(data.photo);
-        $("#current_id").val(data.id_bottle);
+        $("#current_id").val(data.id_year);
+        $("#current_id_bottle").val(data.id_bottle);
       },
       "json"
     );

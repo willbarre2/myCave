@@ -1,7 +1,7 @@
 @import "./variables.scss";
 @import "./modales.scss";
 
-#submitAdd, #submitUp{
+#submitAdd, #submitUp, #submitAddYear{
     align-self: center;
     @extend %cta;
     background-color: $bx;
@@ -20,11 +20,11 @@
     color: $rouge;
 }
 
-#resultAdd, #resultUp{
+#resultAdd, #resultUp, #resultAddYear{
     font-size: 1.5rem;
 }
 
-.modal-add-bottle, .modal-up-bottle{
+.modal-add-bottle, .modal-up-bottle, .modal-add-year{
     text-align: center;
     background-color: $rose;
     border-radius: 30px;
@@ -195,13 +195,75 @@
                 width: 4rem;
             }
         }
+
+        & #cont-form-add-year{
+            display: grid;
+            grid-template-columns: 1fr 2fr 1fr 2fr;
+            grid-template-rows: 1fr 2fr 1fr;
+            justify-items: start;
+
+            
+
+            & #year-add-year-label{
+                grid-column: 1;
+                grid-row: 1;
+                align-self: center;
+            }
+
+
+            & #description-add-year-label{
+                grid-column: 1;
+                grid-row: 2;
+                margin-top: 1rem;
+            }
+
+            & #photo-add-year-label{
+                grid-column: 1;
+                grid-row: 3;
+                align-self: center;
+            }
+
+            
+            & #stock-add-year-label{
+                grid-column: 3;
+                grid-row: 1;
+                align-self: center;
+            }
+
+            & #year-add-year{
+                grid-column: 2;
+                grid-row: 1;
+                width: 100%;
+            }
+
+            & #description-add-year{
+                resize: none;
+                grid-column: 2 / 5;
+                grid-row: 2;
+                width: 96%;
+            }
+
+            & #photo-add-year{
+                grid-column: 2/5;
+                grid-row: 3;
+                padding: .8rem 0 0 0;
+                font-size: 1.1rem;
+                color: $rouge;
+            }
+
+            & #stock-add-year{
+                grid-column: 4;
+                grid-row: 1;
+                width: 4rem;
+            }
+        }
     }
 }
 
 
 
 @media #{$xl}{
-    .modal-add-bottle, .modal-up-bottle{
+    .modal-add-bottle, .modal-up-bottle, .modal-add-year{
         & form{
             & .field{
                 font-size: 1rem;
@@ -275,7 +337,7 @@
 }
 
 @media #{$md}{
-    .modal-add-bottle, .modal-up-bottle{
+    .modal-add-bottle, .modal-up-bottle, .modal-add-year{
         width: 85%;
         & h2{
             font-size: 2.5rem;
@@ -316,18 +378,79 @@
                     font-size: 0.7rem;
                 }
             }
+            & #cont-form-add-year{
+                display: grid;
+                grid-template-columns: 1fr 3fr;
+                grid-template-rows: 1fr 2fr 1fr 1fr;
+                justify-items: start;
+    
+                
+    
+                & #year-add-year-label{
+                    grid-column: 1;
+                    grid-row: 1;
+                    align-self: center;
+                }
+    
+    
+                & #description-add-year-label{
+                    grid-column: 1;
+                    grid-row: 2;
+                    margin-top: 1rem;
+                }
+    
+                & #photo-add-year-label{
+                    grid-column: 1;
+                    grid-row: 3;
+                    align-self: center;
+                }
+    
+                
+                & #stock-add-year-label{
+                    grid-column: 1;
+                    grid-row: 4;
+                    align-self: center;
+                }
+    
+                & #year-add-year{
+                    grid-column: 2;
+                    grid-row: 1;
+                    width: 100%;
+                }
+    
+                & #description-add-year{
+                    resize: none;
+                    grid-column: 2;
+                    grid-row: 2;
+                    width: 96%;
+                }
+    
+                & #photo-add-year{
+                    grid-column: 2;
+                    grid-row: 3;
+                    padding: .6rem 0 0 0;
+                    font-size: 0.7rem;
+                    color: $rouge;
+                }
+    
+                & #stock-add-year{
+                    grid-column: 2;
+                    grid-row: 4;
+                    width: 4rem;
+                }
+            }
         }
     }
 }
 
 @media #{$sm}{
-    .modal-add-bottle-container, .modal-up-bottle-container{
+    .modal-add-bottle-container, .modal-up-bottle-container, .modal-add-year-container{
         position: absolute;
         height: 300vh;
     }
-    .modal-add-bottle, .modal-up-bottle{
+    .modal-add-bottle, .modal-up-bottle, .modal-add-year{
         top: 28%;
-        #submitAdd, #submitUp{
+        #submitAdd, #submitUp, #submitAddYear{
             font-size: 1.5rem;
             margin: 1.5rem 0;
         }
@@ -471,7 +594,7 @@
         bottom: .5rem;
         left: 2rem;
     }
-    .modal-add-bottle{
+    .modal-add-bottle, .modal-add-year{
         padding: 1rem;
         text-align: left;
         top: 28%;
@@ -514,6 +637,14 @@
 
                 & #stock{
                     padding: .5rem .5rem;
+                }
+            }
+            & #cont-form-add-year{
+                display: block;
+
+                & #description-add-year{
+                    height: 50px;
+                    width: 93%;
                 }
             }
         }

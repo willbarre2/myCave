@@ -96,5 +96,6 @@ endif;
     <?php require __DIR__ . '/modal_user_del.php'; ?>
     <?php require __DIR__ . '/modal_bottle_add.php'; ?>
     <?php require __DIR__ . '/modal_update_bottle.php'; ?>
+    <?php require __DIR__ . '/modal_add_year.php'; ?>
 
     <main>
