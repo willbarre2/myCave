@@ -3,7 +3,7 @@ if (empty(session_id())) {
     session_start();
 };
 
-$domaine = "https://mycavewb.com/";
+$domaine = "http://localhost/myCave2/myCave/src/";
 $page_rouge = $domaine;
 $page_blanc = $domaine . "blanc.php";
 $page_rose = $domaine . "rose.php";
@@ -13,7 +13,7 @@ $blanc_name = "myCave / Blanc";
 $rose_name = "myCave / Rosé";
 
 
-$current_url = strtok(('https://mycavewb.com' . $_SERVER['REQUEST_URI']), '?');
+$current_url = strtok(('http://localhost' . $_SERVER['REQUEST_URI']), '?');
 
 
 if ($page_rouge === $current_url) :
@@ -96,5 +96,7 @@ endif;
     <?php require __DIR__ . '/modal_user_del.php'; ?>
     <?php require __DIR__ . '/modal_bottle_add.php'; ?>
     <?php require __DIR__ . '/modal_update_bottle.php'; ?>
+    <?php require __DIR__ . '/modal_add_year.php'; ?>
+    <?php require __DIR__ . '/modal_del_bottle_year.php'; ?>
 
     <main>

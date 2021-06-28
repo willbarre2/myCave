@@ -16,7 +16,9 @@
 
 #btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07); }
 
 #btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
@@ -38,6 +40,14 @@
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
+  .result_ac .content_result_ac::-webkit-input-placeholder, .connexion-modal .form input::-webkit-input-placeholder, .modal-crea .form-crea input::-webkit-input-placeholder, .modal-crea .form-crea select::-webkit-input-placeholder, .modal-del .form-del input::-webkit-input-placeholder, .modal-del .form-del select::-webkit-input-placeholder, .modal-add-bottle form .field::-webkit-input-placeholder, .modal-up-bottle form .field::-webkit-input-placeholder, .modal-add-year form .field::-webkit-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-moz-placeholder, .connexion-modal .form input::-moz-placeholder, .modal-crea .form-crea input::-moz-placeholder, .modal-crea .form-crea select::-moz-placeholder, .modal-del .form-del input::-moz-placeholder, .modal-del .form-del select::-moz-placeholder, .modal-add-bottle form .field::-moz-placeholder, .modal-up-bottle form .field::-moz-placeholder, .modal-add-year form .field::-moz-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac:-ms-input-placeholder, .connexion-modal .form input:-ms-input-placeholder, .modal-crea .form-crea input:-ms-input-placeholder, .modal-crea .form-crea select:-ms-input-placeholder, .modal-del .form-del input:-ms-input-placeholder, .modal-del .form-del select:-ms-input-placeholder, .modal-add-bottle form .field:-ms-input-placeholder, .modal-up-bottle form .field:-ms-input-placeholder, .modal-add-year form .field:-ms-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-ms-input-placeholder, .connexion-modal .form input::-ms-input-placeholder, .modal-crea .form-crea input::-ms-input-placeholder, .modal-crea .form-crea select::-ms-input-placeholder, .modal-del .form-del input::-ms-input-placeholder, .modal-del .form-del select::-ms-input-placeholder, .modal-add-bottle form .field::-ms-input-placeholder, .modal-up-bottle form .field::-ms-input-placeholder, .modal-add-year form .field::-ms-input-placeholder {
+    color: #818181; }
   .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
@@ -76,7 +86,9 @@ body {
 
 #btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07); }
 
 #btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
@@ -98,6 +110,14 @@ body {
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
+  .result_ac .content_result_ac::-webkit-input-placeholder, .connexion-modal .form input::-webkit-input-placeholder, .modal-crea .form-crea input::-webkit-input-placeholder, .modal-crea .form-crea select::-webkit-input-placeholder, .modal-del .form-del input::-webkit-input-placeholder, .modal-del .form-del select::-webkit-input-placeholder, .modal-add-bottle form .field::-webkit-input-placeholder, .modal-up-bottle form .field::-webkit-input-placeholder, .modal-add-year form .field::-webkit-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-moz-placeholder, .connexion-modal .form input::-moz-placeholder, .modal-crea .form-crea input::-moz-placeholder, .modal-crea .form-crea select::-moz-placeholder, .modal-del .form-del input::-moz-placeholder, .modal-del .form-del select::-moz-placeholder, .modal-add-bottle form .field::-moz-placeholder, .modal-up-bottle form .field::-moz-placeholder, .modal-add-year form .field::-moz-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac:-ms-input-placeholder, .connexion-modal .form input:-ms-input-placeholder, .modal-crea .form-crea input:-ms-input-placeholder, .modal-crea .form-crea select:-ms-input-placeholder, .modal-del .form-del input:-ms-input-placeholder, .modal-del .form-del select:-ms-input-placeholder, .modal-add-bottle form .field:-ms-input-placeholder, .modal-up-bottle form .field:-ms-input-placeholder, .modal-add-year form .field:-ms-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-ms-input-placeholder, .connexion-modal .form input::-ms-input-placeholder, .modal-crea .form-crea input::-ms-input-placeholder, .modal-crea .form-crea select::-ms-input-placeholder, .modal-del .form-del input::-ms-input-placeholder, .modal-del .form-del select::-ms-input-placeholder, .modal-add-bottle form .field::-ms-input-placeholder, .modal-up-bottle form .field::-ms-input-placeholder, .modal-add-year form .field::-ms-input-placeholder {
+    color: #818181; }
   .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
@@ -111,6 +131,7 @@ body {
   padding-bottom: .3rem;
   margin: 1rem 5vw;
   font-size: 2.5rem;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 header {
@@ -121,6 +142,7 @@ header {
   overflow: hidden;
   height: 150px;
   width: 100%;
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out; }
   header div img {
     width: 250px;
@@ -130,17 +152,32 @@ header {
   width: 90%;
   height: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
-  align-items: center; }
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 nav ul {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex; }
   nav ul li {
     list-style: none;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
     nav ul li:hover {
-      transform: scale(1.07); }
+      -webkit-transform: scale(1.07);
+          -ms-transform: scale(1.07);
+              transform: scale(1.07); }
     nav ul li a {
       text-decoration: none;
       font-family: 'jose'; }
@@ -148,19 +185,25 @@ nav ul {
 #nav-rouge {
   color: #88002d; }
   #nav-rouge:hover {
-    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+            transform: scale(1.07);
     color: rgba(136, 0, 45, 0.5); }
 
 #nav-blanc {
   color: #ffe5aa; }
   #nav-blanc:hover {
-    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+            transform: scale(1.07);
     color: rgba(255, 229, 170, 0.5); }
 
 #nav-rose {
   color: #ff7b6c; }
   #nav-rose:hover {
-    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+            transform: scale(1.07);
     color: rgba(255, 123, 108, 0.5); }
 
 .current_page {
@@ -173,6 +216,7 @@ nav ul {
   background-color: white;
   color: #3e0018;
   border: none;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   #btn-con a, #btn-decon a {
     text-decoration: none;
@@ -188,9 +232,12 @@ nav ul {
   right: 21px;
   margin: 0;
   display: none;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   #icon-bottle-white:hover, .icon-user-white:hover, .icon-user-del-white:hover {
-    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+            transform: scale(1.07);
     cursor: pointer; }
 
 .icon-user-white {
@@ -209,9 +256,12 @@ nav ul {
   top: 160px;
   right: 10px;
   margin: 0;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   #icon-bottle-bx:hover, .icon-user-bx:hover, .icon-user-del-bx:hover {
-    transform: scale(1.07);
+    -webkit-transform: scale(1.07);
+        -ms-transform: scale(1.07);
+            transform: scale(1.07);
     cursor: pointer; }
 
 .icon-user-bx {
@@ -234,9 +284,17 @@ nav ul {
   #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
     display: none; }
   #nav-cont {
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
   nav ul {
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     nav ul li {
       padding: 2rem 0; }
   #btn-burger {
@@ -293,7 +351,9 @@ nav ul {
 
 #btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07); }
 
 #btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
@@ -315,6 +375,14 @@ nav ul {
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
+  .result_ac .content_result_ac::-webkit-input-placeholder, .connexion-modal .form input::-webkit-input-placeholder, .modal-crea .form-crea input::-webkit-input-placeholder, .modal-crea .form-crea select::-webkit-input-placeholder, .modal-del .form-del input::-webkit-input-placeholder, .modal-del .form-del select::-webkit-input-placeholder, .modal-add-bottle form .field::-webkit-input-placeholder, .modal-up-bottle form .field::-webkit-input-placeholder, .modal-add-year form .field::-webkit-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-moz-placeholder, .connexion-modal .form input::-moz-placeholder, .modal-crea .form-crea input::-moz-placeholder, .modal-crea .form-crea select::-moz-placeholder, .modal-del .form-del input::-moz-placeholder, .modal-del .form-del select::-moz-placeholder, .modal-add-bottle form .field::-moz-placeholder, .modal-up-bottle form .field::-moz-placeholder, .modal-add-year form .field::-moz-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac:-ms-input-placeholder, .connexion-modal .form input:-ms-input-placeholder, .modal-crea .form-crea input:-ms-input-placeholder, .modal-crea .form-crea select:-ms-input-placeholder, .modal-del .form-del input:-ms-input-placeholder, .modal-del .form-del select:-ms-input-placeholder, .modal-add-bottle form .field:-ms-input-placeholder, .modal-up-bottle form .field:-ms-input-placeholder, .modal-add-year form .field:-ms-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-ms-input-placeholder, .connexion-modal .form input::-ms-input-placeholder, .modal-crea .form-crea input::-ms-input-placeholder, .modal-crea .form-crea select::-ms-input-placeholder, .modal-del .form-del input::-ms-input-placeholder, .modal-del .form-del select::-ms-input-placeholder, .modal-add-bottle form .field::-ms-input-placeholder, .modal-up-bottle form .field::-ms-input-placeholder, .modal-add-year form .field::-ms-input-placeholder {
+    color: #818181; }
   .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
@@ -342,9 +410,12 @@ nav ul {
   right: 0.4rem; }
   .del-creat-cont img {
     margin: 0 .4rem;
+    -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
     .del-creat-cont img:hover {
-      transform: scale(1.07);
+      -webkit-transform: scale(1.07);
+          -ms-transform: scale(1.07);
+              transform: scale(1.07);
       cursor: pointer; }
 
 .stock p {
@@ -354,7 +425,10 @@ nav ul {
   margin-right: 2rem;
   height: 600px;
   display: grid;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-template-columns: 1fr 1fr 1fr 2fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
   .card-cont div h4 {
@@ -380,18 +454,30 @@ nav ul {
   .card-cont .annee {
     grid-column: 2 / 4;
     grid-row: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
   .card-cont .cepage {
     grid-column: 2 / 4;
     grid-row: 3;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
   .card-cont .pays {
     grid-column: 4;
     grid-row: 2;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
   .card-cont .region {
     grid-column: 4;
     grid-row: 3;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
   .card-cont .descri {
     grid-column: 2;
@@ -407,12 +493,24 @@ nav ul {
   .card-cont .stock {
     grid-column: 2/4;
     grid-row: 5;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex; }
 
 .navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   font-family: 'joseB';
   font-size: 2rem;
   margin-top: 2rem; }
@@ -430,7 +528,9 @@ nav ul {
 
 .active {
   color: red;
-  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
   cursor: not-allowed; }
 
 .active a {
@@ -452,7 +552,10 @@ nav ul {
 @media only screen and (max-width: 992px) {
   .card-cont {
     margin: 2rem;
-    align-items: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
     .card-cont .photos-bottles {
@@ -588,7 +691,9 @@ nav ul {
 
 #btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07); }
 
 #btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
@@ -610,6 +715,14 @@ nav ul {
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
+  .result_ac .content_result_ac::-webkit-input-placeholder, .connexion-modal .form input::-webkit-input-placeholder, .modal-crea .form-crea input::-webkit-input-placeholder, .modal-crea .form-crea select::-webkit-input-placeholder, .modal-del .form-del input::-webkit-input-placeholder, .modal-del .form-del select::-webkit-input-placeholder, .modal-add-bottle form .field::-webkit-input-placeholder, .modal-up-bottle form .field::-webkit-input-placeholder, .modal-add-year form .field::-webkit-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-moz-placeholder, .connexion-modal .form input::-moz-placeholder, .modal-crea .form-crea input::-moz-placeholder, .modal-crea .form-crea select::-moz-placeholder, .modal-del .form-del input::-moz-placeholder, .modal-del .form-del select::-moz-placeholder, .modal-add-bottle form .field::-moz-placeholder, .modal-up-bottle form .field::-moz-placeholder, .modal-add-year form .field::-moz-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac:-ms-input-placeholder, .connexion-modal .form input:-ms-input-placeholder, .modal-crea .form-crea input:-ms-input-placeholder, .modal-crea .form-crea select:-ms-input-placeholder, .modal-del .form-del input:-ms-input-placeholder, .modal-del .form-del select:-ms-input-placeholder, .modal-add-bottle form .field:-ms-input-placeholder, .modal-up-bottle form .field:-ms-input-placeholder, .modal-add-year form .field:-ms-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-ms-input-placeholder, .connexion-modal .form input::-ms-input-placeholder, .modal-crea .form-crea input::-ms-input-placeholder, .modal-crea .form-crea select::-ms-input-placeholder, .modal-del .form-del input::-ms-input-placeholder, .modal-del .form-del select::-ms-input-placeholder, .modal-add-bottle form .field::-ms-input-placeholder, .modal-up-bottle form .field::-ms-input-placeholder, .modal-add-year form .field::-ms-input-placeholder {
+    color: #818181; }
   .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
@@ -623,7 +736,8 @@ nav ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
@@ -631,6 +745,7 @@ nav ul {
   bottom: 0;
   z-index: 100;
   opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
 
 .hidden {
@@ -641,8 +756,14 @@ nav ul {
   display: none; }
 
 #pass-eye {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: -3rem; }
   #pass-eye i {
     margin: 0 1rem; }
@@ -657,9 +778,12 @@ nav ul {
     background-color: white;
     text-align: start; }
     .result_ac .content_result_ac > div {
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
       .result_ac .content_result_ac > div:hover {
-        transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+            -ms-transform: scale(1.07);
+                transform: scale(1.07);
         cursor: pointer; }
 
 .connexion-modal {
@@ -671,7 +795,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .connexion-modal h2 {
     font-family: 'SourceB', sans-serif;
     font-size: 3rem;
@@ -679,15 +805,29 @@ nav ul {
   .connexion-modal .form {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .connexion-modal .form #submit {
       background-color: #3e0018;
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .modal-crea {
@@ -699,7 +839,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .modal-crea img {
     position: absolute;
     top: 1rem;
@@ -711,10 +853,23 @@ nav ul {
   .modal-crea .form-crea {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .modal-crea .form-crea select {
       width: 305px; }
     .modal-crea .form-crea #submitCrea {
@@ -722,6 +877,7 @@ nav ul {
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .modal-del {
@@ -733,7 +889,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .modal-del img {
     position: absolute;
     top: 1rem;
@@ -745,10 +903,23 @@ nav ul {
   .modal-del .form-del {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .modal-del .form-del select {
       width: 305px; }
     .modal-del .form-del #submitDel {
@@ -756,6 +927,7 @@ nav ul {
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .modal-del-bottle {
@@ -767,7 +939,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .modal-del-bottle img {
     position: absolute;
     top: 1rem;
@@ -779,21 +953,36 @@ nav ul {
   .modal-del-bottle .form-del-bottle {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear {
       background-color: #3e0018;
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 .msg_error {
@@ -910,7 +1099,9 @@ nav ul {
 
 #btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07); }
 
 #btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
@@ -932,6 +1123,14 @@ nav ul {
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
+  .result_ac .content_result_ac::-webkit-input-placeholder, .connexion-modal .form input::-webkit-input-placeholder, .modal-crea .form-crea input::-webkit-input-placeholder, .modal-crea .form-crea select::-webkit-input-placeholder, .modal-del .form-del input::-webkit-input-placeholder, .modal-del .form-del select::-webkit-input-placeholder, .modal-add-bottle form .field::-webkit-input-placeholder, .modal-up-bottle form .field::-webkit-input-placeholder, .modal-add-year form .field::-webkit-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-moz-placeholder, .connexion-modal .form input::-moz-placeholder, .modal-crea .form-crea input::-moz-placeholder, .modal-crea .form-crea select::-moz-placeholder, .modal-del .form-del input::-moz-placeholder, .modal-del .form-del select::-moz-placeholder, .modal-add-bottle form .field::-moz-placeholder, .modal-up-bottle form .field::-moz-placeholder, .modal-add-year form .field::-moz-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac:-ms-input-placeholder, .connexion-modal .form input:-ms-input-placeholder, .modal-crea .form-crea input:-ms-input-placeholder, .modal-crea .form-crea select:-ms-input-placeholder, .modal-del .form-del input:-ms-input-placeholder, .modal-del .form-del select:-ms-input-placeholder, .modal-add-bottle form .field:-ms-input-placeholder, .modal-up-bottle form .field:-ms-input-placeholder, .modal-add-year form .field:-ms-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-ms-input-placeholder, .connexion-modal .form input::-ms-input-placeholder, .modal-crea .form-crea input::-ms-input-placeholder, .modal-crea .form-crea select::-ms-input-placeholder, .modal-del .form-del input::-ms-input-placeholder, .modal-del .form-del select::-ms-input-placeholder, .modal-add-bottle form .field::-ms-input-placeholder, .modal-up-bottle form .field::-ms-input-placeholder, .modal-add-year form .field::-ms-input-placeholder {
+    color: #818181; }
   .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
@@ -959,7 +1158,9 @@ nav ul {
 
 #btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+      -ms-transform: scale(1.07);
+          transform: scale(1.07); }
 
 #btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
   padding: 2px 15px;
@@ -981,6 +1182,14 @@ nav ul {
   margin: 1rem 0;
   font-family: 'source', sans-serif;
   font-size: 1.5rem; }
+  .result_ac .content_result_ac::-webkit-input-placeholder, .connexion-modal .form input::-webkit-input-placeholder, .modal-crea .form-crea input::-webkit-input-placeholder, .modal-crea .form-crea select::-webkit-input-placeholder, .modal-del .form-del input::-webkit-input-placeholder, .modal-del .form-del select::-webkit-input-placeholder, .modal-add-bottle form .field::-webkit-input-placeholder, .modal-up-bottle form .field::-webkit-input-placeholder, .modal-add-year form .field::-webkit-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-moz-placeholder, .connexion-modal .form input::-moz-placeholder, .modal-crea .form-crea input::-moz-placeholder, .modal-crea .form-crea select::-moz-placeholder, .modal-del .form-del input::-moz-placeholder, .modal-del .form-del select::-moz-placeholder, .modal-add-bottle form .field::-moz-placeholder, .modal-up-bottle form .field::-moz-placeholder, .modal-add-year form .field::-moz-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac:-ms-input-placeholder, .connexion-modal .form input:-ms-input-placeholder, .modal-crea .form-crea input:-ms-input-placeholder, .modal-crea .form-crea select:-ms-input-placeholder, .modal-del .form-del input:-ms-input-placeholder, .modal-del .form-del select:-ms-input-placeholder, .modal-add-bottle form .field:-ms-input-placeholder, .modal-up-bottle form .field:-ms-input-placeholder, .modal-add-year form .field:-ms-input-placeholder {
+    color: #818181; }
+  .result_ac .content_result_ac::-ms-input-placeholder, .connexion-modal .form input::-ms-input-placeholder, .modal-crea .form-crea input::-ms-input-placeholder, .modal-crea .form-crea select::-ms-input-placeholder, .modal-del .form-del input::-ms-input-placeholder, .modal-del .form-del select::-ms-input-placeholder, .modal-add-bottle form .field::-ms-input-placeholder, .modal-up-bottle form .field::-ms-input-placeholder, .modal-add-year form .field::-ms-input-placeholder {
+    color: #818181; }
   .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
     color: #818181; }
 
@@ -994,7 +1203,8 @@ nav ul {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
   left: 0;
@@ -1002,6 +1212,7 @@ nav ul {
   bottom: 0;
   z-index: 100;
   opacity: 1;
+  -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out; }
 
 .hidden {
@@ -1012,8 +1223,14 @@ nav ul {
   display: none; }
 
 #pass-eye {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-right: -3rem; }
   #pass-eye i {
     margin: 0 1rem; }
@@ -1028,9 +1245,12 @@ nav ul {
     background-color: white;
     text-align: start; }
     .result_ac .content_result_ac > div {
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
       .result_ac .content_result_ac > div:hover {
-        transform: scale(1.07);
+        -webkit-transform: scale(1.07);
+            -ms-transform: scale(1.07);
+                transform: scale(1.07);
         cursor: pointer; }
 
 .connexion-modal {
@@ -1042,7 +1262,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .connexion-modal h2 {
     font-family: 'SourceB', sans-serif;
     font-size: 3rem;
@@ -1050,15 +1272,29 @@ nav ul {
   .connexion-modal .form {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .connexion-modal .form #submit {
       background-color: #3e0018;
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .modal-crea {
@@ -1070,7 +1306,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .modal-crea img {
     position: absolute;
     top: 1rem;
@@ -1082,10 +1320,23 @@ nav ul {
   .modal-crea .form-crea {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .modal-crea .form-crea select {
       width: 305px; }
     .modal-crea .form-crea #submitCrea {
@@ -1093,6 +1344,7 @@ nav ul {
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .modal-del {
@@ -1104,7 +1356,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .modal-del img {
     position: absolute;
     top: 1rem;
@@ -1116,10 +1370,23 @@ nav ul {
   .modal-del .form-del {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .modal-del .form-del select {
       width: 305px; }
     .modal-del .form-del #submitDel {
@@ -1127,6 +1394,7 @@ nav ul {
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .modal-del-bottle {
@@ -1138,7 +1406,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .modal-del-bottle img {
     position: absolute;
     top: 1rem;
@@ -1150,21 +1420,36 @@ nav ul {
   .modal-del-bottle .form-del-bottle {
     width: 60%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+            align-items: center; }
     .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear {
       background-color: #3e0018;
       color: #ff7b6c;
       border: none;
       margin: 2rem 0;
+      -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
 
 .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
   position: absolute;
   top: 1rem;
   right: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 .msg_error {
@@ -1264,11 +1549,14 @@ nav ul {
     font-size: 1rem; } }
 
 #submitAdd, #submitUp, #submitAddYear {
-  align-self: center;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
   background-color: #3e0018;
   color: #ff7b6c;
   border: none;
   margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
 
 #champ-requis {
@@ -1289,7 +1577,9 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%); }
   .modal-add-bottle h2, .modal-up-bottle h2, .modal-add-year h2 {
     font-family: 'SourceB', sans-serif;
     font-size: 3rem;
@@ -1297,8 +1587,15 @@ nav ul {
   .modal-add-bottle form, .modal-up-bottle form, .modal-add-year form {
     width: 90%;
     margin: 0 auto;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column; }
     .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
       width: 90%; }
     .modal-add-bottle form #cont-form-add-bottle, .modal-up-bottle form #cont-form-add-bottle, .modal-add-year form #cont-form-add-bottle {
@@ -1346,6 +1643,9 @@ nav ul {
         grid-column: 1/5;
         grid-row: 6;
         align-self: center;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
         display: flex; }
         .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #container-photo img {
           display: block;
@@ -1354,7 +1654,9 @@ nav ul {
           margin-left: 1rem; }
         .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
           margin-left: 8rem;
-          align-self: center; }
+          -webkit-align-self: center;
+              -ms-flex-item-align: center;
+                  align-self: center; }
         .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
           width: 4rem; }
       .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {

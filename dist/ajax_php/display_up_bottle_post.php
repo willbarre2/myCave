@@ -1,19 +1,19 @@
 <?php
 require dirname(__DIR__) . '/connect.php';
-$bottle_id = intval($_POST['bottleID']);
+$year_id = intval($_POST['yearID']);
 
 $req = $db->prepare(
-	"SELECT b.id_bottle, b.nom, b.cepage, b.region, b.pays, y.annee, y.descri, y.photo, y.stock, c.type
-	FROM bottle b
-	INNER JOIN year y
-	ON b.id_bottle = y.id_to_bottle
+	"SELECT y.id_year, y.annee, y.descri, y.photo, y.stock, b.id_bottle, b.nom, b.cepage, b.region, b.pays, c.type
+	FROM year y
+	INNER JOIN bottle b
+	ON y.id_to_bottle = b.id_bottle
     INNER JOIN category c
     ON b.id_to_category = c.id_category   
-	WHERE b.id_bottle = :id
+	WHERE y.id_year = :id
 "
 );
 
-$req->bindValue(':id', $bottle_id, PDO::PARAM_INT);
+$req->bindValue(':id', $year_id, PDO::PARAM_INT);
 
 $req->execute();
 

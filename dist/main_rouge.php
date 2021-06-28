@@ -5,13 +5,15 @@ require 'connect.php';
 <!-- requette pour pagination -->
 <?php
 $req = $db->query(
-    "SELECT COUNT(id_bottle) AS count_bottles
-	FROM bottle
-    WHERE bottle.id_to_category = 1 
+    "SELECT COUNT(id_year) AS count_years
+	FROM year y
+    INNER JOIN bottle b
+    ON y.id_to_bottle = b.id_bottle
+    WHERE b.id_to_category = 1 
 "
 );
 $result = $req->fetchObject();
-$count_bottles = $result->count_bottles;
+$count_bottles = $result->count_years;
 $per_page = 4;
 $nb_pages = ceil($count_bottles / $per_page); // arrondie au chiffre sup de la division
 
@@ -68,12 +70,13 @@ if (isset($_GET['page']) && $_GET['page'] > 0 && $_GET['page'] <= $nb_pages) {
 $req = $db->prepare(
 
     "SELECT *
-        FROM bottle
-        INNER JOIN category
-        ON bottle.id_to_category = category.id_category
-        INNER JOIN year
-        ON bottle.id_bottle = year.id_to_bottle
-        WHERE category.id_category = 1
+        FROM year y
+        INNER JOIN bottle b
+        ON y.id_to_bottle = b.id_bottle
+        INNER JOIN category c
+        ON b.id_to_category = c.id_category
+        WHERE c.id_category = 1
+        ORDER BY b.nom
         LIMIT :offset, :per_page
         "
 );
@@ -87,7 +90,9 @@ $req->execute();
     <article class="cards">
         <?php if (isset($_SESSION['role'])) : ?>
             <div class="del-creat-cont">
-                <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression" class="btn-del" data-id="<?php echo $cards->id_bottle ?>"><img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition" class="btn-up" data-id="<?php echo $cards->id_bottle ?>">
+                <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon de suppression" class="btn-del" data-id="<?php echo $cards->id_year ?>">
+                <img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition" class="btn-up" data-id="<?php echo $cards->id_year ?>">
+                <img src="./assets/img/logos/icon_year_bx.svg" alt="icon d'ajout d'année" class="btn-add-year" data-id="<?php echo $cards->id_bottle ?>">
             </div>
         <?php endif; ?>
         <div class="card-cont">

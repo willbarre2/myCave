@@ -19,6 +19,7 @@ $photo_error = $photo['error'];
 $photo_name = uniqid() . '_' . $photo['name'];
 $current_picture = $_POST['current_picture'];
 $current_id = intval($_POST['current_id']);
+$current_id_bottle =intval($_POST['current_id_bottle']);
 $generic = 'generic.jpg';
 $ext = array('png', 'jpg', 'jpeg');
 $type = intval($_POST['type']);
@@ -63,9 +64,9 @@ if ($name == '') {
             $req = $db->prepare(
                 "UPDATE bottle
                 SET nom = :nom$sql_cepage$sql_region$sql_pays, id_to_user = :iduser, id_to_category = :idcat
-                WHERE id_bottle = $current_id;
+                WHERE id_bottle = $current_id_bottle;
                 UPDATE year
-                SET annee = :annee$sql_descri, id_to_bottle = $current_id, photo = :photo, stock = :stock
+                SET annee = :annee$sql_descri, id_to_bottle = $current_id_bottle, photo = :photo, stock = :stock
                 WHERE id_year = $current_id
             "
             );

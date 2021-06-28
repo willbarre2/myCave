@@ -1,7 +1,6 @@
 <?php
 require dirname(__DIR__) . '/connect.php';
 
-
 $year_id = intval($_POST['yearId']);
 $bottle_id = intval($_POST['bottleId']);
 
@@ -10,39 +9,34 @@ $bottle_id = intval($_POST['bottleId']);
 $req = $db->prepare(
     "SELECT photo
 	FROM year y
-	WHERE id_to_bottle = :idb;
+	WHERE id_year = :idy;
 "
 );
 
-$req->bindValue(':idb', $bottle_id, PDO::PARAM_INT);
+$req->bindValue(':idy', $year_id, PDO::PARAM_INT);
 $req->execute();
-while ($resultat = $req->fetchObject()) {
-    $tof = "../assets/img/photos/$resultat->photo";
+$resultat = $req->fetchObject();
+$tof = "../assets/img/photos/$resultat->photo";
 
-    if ($resultat->photo != 'generic.jpg') :
-        unlink($tof);
-    endif;
+if ($resultat->photo != 'generic.jpg') {
+    unlink($tof);
 }
 
-
-// requette pour effacer bouteille dans DB
+// requette pour effacer année dans DB
 $req2 = $db->prepare(
-    "DELETE 
-	FROM bottle  
-	WHERE bottle.id_bottle = :idb;
-	DELETE 
+    "DELETE  
 	FROM year 
-	WHERE year.id_to_bottle = :idb
+	WHERE year.id_year = :idy
 "
 );
 
-$req2->bindValue(':idb', $bottle_id, PDO::PARAM_INT);
+$req2->bindValue(':idy', $year_id, PDO::PARAM_INT);
 $result = $req2->execute();
 
 $msg = array();
 if ($result) :
     $msg['error'] = FALSE;
-    $msg['msg'] = 'Bouteille effacé';
+    $msg['msg'] = 'Année effacé';
 else :
     $msg['error'] = TRUE;
     $msg['msg'] = 'Erreur lors de l\'effacement';

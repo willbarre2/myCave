@@ -52,6 +52,7 @@
                 </div>
                 <input type="hidden" name="current_picture" id="current_picture">
                 <input type="hidden" name="current_id" id="current_id">
+                <input type="hidden" name="current_id_bottle" id="current_id_bottle">
             </div>
 
             <button type="submit" id="submitUp">Modifier</button>
