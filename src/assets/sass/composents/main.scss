@@ -7,7 +7,7 @@
 
 #text-accueil {
     width: 100%;
-    height: 77vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -17,11 +17,13 @@
     h1 {
         font-family: 'JoseB', sans-serif;
         font-size: 4rem;
-        margin-bottom: 2rem;
+        margin: 0 2rem 2rem 2rem;
     }
 
     p {
+        font-family: 'Jose', sans-serif;
         font-size: 1.5rem;
+        margin: 0 2rem;
     }
 }
 
@@ -269,6 +271,17 @@
 
 @media #{$md} {
 
+    #text-accueil {
+
+        h1 {
+            font-size: 3rem;
+        }
+
+        p {
+            font-size: 1.35rem;
+        }
+    }
+
     .del-creat-cont {
         top: 202px;
     }
@@ -336,6 +349,17 @@
 
 @media #{$sm} {
 
+    #text-accueil {
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+    }
+
     .del-creat-cont {
         top: 144px;
     }
@@ -362,6 +386,17 @@
 }
 
 @media #{$xs} {
+
+    #text-accueil {
+
+        h1 {
+            font-size: 2rem;
+        }
+
+        p {
+            font-size: 1rem;
+        }
+    }
 
     #ratrape-header {
         height: 75px;
@@ -398,6 +433,18 @@
 }
 
 @media #{$xxs} {
+
+    #text-accueil {
+
+        h1 {
+            font-size: 1.8rem;
+        }
+
+        p {
+            font-size: 0.8rem;
+        }
+    }
+
     .card-cont {
 
         & div h4 {

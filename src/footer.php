@@ -1,6 +1,10 @@
+<?php
+$domaine = "http://localhost/myCave2/myCave/src/";
+?>
+
 </main>
 
-<footer>
+<footer <?php if ($domaine === $current_url || $domaine . "index.php" === $current_url) echo 'id="footer-index"'; ?>>
     <p id="footer">&copy; William Barré - 2021 - Tous droits réservés</p>
 </footer>
 

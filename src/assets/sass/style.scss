@@ -24,6 +24,11 @@ body {
     margin: 1rem;
 }
 
+#footer-index {
+    position: absolute;
+    bottom: 0;
+}
+
 .red {
     color: $red;
     text-decoration: underline;
@@ -37,6 +42,13 @@ body {
 
 .border_red {
     border: 3px solid $red !important;
+}
+
+@media #{$sm} {
+    #footer {
+        font-size: 1rem;
+        margin: 0.8rem;
+    }
 }
 
 @media #{$xs} {

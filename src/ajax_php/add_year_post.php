@@ -40,15 +40,15 @@ if ($photo_error > 0 && $photo_error < 3) {
             $id_session = intval($_SESSION['id']);
             $generic = 'generic.jpg';
             $req = $db->prepare(
-                "INSERT INTO year(annee, stock, descri, id_to_bottle, photo)
-                VALUES (:annee, :stock, :descri, :id_to_bottle, :photo)
+                "INSERT INTO year(annee, stock, descri, id_to_estate, photo)
+                VALUES (:annee, :stock, :descri, :id_to_estate, :photo)
             "
             );
 
             $req->bindValue(':annee', $year, PDO::PARAM_INT);
             $req->bindValue(':stock', $stock, PDO::PARAM_INT);
             $req->bindValue(':descri', $description, PDO::PARAM_STR);
-            $req->bindValue(':id_to_bottle', $id_bottle, PDO::PARAM_INT);
+            $req->bindValue(':id_to_estate', $id_bottle, PDO::PARAM_INT);
             if (!empty($photo['name'])) {
                 $req->bindValue(':photo', $photo_name, PDO::PARAM_STR);
             } else {

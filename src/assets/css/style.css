@@ -330,7 +330,7 @@ nav ul {
 
 #text-accueil {
   width: 100%;
-  height: 77vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -339,9 +339,11 @@ nav ul {
   #text-accueil h1 {
     font-family: 'JoseB', sans-serif;
     font-size: 4rem;
-    margin-bottom: 2rem; }
+    margin: 0 2rem 2rem 2rem; }
   #text-accueil p {
-    font-size: 1.5rem; }
+    font-family: 'Jose', sans-serif;
+    font-size: 1.5rem;
+    margin: 0 2rem; }
 
 .cards {
   position: relative;
@@ -506,6 +508,10 @@ nav ul {
       grid-row: 5; } }
 
 @media only screen and (max-width: 768px) {
+  #text-accueil h1 {
+    font-size: 3rem; }
+  #text-accueil p {
+    font-size: 1.35rem; }
   .del-creat-cont {
     top: 202px; }
   .card-cont {
@@ -546,6 +552,10 @@ nav ul {
       align-self: start; } }
 
 @media only screen and (max-width: 576px) {
+  #text-accueil h1 {
+    font-size: 2.5rem; }
+  #text-accueil p {
+    font-size: 1.2rem; }
   .del-creat-cont {
     top: 144px; }
   .card-cont div h4 {
@@ -559,6 +569,10 @@ nav ul {
     font-size: 1.5rem; } }
 
 @media only screen and (max-width: 425px) {
+  #text-accueil h1 {
+    font-size: 2rem; }
+  #text-accueil p {
+    font-size: 1rem; }
   #ratrape-header {
     height: 75px; }
   .del-creat-cont {
@@ -577,6 +591,10 @@ nav ul {
     margin-left: 1rem; } }
 
 @media only screen and (max-width: 320px) {
+  #text-accueil h1 {
+    font-size: 1.8rem; }
+  #text-accueil p {
+    font-size: 0.8rem; }
   .card-cont div h4 {
     font-size: 0.8rem; }
   .card-cont div p {
@@ -1701,6 +1719,10 @@ nav ul {
   font-size: 1.5rem;
   margin: 1rem; }
 
+#footer-index {
+  position: absolute;
+  bottom: 0; }
+
 .red {
   color: red;
   text-decoration: underline;
@@ -1712,6 +1734,11 @@ nav ul {
 
 .border_red {
   border: 3px solid red !important; }
+
+@media only screen and (max-width: 576px) {
+  #footer {
+    font-size: 1rem;
+    margin: 0.8rem; } }
 
 @media only screen and (max-width: 425px) {
   .red {

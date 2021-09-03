@@ -37,7 +37,7 @@ if (".btn-up" !== null && ".btn-up" !== "") {
         $("#stock-up").val(data.stock);
         $("#current_picture").val(data.photo);
         $("#current_id").val(data.id_year);
-        $("#current_id_bottle").val(data.id_bottle);
+        $("#current_id_bottle").val(data.id_estate);
       },
       "json"
     );
