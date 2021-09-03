@@ -42,6 +42,7 @@ if ($msg) {
     echo "<p class=\"msg_error\">{$msg_error}</p>";
 } else {
     $_SESSION['id']         = $result->id_user;
+    $_SESSION['name']         = $result->identifiant;
     $_SESSION['id_role']         = $result->id_role;
     $_SESSION['role']     = $result->role;
     echo "<p class=\"msg_success\">{$msg_success}</p>";

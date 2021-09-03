@@ -25,6 +25,21 @@
   width: 100%;
   height: 150px; }
 
+#text-accueil {
+  width: 100%;
+  height: 77vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center; }
+  #text-accueil h1 {
+    font-family: 'JoseB', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 2rem; }
+  #text-accueil p {
+    font-size: 1.5rem; }
+
 .cards {
   position: relative;
   width: 90%;
