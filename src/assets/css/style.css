@@ -1,117 +1,369 @@
 @font-face {
   font-family: "source";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
 
 @font-face {
   font-family: "sourceB";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
 
 @font-face {
   font-family: "jose";
-  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
 
 @font-face {
   font-family: "joseB";
-  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf");
+}
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
+#btn-con:hover,
+#btn-decon:hover,
+.connexion-modal .form #submit:hover,
+.modal-crea .form-crea #submitCrea:hover,
+.modal-del .form-del #submitDel:hover,
+.modal-del-bottle .form-del-bottle #submitDelBottle:hover,
+.modal-del-bottle .form-del-bottle #submitDelYear:hover,
+.close-modal:hover,
+.close-modal-crea:hover,
+.close-modal-add:hover,
+.close-modal-up:hover,
+.close-modal-del:hover,
+.close-modal-add-year:hover,
+.close-modal-del-bottle:hover,
+#submitAdd:hover,
+#submitUp:hover,
+#submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
+#btn-con,
+#btn-decon,
+.connexion-modal .form #submit,
+.modal-crea .form-crea #submitCrea,
+.modal-del .form-del #submitDel,
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear,
+#submitAdd,
+#submitUp,
+#submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+#btn-burger,
+#icon-bottle-white,
+.icon-user-white,
+.icon-user-del-white,
+.del-creat-cont img,
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 
-.cards, .connexion-modal, .modal-crea, .modal-del, .modal-del-bottle, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+.cards,
+.connexion-modal,
+.modal-crea,
+.modal-del,
+.modal-del-bottle,
+.modal-add-bottle,
+.modal-up-bottle,
+.modal-add-year {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
+.result_ac .content_result_ac,
+.connexion-modal .form input,
+.modal-crea .form-crea input,
+.modal-crea .form-crea select,
+.modal-del .form-del input,
+.modal-del .form-del select,
+.modal-add-bottle form .field,
+.modal-up-bottle form .field,
+.modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
-  font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
-    color: #818181; }
+  font-size: 1.5rem;
+}
 
-.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
+.result_ac .content_result_ac::-webkit-input-placeholder,
+.connexion-modal .form input::-webkit-input-placeholder,
+.modal-crea .form-crea input::-webkit-input-placeholder,
+.modal-crea .form-crea select::-webkit-input-placeholder,
+.modal-del .form-del input::-webkit-input-placeholder,
+.modal-del .form-del select::-webkit-input-placeholder,
+.modal-add-bottle form .field::-webkit-input-placeholder,
+.modal-up-bottle form .field::-webkit-input-placeholder,
+.modal-add-year form .field::-webkit-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-moz-placeholder,
+.connexion-modal .form input::-moz-placeholder,
+.modal-crea .form-crea input::-moz-placeholder,
+.modal-crea .form-crea select::-moz-placeholder,
+.modal-del .form-del input::-moz-placeholder,
+.modal-del .form-del select::-moz-placeholder,
+.modal-add-bottle form .field::-moz-placeholder,
+.modal-up-bottle form .field::-moz-placeholder,
+.modal-add-year form .field::-moz-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac:-ms-input-placeholder,
+.connexion-modal .form input:-ms-input-placeholder,
+.modal-crea .form-crea input:-ms-input-placeholder,
+.modal-crea .form-crea select:-ms-input-placeholder,
+.modal-del .form-del input:-ms-input-placeholder,
+.modal-del .form-del select:-ms-input-placeholder,
+.modal-add-bottle form .field:-ms-input-placeholder,
+.modal-up-bottle form .field:-ms-input-placeholder,
+.modal-add-year form .field:-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-ms-input-placeholder,
+.connexion-modal .form input::-ms-input-placeholder,
+.modal-crea .form-crea input::-ms-input-placeholder,
+.modal-crea .form-crea select::-ms-input-placeholder,
+.modal-del .form-del input::-ms-input-placeholder,
+.modal-del .form-del select::-ms-input-placeholder,
+.modal-add-bottle form .field::-ms-input-placeholder,
+.modal-up-bottle form .field::-ms-input-placeholder,
+.modal-add-year form .field::-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::placeholder,
+.connexion-modal .form input::placeholder,
+.modal-crea .form-crea input::placeholder,
+.modal-crea .form-crea select::placeholder,
+.modal-del .form-del input::placeholder,
+.modal-del .form-del select::placeholder,
+.modal-add-bottle form .field::placeholder,
+.modal-up-bottle form .field::placeholder,
+.modal-add-year form .field::placeholder {
+  color: #818181;
+}
+
+.modal-add-bottle form label,
+.modal-up-bottle form label,
+.modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
 * {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 body {
   font-family: "source", sans-serif;
   color: #3e0018;
   background-image: url(../img/bg-bouteilles.jpg);
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+}
 
 @font-face {
   font-family: "source";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
 
 @font-face {
   font-family: "sourceB";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
 
 @font-face {
   font-family: "jose";
-  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
 
 @font-face {
   font-family: "joseB";
-  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf");
+}
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
+#btn-con:hover,
+#btn-decon:hover,
+.connexion-modal .form #submit:hover,
+.modal-crea .form-crea #submitCrea:hover,
+.modal-del .form-del #submitDel:hover,
+.modal-del-bottle .form-del-bottle #submitDelBottle:hover,
+.modal-del-bottle .form-del-bottle #submitDelYear:hover,
+.close-modal:hover,
+.close-modal-crea:hover,
+.close-modal-add:hover,
+.close-modal-up:hover,
+.close-modal-del:hover,
+.close-modal-add-year:hover,
+.close-modal-del-bottle:hover,
+#submitAdd:hover,
+#submitUp:hover,
+#submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
+#btn-con,
+#btn-decon,
+.connexion-modal .form #submit,
+.modal-crea .form-crea #submitCrea,
+.modal-del .form-del #submitDel,
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear,
+#submitAdd,
+#submitUp,
+#submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+#btn-burger,
+#icon-bottle-white,
+.icon-user-white,
+.icon-user-del-white,
+.del-creat-cont img,
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 
-.cards, .connexion-modal, .modal-crea, .modal-del, .modal-del-bottle, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+.cards,
+.connexion-modal,
+.modal-crea,
+.modal-del,
+.modal-del-bottle,
+.modal-add-bottle,
+.modal-up-bottle,
+.modal-add-year {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
+.result_ac .content_result_ac,
+.connexion-modal .form input,
+.modal-crea .form-crea input,
+.modal-crea .form-crea select,
+.modal-del .form-del input,
+.modal-del .form-del select,
+.modal-add-bottle form .field,
+.modal-up-bottle form .field,
+.modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
-  font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
-    color: #818181; }
+  font-size: 1.5rem;
+}
 
-.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
+.result_ac .content_result_ac::-webkit-input-placeholder,
+.connexion-modal .form input::-webkit-input-placeholder,
+.modal-crea .form-crea input::-webkit-input-placeholder,
+.modal-crea .form-crea select::-webkit-input-placeholder,
+.modal-del .form-del input::-webkit-input-placeholder,
+.modal-del .form-del select::-webkit-input-placeholder,
+.modal-add-bottle form .field::-webkit-input-placeholder,
+.modal-up-bottle form .field::-webkit-input-placeholder,
+.modal-add-year form .field::-webkit-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-moz-placeholder,
+.connexion-modal .form input::-moz-placeholder,
+.modal-crea .form-crea input::-moz-placeholder,
+.modal-crea .form-crea select::-moz-placeholder,
+.modal-del .form-del input::-moz-placeholder,
+.modal-del .form-del select::-moz-placeholder,
+.modal-add-bottle form .field::-moz-placeholder,
+.modal-up-bottle form .field::-moz-placeholder,
+.modal-add-year form .field::-moz-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac:-ms-input-placeholder,
+.connexion-modal .form input:-ms-input-placeholder,
+.modal-crea .form-crea input:-ms-input-placeholder,
+.modal-crea .form-crea select:-ms-input-placeholder,
+.modal-del .form-del input:-ms-input-placeholder,
+.modal-del .form-del select:-ms-input-placeholder,
+.modal-add-bottle form .field:-ms-input-placeholder,
+.modal-up-bottle form .field:-ms-input-placeholder,
+.modal-add-year form .field:-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-ms-input-placeholder,
+.connexion-modal .form input::-ms-input-placeholder,
+.modal-crea .form-crea input::-ms-input-placeholder,
+.modal-crea .form-crea select::-ms-input-placeholder,
+.modal-del .form-del input::-ms-input-placeholder,
+.modal-del .form-del select::-ms-input-placeholder,
+.modal-add-bottle form .field::-ms-input-placeholder,
+.modal-up-bottle form .field::-ms-input-placeholder,
+.modal-add-year form .field::-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::placeholder,
+.connexion-modal .form input::placeholder,
+.modal-crea .form-crea input::placeholder,
+.modal-crea .form-crea select::placeholder,
+.modal-del .form-del input::placeholder,
+.modal-del .form-del select::placeholder,
+.modal-add-bottle form .field::placeholder,
+.modal-up-bottle form .field::placeholder,
+.modal-add-year form .field::placeholder {
+  color: #818181;
+}
+
+.modal-add-bottle form label,
+.modal-up-bottle form label,
+.modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
-#nav-rouge, #nav-blanc, #nav-rose {
+#nav-rouge,
+#nav-blanc,
+#nav-rose {
   padding-bottom: .3rem;
   margin: 1rem 5vw;
   font-size: 2.5rem;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 header {
   position: fixed;
@@ -121,87 +373,153 @@ header {
   overflow: hidden;
   height: 150px;
   width: 100%;
-  transition: all 1s ease-in-out; }
-  header div img {
-    width: 250px;
-    margin: 3rem 0; }
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+header div img {
+  width: 250px;
+  margin: 3rem 0;
+}
 
 #nav-cont {
   width: 90%;
   height: 100%;
   margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
   justify-content: space-between;
-  align-items: center; }
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
 
 nav ul {
-  display: flex; }
-  nav ul li {
-    list-style: none;
-    transition: all 0.2s ease-in-out; }
-    nav ul li:hover {
-      transform: scale(1.07); }
-    nav ul li a {
-      text-decoration: none;
-      font-family: 'jose'; }
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+nav ul li:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-family: 'jose';
+}
 
 #nav-rouge {
-  color: #88002d; }
-  #nav-rouge:hover {
-    transform: scale(1.07);
-    color: rgba(136, 0, 45, 0.5); }
+  color: #88002d;
+}
+
+#nav-rouge:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  color: rgba(136, 0, 45, 0.5);
+}
 
 #nav-blanc {
-  color: #ffe5aa; }
-  #nav-blanc:hover {
-    transform: scale(1.07);
-    color: rgba(255, 229, 170, 0.5); }
+  color: #ffe5aa;
+}
+
+#nav-blanc:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  color: rgba(255, 229, 170, 0.5);
+}
 
 #nav-rose {
-  color: #ff7b6c; }
-  #nav-rose:hover {
-    transform: scale(1.07);
-    color: rgba(255, 123, 108, 0.5); }
+  color: #ff7b6c;
+}
+
+#nav-rose:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  color: rgba(255, 123, 108, 0.5);
+}
 
 .current_page {
-  border-bottom: 3px solid #88002d; }
-  .current_page:hover {
-    border-bottom-color: rgba(136, 0, 45, 0.5); }
+  border-bottom: 3px solid #88002d;
+}
 
-#btn-con, #btn-decon {
+.current_page:hover {
+  border-bottom-color: rgba(136, 0, 45, 0.5);
+}
+
+#btn-con,
+#btn-decon {
   margin: 3rem 0;
   background-color: white;
   color: #3e0018;
   border: none;
-  transition: all 0.2s ease-in-out; }
-  #btn-con a, #btn-decon a {
-    text-decoration: none;
-    color: #3e0018; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#btn-con a,
+#btn-decon a {
+  text-decoration: none;
+  color: #3e0018;
+}
 
 #btn-burger {
-  display: none; }
+  display: none;
+}
 
-#icon-bottle-white, .icon-user-white, .icon-user-del-white {
+#icon-bottle-white,
+.icon-user-white,
+.icon-user-del-white {
   position: absolute;
   z-index: 4;
   top: 25px;
   right: 21px;
   margin: 0;
   display: none;
-  transition: all 0.2s ease-in-out; }
-  #icon-bottle-white:hover, .icon-user-white:hover, .icon-user-del-white:hover {
-    transform: scale(1.07);
-    cursor: pointer; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#icon-bottle-white:hover,
+.icon-user-white:hover,
+.icon-user-del-white:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  cursor: pointer;
+}
 
 .icon-user-white {
   background: url("../img/logos/icon_user_plus_white.svg");
-  top: 87px; }
+  top: 87px;
+}
 
 .icon-user-del-white {
   background: url("../img/logos/icon_user_del_white.svg");
-  top: 150px; }
+  top: 150px;
+}
 
-#icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
+#icon-bottle-bx,
+.icon-user-bx,
+.icon-user-del-bx {
   width: 50px;
   height: 50px;
   position: fixed;
@@ -209,141 +527,356 @@ nav ul {
   top: 160px;
   right: 10px;
   margin: 0;
-  transition: all 0.2s ease-in-out; }
-  #icon-bottle-bx:hover, .icon-user-bx:hover, .icon-user-del-bx:hover {
-    transform: scale(1.07);
-    cursor: pointer; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#icon-bottle-bx:hover,
+.icon-user-bx:hover,
+.icon-user-del-bx:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  cursor: pointer;
+}
 
 .icon-user-bx {
   background: url("../img/logos/icon_user_plus.svg");
-  top: 220px; }
+  top: 220px;
+}
 
 .icon-user-del-bx {
   background: url("../img/logos/icon_user_del.svg");
-  top: 281px; }
+  top: 281px;
+}
 
 @media only screen and (max-width: 1200px) {
-  #nav-rouge, #nav-blanc, #nav-rose {
-    margin: 1rem 3vw; }
-  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx, .icon-user-bx {
-    right: 2px; } }
+
+  #nav-rouge,
+  #nav-blanc,
+  #nav-rose {
+    margin: 1rem 3vw;
+  }
+
+  #icon-bottle-bx,
+  .icon-user-bx,
+  .icon-user-del-bx,
+  .icon-user-bx {
+    right: 2px;
+  }
+}
 
 @media only screen and (max-width: 992px) {
-  #icon-bottle-white, .icon-user-white, .icon-user-del-white {
-    display: block; }
-  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
-    display: none; }
+
+  #icon-bottle-white,
+  .icon-user-white,
+  .icon-user-del-white {
+    display: block;
+  }
+
+  #icon-bottle-bx,
+  .icon-user-bx,
+  .icon-user-del-bx {
+    display: none;
+  }
+
   #nav-cont {
-    flex-direction: column; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
   nav ul {
-    flex-direction: column; }
-    nav ul li {
-      padding: 2rem 0; }
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  nav ul li {
+    padding: 2rem 0;
+  }
+
   #btn-burger {
     display: block;
     position: fixed;
     top: 12px;
     left: 16px;
     z-index: 3;
-    background: url(../img/logos/icon_burger.svg); }
-    #btn-burger.is-closed {
-      background: url(../img/logos/icon_burger.svg); }
-    #btn-burger.is-opened {
-      background: url(../img/logos/icon_croix.svg); }
+    background: url(../img/logos/icon_burger.svg);
+  }
+
+  #btn-burger.is-closed {
+    background: url(../img/logos/icon_burger.svg);
+  }
+
+  #btn-burger.is-opened {
+    background: url(../img/logos/icon_croix.svg);
+  }
+
   header.isOpen {
-    height: 633px; } }
+    height: 633px;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   header {
-    height: 75px; }
-    header.isOpen {
-      height: 527px; }
-    header div img {
-      margin: 1.2rem 0;
-      width: 150px; }
-  #icon-bottle-white, .icon-user-white, .icon-user-del-white {
-    right: 10px;
-    top: 25px; }
-  .icon-user-white {
-    top: 87px; }
+    height: 75px;
+  }
+
+  header.isOpen {
+    height: 527px;
+  }
+
+  header div img {
+    margin: 1.2rem 0;
+    width: 150px;
+  }
+
+  #icon-bottle-white,
+  .icon-user-white,
   .icon-user-del-white {
-    top: 150px; }
-  #icon-bottle-bx, .icon-user-bx, .icon-user-del-bx {
-    top: 160px; }
-  .icon-user-bx {
-    top: 220px; }
+    right: 10px;
+    top: 25px;
+  }
+
+  .icon-user-white {
+    top: 87px;
+  }
+
+  .icon-user-del-white {
+    top: 150px;
+  }
+
+  #icon-bottle-bx,
+  .icon-user-bx,
   .icon-user-del-bx {
-    top: 281px; } }
+    top: 160px;
+  }
+
+  .icon-user-bx {
+    top: 220px;
+  }
+
+  .icon-user-del-bx {
+    top: 281px;
+  }
+}
 
 @font-face {
   font-family: "source";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
 
 @font-face {
   font-family: "sourceB";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
 
 @font-face {
   font-family: "jose";
-  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
 
 @font-face {
   font-family: "joseB";
-  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf");
+}
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
+#btn-con:hover,
+#btn-decon:hover,
+.connexion-modal .form #submit:hover,
+.modal-crea .form-crea #submitCrea:hover,
+.modal-del .form-del #submitDel:hover,
+.modal-del-bottle .form-del-bottle #submitDelBottle:hover,
+.modal-del-bottle .form-del-bottle #submitDelYear:hover,
+.close-modal:hover,
+.close-modal-crea:hover,
+.close-modal-add:hover,
+.close-modal-up:hover,
+.close-modal-del:hover,
+.close-modal-add-year:hover,
+.close-modal-del-bottle:hover,
+#submitAdd:hover,
+#submitUp:hover,
+#submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
+#btn-con,
+#btn-decon,
+.connexion-modal .form #submit,
+.modal-crea .form-crea #submitCrea,
+.modal-del .form-del #submitDel,
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear,
+#submitAdd,
+#submitUp,
+#submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+#btn-burger,
+#icon-bottle-white,
+.icon-user-white,
+.icon-user-del-white,
+.del-creat-cont img,
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 
-.cards, .connexion-modal, .modal-crea, .modal-del, .modal-del-bottle, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+.cards,
+.connexion-modal,
+.modal-crea,
+.modal-del,
+.modal-del-bottle,
+.modal-add-bottle,
+.modal-up-bottle,
+.modal-add-year {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
+.result_ac .content_result_ac,
+.connexion-modal .form input,
+.modal-crea .form-crea input,
+.modal-crea .form-crea select,
+.modal-del .form-del input,
+.modal-del .form-del select,
+.modal-add-bottle form .field,
+.modal-up-bottle form .field,
+.modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
-  font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
-    color: #818181; }
+  font-size: 1.5rem;
+}
 
-.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
+.result_ac .content_result_ac::-webkit-input-placeholder,
+.connexion-modal .form input::-webkit-input-placeholder,
+.modal-crea .form-crea input::-webkit-input-placeholder,
+.modal-crea .form-crea select::-webkit-input-placeholder,
+.modal-del .form-del input::-webkit-input-placeholder,
+.modal-del .form-del select::-webkit-input-placeholder,
+.modal-add-bottle form .field::-webkit-input-placeholder,
+.modal-up-bottle form .field::-webkit-input-placeholder,
+.modal-add-year form .field::-webkit-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-moz-placeholder,
+.connexion-modal .form input::-moz-placeholder,
+.modal-crea .form-crea input::-moz-placeholder,
+.modal-crea .form-crea select::-moz-placeholder,
+.modal-del .form-del input::-moz-placeholder,
+.modal-del .form-del select::-moz-placeholder,
+.modal-add-bottle form .field::-moz-placeholder,
+.modal-up-bottle form .field::-moz-placeholder,
+.modal-add-year form .field::-moz-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac:-ms-input-placeholder,
+.connexion-modal .form input:-ms-input-placeholder,
+.modal-crea .form-crea input:-ms-input-placeholder,
+.modal-crea .form-crea select:-ms-input-placeholder,
+.modal-del .form-del input:-ms-input-placeholder,
+.modal-del .form-del select:-ms-input-placeholder,
+.modal-add-bottle form .field:-ms-input-placeholder,
+.modal-up-bottle form .field:-ms-input-placeholder,
+.modal-add-year form .field:-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-ms-input-placeholder,
+.connexion-modal .form input::-ms-input-placeholder,
+.modal-crea .form-crea input::-ms-input-placeholder,
+.modal-crea .form-crea select::-ms-input-placeholder,
+.modal-del .form-del input::-ms-input-placeholder,
+.modal-del .form-del select::-ms-input-placeholder,
+.modal-add-bottle form .field::-ms-input-placeholder,
+.modal-up-bottle form .field::-ms-input-placeholder,
+.modal-add-year form .field::-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::placeholder,
+.connexion-modal .form input::placeholder,
+.modal-crea .form-crea input::placeholder,
+.modal-crea .form-crea select::placeholder,
+.modal-del .form-del input::placeholder,
+.modal-del .form-del select::placeholder,
+.modal-add-bottle form .field::placeholder,
+.modal-up-bottle form .field::placeholder,
+.modal-add-year form .field::placeholder {
+  color: #818181;
+}
+
+.modal-add-bottle form label,
+.modal-up-bottle form label,
+.modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
 #ratrape-header {
   width: 100%;
-  height: 150px; }
+  height: 150px;
+}
 
 #text-accueil {
   width: 100%;
-  height: 80vh;
+  height: 77vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-  text-align: center; }
-  #text-accueil h1 {
-    font-family: 'JoseB', sans-serif;
-    font-size: 4rem;
-    margin: 0 2rem 2rem 2rem; }
-  #text-accueil p {
-    font-family: 'Jose', sans-serif;
-    font-size: 1.5rem;
-    margin: 0 2rem; }
+  text-align: center;
+}
+
+#text-accueil h1 {
+  font-family: 'JoseB', sans-serif;
+  font-size: 4rem;
+  margin: 0 2rem 2rem 2rem;
+}
+
+#text-accueil p {
+  font-family: 'Jose', sans-serif;
+  font-size: 1.5rem;
+  margin: 0 2rem;
+}
 
 .cards {
   position: relative;
@@ -351,311 +884,616 @@ nav ul {
   height: 600px;
   margin: 2.5rem auto;
   background: white;
-  border-radius: 15px; }
+  border-radius: 15px;
+}
 
 .del-creat-cont {
   position: absolute;
   top: 15px;
-  right: 0.4rem; }
-  .del-creat-cont img {
-    margin: 0 .4rem;
-    transition: all 0.2s ease-in-out; }
-    .del-creat-cont img:hover {
-      transform: scale(1.07);
-      cursor: pointer; }
+  right: 0.4rem;
+}
+
+.del-creat-cont img {
+  margin: 0 .4rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.del-creat-cont img:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  cursor: pointer;
+}
 
 .stock p {
-  color: #ff7b6c; }
+  color: #ff7b6c;
+}
 
 .card-cont {
   margin-right: 2rem;
   height: 600px;
   display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr 2fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
-  .card-cont div h4 {
-    color: #88002d;
-    font-family: 'jose';
-    font-size: 1.5rem; }
-  .card-cont div p {
-    margin-left: 1rem;
-    font-size: 1.3rem; }
-  .card-cont .photos-bottles {
-    grid-column: 1;
-    grid-row: 1 / 6;
-    place-self: center;
-    border-radius: 15px;
-    width: 250px;
-    height: 300px;
-    margin: 0 2rem; }
-  .card-cont h2 {
-    grid-column: 2 / 5;
-    grid-row: 1;
-    font-family: 'joseB';
-    font-size: 2.5rem; }
-  .card-cont .annee {
-    grid-column: 2 / 4;
-    grid-row: 2;
-    display: flex; }
-  .card-cont .cepage {
-    grid-column: 2 / 4;
-    grid-row: 3;
-    display: flex; }
-  .card-cont .pays {
-    grid-column: 4;
-    grid-row: 2;
-    display: flex; }
-  .card-cont .region {
-    grid-column: 4;
-    grid-row: 3;
-    display: flex; }
-  .card-cont .descri {
-    grid-column: 2;
-    grid-row: 4; }
-  .card-cont .textarea {
-    grid-column: 3 / 5;
-    grid-row: 5/6;
-    align-self: start; }
-    .card-cont .textarea p {
-      margin-left: -2rem;
-      margin-top: -4.5rem;
-      margin-bottom: 2rem; }
-  .card-cont .stock {
-    grid-column: 2/4;
-    grid-row: 5;
-    display: flex; }
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.card-cont div h4 {
+  color: #88002d;
+  font-family: 'jose';
+  font-size: 1.5rem;
+}
+
+.card-cont div p {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.card-cont .photos-bottles {
+  grid-column: 1;
+  grid-row: 1 / 6;
+  place-self: center;
+  border-radius: 15px;
+  width: 250px;
+  height: 300px;
+  margin: 0 2rem;
+}
+
+.card-cont h2 {
+  grid-column: 2 / 5;
+  grid-row: 1;
+  font-family: 'joseB';
+  font-size: 2.5rem;
+}
+
+.card-cont .annee {
+  grid-column: 2 / 4;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-cont .cepage {
+  grid-column: 2 / 4;
+  grid-row: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-cont .pays {
+  grid-column: 4;
+  grid-row: 2;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-cont .region {
+  grid-column: 4;
+  grid-row: 3;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.card-cont .descri {
+  grid-column: 2;
+  grid-row: 4;
+}
+
+.card-cont .textarea {
+  grid-column: 3 / 5;
+  grid-row: 5/6;
+  align-self: start;
+}
+
+.card-cont .textarea p {
+  margin-left: -2rem;
+  margin-top: -4.5rem;
+  margin-bottom: 2rem;
+}
+
+.card-cont .stock {
+  grid-column: 2/4;
+  grid-row: 5;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
 
 .navigation {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   font-family: 'joseB';
   font-size: 2rem;
-  margin-top: 2rem; }
+  margin-top: 2rem;
+}
 
 .navigation li {
   margin: 0 20px;
-  list-style: none; }
+  list-style: none;
+}
 
 .navigation li a {
-  color: #3e0018; }
+  color: #3e0018;
+}
 
 .disabled a {
   opacity: 0.4;
-  cursor: not-allowed; }
+  cursor: not-allowed;
+}
 
 .active {
   color: red;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
   transform: scale(1.1);
-  cursor: not-allowed; }
+  cursor: not-allowed;
+}
 
 .active a {
-  color: red !important; }
+  color: red !important;
+}
 
 @media only screen and (max-width: 1200px) {
   .card-cont div h4 {
-    font-size: 1.3rem; }
+    font-size: 1.3rem;
+  }
+
   .card-cont div p {
-    font-size: 1rem; }
+    font-size: 1rem;
+  }
+
   .card-cont .textarea p {
-    margin-left: -1rem; }
+    margin-left: -1rem;
+  }
+
   .card-cont .photos-bottles {
     width: 200px;
-    height: 240px; }
+    height: 240px;
+  }
+
   .card-cont h2 {
-    font-size: 2rem; } }
+    font-size: 2rem;
+  }
+}
 
 @media only screen and (max-width: 992px) {
   .card-cont {
     margin: 2rem;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     grid-template-columns: 40% 60%;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr; }
-    .card-cont .photos-bottles {
-      grid-column: 1;
-      grid-row: 1;
-      width: 150px;
-      height: 180px;
-      margin-top: 2rem; }
-    .card-cont h2 {
-      grid-column: 2;
-      grid-row: 1; }
-    .card-cont .annee {
-      grid-column: 1;
-      grid-row: 2; }
-    .card-cont .cepage {
-      grid-column: 1;
-      grid-row: 3; }
-    .card-cont .pays {
-      grid-column: 2;
-      grid-row: 2; }
-    .card-cont .region {
-      grid-column: 2;
-      grid-row: 3; }
-    .card-cont .descri {
-      grid-column: 1;
-      grid-row: 4; }
-    .card-cont .textarea {
-      grid-column: 2;
-      grid-row: 4/6;
-      align-self: center; }
-      .card-cont .textarea p {
-        margin-left: 0;
-        margin-top: -1.5rem; }
-    .card-cont .stock {
-      grid-column: 1;
-      grid-row: 5; } }
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+
+  .card-cont .photos-bottles {
+    grid-column: 1;
+    grid-row: 1;
+    width: 150px;
+    height: 180px;
+    margin-top: 2rem;
+  }
+
+  .card-cont h2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .card-cont .annee {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .card-cont .cepage {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .card-cont .pays {
+    grid-column: 2;
+    grid-row: 2;
+  }
+
+  .card-cont .region {
+    grid-column: 2;
+    grid-row: 3;
+  }
+
+  .card-cont .descri {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .card-cont .textarea {
+    grid-column: 2;
+    grid-row: 4/6;
+    align-self: center;
+  }
+
+  .card-cont .textarea p {
+    margin-left: 0;
+    margin-top: -1.5rem;
+  }
+
+  .card-cont .stock {
+    grid-column: 1;
+    grid-row: 5;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   #text-accueil h1 {
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
+
   #text-accueil p {
-    font-size: 1.35rem; }
+    font-size: 1.35rem;
+  }
+
   .del-creat-cont {
-    top: 202px; }
+    top: 202px;
+  }
+
   .card-cont {
     grid-template-columns: 40% 60%;
-    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr; }
-    .card-cont .photos-bottles {
-      grid-column: 1;
-      grid-row: 1;
-      width: 150px;
-      height: 180px;
-      margin-top: 2rem; }
-    .card-cont h2 {
-      grid-column: 2;
-      grid-row: 1; }
-    .card-cont .annee {
-      grid-column: 1 / 3;
-      grid-row: 2; }
-    .card-cont .cepage {
-      grid-column: 1 / 3;
-      grid-row: 3; }
-    .card-cont .pays {
-      grid-column: 1 / 3;
-      grid-row: 4; }
-    .card-cont .region {
-      grid-column: 1 / 3;
-      grid-row: 5; }
-    .card-cont .descri {
-      grid-column: 1 / 3;
-      grid-row: 6; }
-    .card-cont .textarea {
-      grid-column: 1 / 3;
-      grid-row: 7; }
-      .card-cont .textarea p {
-        margin-top: -0.5rem; }
-    .card-cont .stock {
-      grid-column: 1 / 3;
-      grid-row: 8;
-      align-self: start; } }
+    grid-template-rows: 2fr 1fr 1fr 1fr 1fr 1fr 2fr 1fr;
+  }
+
+  .card-cont .photos-bottles {
+    grid-column: 1;
+    grid-row: 1;
+    width: 150px;
+    height: 180px;
+    margin-top: 2rem;
+  }
+
+  .card-cont h2 {
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .card-cont .annee {
+    grid-column: 1 / 3;
+    grid-row: 2;
+  }
+
+  .card-cont .cepage {
+    grid-column: 1 / 3;
+    grid-row: 3;
+  }
+
+  .card-cont .pays {
+    grid-column: 1 / 3;
+    grid-row: 4;
+  }
+
+  .card-cont .region {
+    grid-column: 1 / 3;
+    grid-row: 5;
+  }
+
+  .card-cont .descri {
+    grid-column: 1 / 3;
+    grid-row: 6;
+  }
+
+  .card-cont .textarea {
+    grid-column: 1 / 3;
+    grid-row: 7;
+  }
+
+  .card-cont .textarea p {
+    margin-top: -0.5rem;
+  }
+
+  .card-cont .stock {
+    grid-column: 1 / 3;
+    grid-row: 8;
+    align-self: start;
+  }
+}
 
 @media only screen and (max-width: 576px) {
   #text-accueil h1 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   #text-accueil p {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+  }
+
   .del-creat-cont {
-    top: 144px; }
+    top: 144px;
+  }
+
   .card-cont div h4 {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+  }
+
   .card-cont div p {
-    font-size: 0.90rem; }
+    font-size: 0.90rem;
+  }
+
   .card-cont .photos-bottles {
     width: 100px;
-    height: 120px; }
+    height: 120px;
+  }
+
   .card-cont h2 {
-    font-size: 1.5rem; } }
+    font-size: 1.5rem;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   #text-accueil h1 {
-    font-size: 2rem; }
+    font-size: 2rem;
+  }
+
   #text-accueil p {
-    font-size: 1rem; }
+    font-size: 1rem;
+  }
+
   #ratrape-header {
-    height: 75px; }
+    height: 75px;
+  }
+
   .del-creat-cont {
-    right: 5px; }
-    .del-creat-cont img {
-      margin: 0 0.2rem; }
+    right: 5px;
+  }
+
+  .del-creat-cont img {
+    margin: 0 0.2rem;
+  }
+
   .card-cont div h4 {
-    font-size: 1rem; }
+    font-size: 1rem;
+  }
+
   .card-cont div p {
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+  }
+
   .card-cont .photos-bottles {
     width: 100px;
-    height: 120px; }
+    height: 120px;
+  }
+
   .card-cont h2 {
     font-size: 1.2rem;
-    margin-left: 1rem; } }
+    margin-left: 1rem;
+  }
+}
 
 @media only screen and (max-width: 320px) {
   #text-accueil h1 {
-    font-size: 1.8rem; }
+    font-size: 1.8rem;
+  }
+
   #text-accueil p {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+  }
+
   .card-cont div h4 {
-    font-size: 0.8rem; }
+    font-size: 0.8rem;
+  }
+
   .card-cont div p {
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+  }
+
   .card-cont h2 {
     font-size: 1.2rem;
-    margin-left: 1.5rem; } }
+    margin-left: 1.5rem;
+  }
+}
 
 @font-face {
   font-family: "source";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
 
 @font-face {
   font-family: "sourceB";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
 
 @font-face {
   font-family: "jose";
-  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
 
 @font-face {
   font-family: "joseB";
-  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf");
+}
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
+#btn-con:hover,
+#btn-decon:hover,
+.connexion-modal .form #submit:hover,
+.modal-crea .form-crea #submitCrea:hover,
+.modal-del .form-del #submitDel:hover,
+.modal-del-bottle .form-del-bottle #submitDelBottle:hover,
+.modal-del-bottle .form-del-bottle #submitDelYear:hover,
+.close-modal:hover,
+.close-modal-crea:hover,
+.close-modal-add:hover,
+.close-modal-up:hover,
+.close-modal-del:hover,
+.close-modal-add-year:hover,
+.close-modal-del-bottle:hover,
+#submitAdd:hover,
+#submitUp:hover,
+#submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
+#btn-con,
+#btn-decon,
+.connexion-modal .form #submit,
+.modal-crea .form-crea #submitCrea,
+.modal-del .form-del #submitDel,
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear,
+#submitAdd,
+#submitUp,
+#submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+#btn-burger,
+#icon-bottle-white,
+.icon-user-white,
+.icon-user-del-white,
+.del-creat-cont img,
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 
-.cards, .connexion-modal, .modal-crea, .modal-del, .modal-del-bottle, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+.cards,
+.connexion-modal,
+.modal-crea,
+.modal-del,
+.modal-del-bottle,
+.modal-add-bottle,
+.modal-up-bottle,
+.modal-add-year {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
+.result_ac .content_result_ac,
+.connexion-modal .form input,
+.modal-crea .form-crea input,
+.modal-crea .form-crea select,
+.modal-del .form-del input,
+.modal-del .form-del select,
+.modal-add-bottle form .field,
+.modal-up-bottle form .field,
+.modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
-  font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
-    color: #818181; }
+  font-size: 1.5rem;
+}
 
-.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
+.result_ac .content_result_ac::-webkit-input-placeholder,
+.connexion-modal .form input::-webkit-input-placeholder,
+.modal-crea .form-crea input::-webkit-input-placeholder,
+.modal-crea .form-crea select::-webkit-input-placeholder,
+.modal-del .form-del input::-webkit-input-placeholder,
+.modal-del .form-del select::-webkit-input-placeholder,
+.modal-add-bottle form .field::-webkit-input-placeholder,
+.modal-up-bottle form .field::-webkit-input-placeholder,
+.modal-add-year form .field::-webkit-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-moz-placeholder,
+.connexion-modal .form input::-moz-placeholder,
+.modal-crea .form-crea input::-moz-placeholder,
+.modal-crea .form-crea select::-moz-placeholder,
+.modal-del .form-del input::-moz-placeholder,
+.modal-del .form-del select::-moz-placeholder,
+.modal-add-bottle form .field::-moz-placeholder,
+.modal-up-bottle form .field::-moz-placeholder,
+.modal-add-year form .field::-moz-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac:-ms-input-placeholder,
+.connexion-modal .form input:-ms-input-placeholder,
+.modal-crea .form-crea input:-ms-input-placeholder,
+.modal-crea .form-crea select:-ms-input-placeholder,
+.modal-del .form-del input:-ms-input-placeholder,
+.modal-del .form-del select:-ms-input-placeholder,
+.modal-add-bottle form .field:-ms-input-placeholder,
+.modal-up-bottle form .field:-ms-input-placeholder,
+.modal-add-year form .field:-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-ms-input-placeholder,
+.connexion-modal .form input::-ms-input-placeholder,
+.modal-crea .form-crea input::-ms-input-placeholder,
+.modal-crea .form-crea select::-ms-input-placeholder,
+.modal-del .form-del input::-ms-input-placeholder,
+.modal-del .form-del select::-ms-input-placeholder,
+.modal-add-bottle form .field::-ms-input-placeholder,
+.modal-up-bottle form .field::-ms-input-placeholder,
+.modal-add-year form .field::-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::placeholder,
+.connexion-modal .form input::placeholder,
+.modal-crea .form-crea input::placeholder,
+.modal-crea .form-crea select::placeholder,
+.modal-del .form-del input::placeholder,
+.modal-del .form-del select::placeholder,
+.modal-add-bottle form .field::placeholder,
+.modal-up-bottle form .field::placeholder,
+.modal-add-year form .field::placeholder {
+  color: #818181;
+}
+
+.modal-add-bottle form label,
+.modal-up-bottle form label,
+.modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container, .modal-add-year-container, .modal-del-bottle-container {
+.connexion-modal-container,
+.modal-crea-container,
+.modal-add-bottle-container,
+.modal-up-bottle-container,
+.modal-del-container,
+.modal-add-year-container,
+.modal-del-bottle-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
@@ -664,36 +1502,59 @@ nav ul {
   bottom: 0;
   z-index: 100;
   opacity: 1;
-  transition: all 0.4s ease-in-out; }
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 
 .hidden {
   z-index: -1;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .pass_hide {
-  display: none; }
+  display: none;
+}
 
 #pass-eye {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin-right: -3rem; }
-  #pass-eye i {
-    margin: 0 1rem; }
+  margin-right: -3rem;
+}
+
+#pass-eye i {
+  margin: 0 1rem;
+}
 
 .result_ac {
-  position: relative; }
-  .result_ac .content_result_ac {
-    position: absolute;
-    top: -32px;
-    left: -152px;
-    font-size: 1.5rem;
-    background-color: white;
-    text-align: start; }
-    .result_ac .content_result_ac > div {
-      transition: all 0.2s ease-in-out; }
-      .result_ac .content_result_ac > div:hover {
-        transform: scale(1.07);
-        cursor: pointer; }
+  position: relative;
+}
+
+.result_ac .content_result_ac {
+  position: absolute;
+  top: -32px;
+  left: -152px;
+  font-size: 1.5rem;
+  background-color: white;
+  text-align: start;
+}
+
+.result_ac .content_result_ac>div {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.result_ac .content_result_ac>div:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  cursor: pointer;
+}
 
 .connexion-modal {
   text-align: center;
@@ -704,24 +1565,47 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .connexion-modal h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .connexion-modal .form {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .connexion-modal .form #submit {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.connexion-modal h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.connexion-modal .form {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.connexion-modal .form #submit {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .modal-crea {
   text-align: center;
@@ -732,30 +1616,57 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .modal-crea img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
-  .modal-crea h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .modal-crea .form-crea {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .modal-crea .form-crea select {
-      width: 305px; }
-    .modal-crea .form-crea #submitCrea {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-crea img {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-crea h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.modal-crea .form-crea {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal-crea .form-crea select {
+  width: 305px;
+}
+
+.modal-crea .form-crea #submitCrea {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .modal-del {
   text-align: center;
@@ -766,30 +1677,57 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .modal-del img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
-  .modal-del h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .modal-del .form-del {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .modal-del .form-del select {
-      width: 305px; }
-    .modal-del .form-del #submitDel {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-del img {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-del h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.modal-del .form-del {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal-del .form-del select {
+  width: 305px;
+}
+
+.modal-del .form-del #submitDel {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .modal-del-bottle {
   text-align: center;
@@ -800,233 +1738,607 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .modal-del-bottle img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
-  .modal-del-bottle h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .modal-del-bottle .form-del-bottle {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+.modal-del-bottle img {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  transition: all 0.2s ease-in-out; }
+}
+
+.modal-del-bottle h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.modal-del-bottle .form-del-bottle {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .msg_error {
   color: red;
   width: 100%;
   text-decoration: underline;
   margin: 1rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .msg_success {
   color: #add400;
   width: 100%;
   margin: 1rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 1200px) {
-  .connexion-modal, .modal-crea, .modal-del {
-    width: 50%; } }
+
+  .connexion-modal,
+  .modal-crea,
+  .modal-del {
+    width: 50%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .connexion-modal h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   .connexion-modal .form {
-    width: 80%; }
+    width: 80%;
+  }
+
   .modal-crea h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   .modal-crea .form-crea {
-    width: 80%; }
+    width: 80%;
+  }
+
   .modal-del h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   .modal-del .form-del {
-    width: 80%; }
+    width: 80%;
+  }
+
   #pass-eye {
-    margin-right: -1.6rem; }
-    #pass-eye i {
-      margin: 0 0.3rem; } }
+    margin-right: -1.6rem;
+  }
+
+  #pass-eye i {
+    margin: 0 0.3rem;
+  }
+}
 
 @media only screen and (max-width: 576px) {
-  .connexion-modal, .modal-crea, .modal-del {
-    width: 80%; } }
+
+  .connexion-modal,
+  .modal-crea,
+  .modal-del {
+    width: 80%;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   .result_ac .content_result_ac {
     left: -104px;
-    font-size: 1rem; }
+    font-size: 1rem;
+  }
+
   .connexion-modal {
-    width: 75%; }
-    .connexion-modal h2 {
-      font-size: 2rem; }
-    .connexion-modal .form input {
-      font-size: 1rem; }
-    .connexion-modal .form #submit {
-      font-size: 1.5rem; }
+    width: 75%;
+  }
+
+  .connexion-modal h2 {
+    font-size: 2rem;
+  }
+
+  .connexion-modal .form input {
+    font-size: 1rem;
+  }
+
+  .connexion-modal .form #submit {
+    font-size: 1.5rem;
+  }
+
   .modal-crea {
-    width: 75%; }
-    .modal-crea h2 {
-      font-size: 2rem; }
-    .modal-crea .form-crea input, .modal-crea .form-crea select {
-      font-size: 1rem; }
-    .modal-crea .form-crea select {
-      width: 210px; }
-    .modal-crea .form-crea #submitCrea {
-      font-size: 1.5rem; }
+    width: 75%;
+  }
+
+  .modal-crea h2 {
+    font-size: 2rem;
+  }
+
+  .modal-crea .form-crea input,
+  .modal-crea .form-crea select {
+    font-size: 1rem;
+  }
+
+  .modal-crea .form-crea select {
+    width: 210px;
+  }
+
+  .modal-crea .form-crea #submitCrea {
+    font-size: 1.5rem;
+  }
+
   .modal-del {
-    width: 75%; }
-    .modal-del h2 {
-      font-size: 2rem; }
-    .modal-del .form-del input, .modal-del .form-del select {
-      font-size: 1rem; }
-    .modal-del .form-del select {
-      width: 210px; }
-    .modal-del .form-del #submitDel {
-      font-size: 1.5rem; }
-  .msg_success, .msg_error {
-    font-size: 1.5rem; } }
+    width: 75%;
+  }
+
+  .modal-del h2 {
+    font-size: 2rem;
+  }
+
+  .modal-del .form-del input,
+  .modal-del .form-del select {
+    font-size: 1rem;
+  }
+
+  .modal-del .form-del select {
+    width: 210px;
+  }
+
+  .modal-del .form-del #submitDel {
+    font-size: 1.5rem;
+  }
+
+  .msg_success,
+  .msg_error {
+    font-size: 1.5rem;
+  }
+}
 
 @media only screen and (max-width: 320px) {
   .connexion-modal h2 {
-    font-size: 1.5rem; }
-  .connexion-modal div input, .connexion-modal div select {
-    font-size: 1rem; }
+    font-size: 1.5rem;
+  }
+
+  .connexion-modal div input,
+  .connexion-modal div select {
+    font-size: 1rem;
+  }
+
   .connexion-modal div #submit {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+  }
+
   .modal-crea h2 {
-    font-size: 1.5rem; }
-  .modal-crea div input, .modal-crea div select {
-    font-size: 1rem; }
+    font-size: 1.5rem;
+  }
+
+  .modal-crea div input,
+  .modal-crea div select {
+    font-size: 1rem;
+  }
+
   .modal-crea div #submitCrea {
-    font-size: 1.2rem; }
+    font-size: 1.2rem;
+  }
+
   .modal-del h2 {
-    font-size: 1.5rem; }
-  .modal-del div input, .modal-del div select {
-    font-size: 1rem; }
+    font-size: 1.5rem;
+  }
+
+  .modal-del div input,
+  .modal-del div select {
+    font-size: 1rem;
+  }
+
   .modal-del div #submitDel {
-    font-size: 1.2rem; }
-  .msg_success, .msg_error {
-    font-size: 1rem; } }
+    font-size: 1.2rem;
+  }
+
+  .msg_success,
+  .msg_error {
+    font-size: 1rem;
+  }
+}
 
 @font-face {
   font-family: "source";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
 
 @font-face {
   font-family: "sourceB";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
 
 @font-face {
   font-family: "jose";
-  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
 
 @font-face {
   font-family: "joseB";
-  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf");
+}
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
+#btn-con:hover,
+#btn-decon:hover,
+.connexion-modal .form #submit:hover,
+.modal-crea .form-crea #submitCrea:hover,
+.modal-del .form-del #submitDel:hover,
+.modal-del-bottle .form-del-bottle #submitDelBottle:hover,
+.modal-del-bottle .form-del-bottle #submitDelYear:hover,
+.close-modal:hover,
+.close-modal-crea:hover,
+.close-modal-add:hover,
+.close-modal-up:hover,
+.close-modal-del:hover,
+.close-modal-add-year:hover,
+.close-modal-del-bottle:hover,
+#submitAdd:hover,
+#submitUp:hover,
+#submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
+#btn-con,
+#btn-decon,
+.connexion-modal .form #submit,
+.modal-crea .form-crea #submitCrea,
+.modal-del .form-del #submitDel,
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear,
+#submitAdd,
+#submitUp,
+#submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+#btn-burger,
+#icon-bottle-white,
+.icon-user-white,
+.icon-user-del-white,
+.del-creat-cont img,
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 
-.cards, .connexion-modal, .modal-crea, .modal-del, .modal-del-bottle, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+.cards,
+.connexion-modal,
+.modal-crea,
+.modal-del,
+.modal-del-bottle,
+.modal-add-bottle,
+.modal-up-bottle,
+.modal-add-year {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
+.result_ac .content_result_ac,
+.connexion-modal .form input,
+.modal-crea .form-crea input,
+.modal-crea .form-crea select,
+.modal-del .form-del input,
+.modal-del .form-del select,
+.modal-add-bottle form .field,
+.modal-up-bottle form .field,
+.modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
-  font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
-    color: #818181; }
+  font-size: 1.5rem;
+}
 
-.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
+.result_ac .content_result_ac::-webkit-input-placeholder,
+.connexion-modal .form input::-webkit-input-placeholder,
+.modal-crea .form-crea input::-webkit-input-placeholder,
+.modal-crea .form-crea select::-webkit-input-placeholder,
+.modal-del .form-del input::-webkit-input-placeholder,
+.modal-del .form-del select::-webkit-input-placeholder,
+.modal-add-bottle form .field::-webkit-input-placeholder,
+.modal-up-bottle form .field::-webkit-input-placeholder,
+.modal-add-year form .field::-webkit-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-moz-placeholder,
+.connexion-modal .form input::-moz-placeholder,
+.modal-crea .form-crea input::-moz-placeholder,
+.modal-crea .form-crea select::-moz-placeholder,
+.modal-del .form-del input::-moz-placeholder,
+.modal-del .form-del select::-moz-placeholder,
+.modal-add-bottle form .field::-moz-placeholder,
+.modal-up-bottle form .field::-moz-placeholder,
+.modal-add-year form .field::-moz-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac:-ms-input-placeholder,
+.connexion-modal .form input:-ms-input-placeholder,
+.modal-crea .form-crea input:-ms-input-placeholder,
+.modal-crea .form-crea select:-ms-input-placeholder,
+.modal-del .form-del input:-ms-input-placeholder,
+.modal-del .form-del select:-ms-input-placeholder,
+.modal-add-bottle form .field:-ms-input-placeholder,
+.modal-up-bottle form .field:-ms-input-placeholder,
+.modal-add-year form .field:-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-ms-input-placeholder,
+.connexion-modal .form input::-ms-input-placeholder,
+.modal-crea .form-crea input::-ms-input-placeholder,
+.modal-crea .form-crea select::-ms-input-placeholder,
+.modal-del .form-del input::-ms-input-placeholder,
+.modal-del .form-del select::-ms-input-placeholder,
+.modal-add-bottle form .field::-ms-input-placeholder,
+.modal-up-bottle form .field::-ms-input-placeholder,
+.modal-add-year form .field::-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::placeholder,
+.connexion-modal .form input::placeholder,
+.modal-crea .form-crea input::placeholder,
+.modal-crea .form-crea select::placeholder,
+.modal-del .form-del input::placeholder,
+.modal-del .form-del select::placeholder,
+.modal-add-bottle form .field::placeholder,
+.modal-up-bottle form .field::placeholder,
+.modal-add-year form .field::placeholder {
+  color: #818181;
+}
+
+.modal-add-bottle form label,
+.modal-up-bottle form label,
+.modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
 @font-face {
   font-family: "source";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf");
+}
 
 @font-face {
   font-family: "sourceB";
-  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf"); }
+  src: url("../fonts/Source_Sans_Pro/SourceSansPro-Bold.ttf");
+}
 
 @font-face {
   font-family: "jose";
-  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Regular.ttf");
+}
 
 @font-face {
   font-family: "joseB";
-  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf"); }
+  src: url("../fonts/JosefinSans/JosefinSans-Bold.ttf");
+}
 
-#btn-con:hover, #btn-decon:hover, .connexion-modal .form #submit:hover, .modal-crea .form-crea #submitCrea:hover, .modal-del .form-del #submitDel:hover, .modal-del-bottle .form-del-bottle #submitDelBottle:hover, .modal-del-bottle .form-del-bottle #submitDelYear:hover, .close-modal:hover, .close-modal-crea:hover, .close-modal-add:hover, .close-modal-up:hover, .close-modal-del:hover, .close-modal-add-year:hover, .close-modal-del-bottle:hover, #submitAdd:hover, #submitUp:hover, #submitAddYear:hover {
+#btn-con:hover,
+#btn-decon:hover,
+.connexion-modal .form #submit:hover,
+.modal-crea .form-crea #submitCrea:hover,
+.modal-del .form-del #submitDel:hover,
+.modal-del-bottle .form-del-bottle #submitDelBottle:hover,
+.modal-del-bottle .form-del-bottle #submitDelYear:hover,
+.close-modal:hover,
+.close-modal-crea:hover,
+.close-modal-add:hover,
+.close-modal-up:hover,
+.close-modal-del:hover,
+.close-modal-add-year:hover,
+.close-modal-del-bottle:hover,
+#submitAdd:hover,
+#submitUp:hover,
+#submitAddYear:hover {
   cursor: pointer;
-  transform: scale(1.07); }
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+}
 
-#btn-con, #btn-decon, .connexion-modal .form #submit, .modal-crea .form-crea #submitCrea, .modal-del .form-del #submitDel, .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear, #submitAdd, #submitUp, #submitAddYear {
+#btn-con,
+#btn-decon,
+.connexion-modal .form #submit,
+.modal-crea .form-crea #submitCrea,
+.modal-del .form-del #submitDel,
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear,
+#submitAdd,
+#submitUp,
+#submitAddYear {
   padding: 2px 15px;
   border-radius: 30px;
   font-family: "sourceB";
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
-#btn-burger, #icon-bottle-white, .icon-user-white, .icon-user-del-white, .del-creat-cont img, .close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+#btn-burger,
+#icon-bottle-white,
+.icon-user-white,
+.icon-user-del-white,
+.del-creat-cont img,
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
   width: 40px;
-  height: 40px; }
+  height: 40px;
+}
 
-.cards, .connexion-modal, .modal-crea, .modal-del, .modal-del-bottle, .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45); }
+.cards,
+.connexion-modal,
+.modal-crea,
+.modal-del,
+.modal-del-bottle,
+.modal-add-bottle,
+.modal-up-bottle,
+.modal-add-year {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.45);
+}
 
-.result_ac .content_result_ac, .connexion-modal .form input, .modal-crea .form-crea input, .modal-crea .form-crea select, .modal-del .form-del input, .modal-del .form-del select, .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
+.result_ac .content_result_ac,
+.connexion-modal .form input,
+.modal-crea .form-crea input,
+.modal-crea .form-crea select,
+.modal-del .form-del input,
+.modal-del .form-del select,
+.modal-add-bottle form .field,
+.modal-up-bottle form .field,
+.modal-add-year form .field {
   border: none;
   border-radius: 5px;
   padding: 0.5rem 1rem;
   margin: 1rem 0;
   font-family: 'source', sans-serif;
-  font-size: 1.5rem; }
-  .result_ac .content_result_ac::placeholder, .connexion-modal .form input::placeholder, .modal-crea .form-crea input::placeholder, .modal-crea .form-crea select::placeholder, .modal-del .form-del input::placeholder, .modal-del .form-del select::placeholder, .modal-add-bottle form .field::placeholder, .modal-up-bottle form .field::placeholder, .modal-add-year form .field::placeholder {
-    color: #818181; }
+  font-size: 1.5rem;
+}
 
-.modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
+.result_ac .content_result_ac::-webkit-input-placeholder,
+.connexion-modal .form input::-webkit-input-placeholder,
+.modal-crea .form-crea input::-webkit-input-placeholder,
+.modal-crea .form-crea select::-webkit-input-placeholder,
+.modal-del .form-del input::-webkit-input-placeholder,
+.modal-del .form-del select::-webkit-input-placeholder,
+.modal-add-bottle form .field::-webkit-input-placeholder,
+.modal-up-bottle form .field::-webkit-input-placeholder,
+.modal-add-year form .field::-webkit-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-moz-placeholder,
+.connexion-modal .form input::-moz-placeholder,
+.modal-crea .form-crea input::-moz-placeholder,
+.modal-crea .form-crea select::-moz-placeholder,
+.modal-del .form-del input::-moz-placeholder,
+.modal-del .form-del select::-moz-placeholder,
+.modal-add-bottle form .field::-moz-placeholder,
+.modal-up-bottle form .field::-moz-placeholder,
+.modal-add-year form .field::-moz-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac:-ms-input-placeholder,
+.connexion-modal .form input:-ms-input-placeholder,
+.modal-crea .form-crea input:-ms-input-placeholder,
+.modal-crea .form-crea select:-ms-input-placeholder,
+.modal-del .form-del input:-ms-input-placeholder,
+.modal-del .form-del select:-ms-input-placeholder,
+.modal-add-bottle form .field:-ms-input-placeholder,
+.modal-up-bottle form .field:-ms-input-placeholder,
+.modal-add-year form .field:-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::-ms-input-placeholder,
+.connexion-modal .form input::-ms-input-placeholder,
+.modal-crea .form-crea input::-ms-input-placeholder,
+.modal-crea .form-crea select::-ms-input-placeholder,
+.modal-del .form-del input::-ms-input-placeholder,
+.modal-del .form-del select::-ms-input-placeholder,
+.modal-add-bottle form .field::-ms-input-placeholder,
+.modal-up-bottle form .field::-ms-input-placeholder,
+.modal-add-year form .field::-ms-input-placeholder {
+  color: #818181;
+}
+
+.result_ac .content_result_ac::placeholder,
+.connexion-modal .form input::placeholder,
+.modal-crea .form-crea input::placeholder,
+.modal-crea .form-crea select::placeholder,
+.modal-del .form-del input::placeholder,
+.modal-del .form-del select::placeholder,
+.modal-add-bottle form .field::placeholder,
+.modal-up-bottle form .field::placeholder,
+.modal-add-year form .field::placeholder {
+  color: #818181;
+}
+
+.modal-add-bottle form label,
+.modal-up-bottle form label,
+.modal-add-year form label {
   font-family: 'sourceB';
   font-size: 1.5rem;
   color: #88002d;
-  margin: 0 1rem; }
+  margin: 0 1rem;
+}
 
-.connexion-modal-container, .modal-crea-container, .modal-add-bottle-container, .modal-up-bottle-container, .modal-del-container, .modal-add-year-container, .modal-del-bottle-container {
+.connexion-modal-container,
+.modal-crea-container,
+.modal-add-bottle-container,
+.modal-up-bottle-container,
+.modal-del-container,
+.modal-add-year-container,
+.modal-del-bottle-container {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  -webkit-backdrop-filter: blur(5px);
   backdrop-filter: blur(5px);
   position: fixed;
   top: 0;
@@ -1035,36 +2347,59 @@ nav ul {
   bottom: 0;
   z-index: 100;
   opacity: 1;
-  transition: all 0.4s ease-in-out; }
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
 
 .hidden {
   z-index: -1;
-  opacity: 0; }
+  opacity: 0;
+}
 
 .pass_hide {
-  display: none; }
+  display: none;
+}
 
 #pass-eye {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
-  margin-right: -3rem; }
-  #pass-eye i {
-    margin: 0 1rem; }
+  margin-right: -3rem;
+}
+
+#pass-eye i {
+  margin: 0 1rem;
+}
 
 .result_ac {
-  position: relative; }
-  .result_ac .content_result_ac {
-    position: absolute;
-    top: -32px;
-    left: -152px;
-    font-size: 1.5rem;
-    background-color: white;
-    text-align: start; }
-    .result_ac .content_result_ac > div {
-      transition: all 0.2s ease-in-out; }
-      .result_ac .content_result_ac > div:hover {
-        transform: scale(1.07);
-        cursor: pointer; }
+  position: relative;
+}
+
+.result_ac .content_result_ac {
+  position: absolute;
+  top: -32px;
+  left: -152px;
+  font-size: 1.5rem;
+  background-color: white;
+  text-align: start;
+}
+
+.result_ac .content_result_ac>div {
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.result_ac .content_result_ac>div:hover {
+  -webkit-transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  transform: scale(1.07);
+  cursor: pointer;
+}
 
 .connexion-modal {
   text-align: center;
@@ -1075,24 +2410,47 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .connexion-modal h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .connexion-modal .form {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .connexion-modal .form #submit {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.connexion-modal h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.connexion-modal .form {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.connexion-modal .form #submit {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .modal-crea {
   text-align: center;
@@ -1103,30 +2461,57 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .modal-crea img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
-  .modal-crea h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .modal-crea .form-crea {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .modal-crea .form-crea select {
-      width: 305px; }
-    .modal-crea .form-crea #submitCrea {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-crea img {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-crea h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.modal-crea .form-crea {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal-crea .form-crea select {
+  width: 305px;
+}
+
+.modal-crea .form-crea #submitCrea {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .modal-del {
   text-align: center;
@@ -1137,30 +2522,57 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .modal-del img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
-  .modal-del h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .modal-del .form-del {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .modal-del .form-del select {
-      width: 305px; }
-    .modal-del .form-del #submitDel {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-del img {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.modal-del h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.modal-del .form-del {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal-del .form-del select {
+  width: 305px;
+}
+
+.modal-del .form-del #submitDel {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .modal-del-bottle {
   text-align: center;
@@ -1171,149 +2583,282 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .modal-del-bottle img {
-    position: absolute;
-    top: 1rem;
-    right: 1rem; }
-  .modal-del-bottle h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .modal-del-bottle .form-del-bottle {
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; }
-    .modal-del-bottle .form-del-bottle #submitDelBottle, .modal-del-bottle .form-del-bottle #submitDelYear {
-      background-color: #3e0018;
-      color: #ff7b6c;
-      border: none;
-      margin: 2rem 0;
-      transition: all 0.2s ease-in-out; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
 
-.close-modal, .close-modal-crea, .close-modal-add, .close-modal-up, .close-modal-del, .close-modal-add-year, .close-modal-del-bottle {
+.modal-del-bottle img {
   position: absolute;
   top: 1rem;
   right: 1rem;
-  transition: all 0.2s ease-in-out; }
+}
+
+.modal-del-bottle h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.modal-del-bottle .form-del-bottle {
+  width: 60%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.modal-del-bottle .form-del-bottle #submitDelBottle,
+.modal-del-bottle .form-del-bottle #submitDelYear {
+  background-color: #3e0018;
+  color: #ff7b6c;
+  border: none;
+  margin: 2rem 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+.close-modal,
+.close-modal-crea,
+.close-modal-add,
+.close-modal-up,
+.close-modal-del,
+.close-modal-add-year,
+.close-modal-del-bottle {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 .msg_error {
   color: red;
   width: 100%;
   text-decoration: underline;
   margin: 1rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 .msg_success {
   color: #add400;
   width: 100%;
   margin: 1rem;
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 @media only screen and (max-width: 1200px) {
-  .connexion-modal, .modal-crea, .modal-del {
-    width: 50%; } }
+
+  .connexion-modal,
+  .modal-crea,
+  .modal-del {
+    width: 50%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
   .connexion-modal h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   .connexion-modal .form {
-    width: 80%; }
+    width: 80%;
+  }
+
   .modal-crea h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   .modal-crea .form-crea {
-    width: 80%; }
+    width: 80%;
+  }
+
   .modal-del h2 {
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+  }
+
   .modal-del .form-del {
-    width: 80%; }
+    width: 80%;
+  }
+
   #pass-eye {
-    margin-right: -1.6rem; }
-    #pass-eye i {
-      margin: 0 0.3rem; } }
+    margin-right: -1.6rem;
+  }
+
+  #pass-eye i {
+    margin: 0 0.3rem;
+  }
+}
 
 @media only screen and (max-width: 576px) {
-  .connexion-modal, .modal-crea, .modal-del {
-    width: 80%; } }
+
+  .connexion-modal,
+  .modal-crea,
+  .modal-del {
+    width: 80%;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   .result_ac .content_result_ac {
     left: -104px;
-    font-size: 1rem; }
+    font-size: 1rem;
+  }
+
   .connexion-modal {
-    width: 75%; }
-    .connexion-modal h2 {
-      font-size: 2rem; }
-    .connexion-modal .form input {
-      font-size: 1rem; }
-    .connexion-modal .form #submit {
-      font-size: 1.5rem; }
+    width: 75%;
+  }
+
+  .connexion-modal h2 {
+    font-size: 2rem;
+  }
+
+  .connexion-modal .form input {
+    font-size: 1rem;
+  }
+
+  .connexion-modal .form #submit {
+    font-size: 1.5rem;
+  }
+
   .modal-crea {
-    width: 75%; }
-    .modal-crea h2 {
-      font-size: 2rem; }
-    .modal-crea .form-crea input, .modal-crea .form-crea select {
-      font-size: 1rem; }
-    .modal-crea .form-crea select {
-      width: 210px; }
-    .modal-crea .form-crea #submitCrea {
-      font-size: 1.5rem; }
+    width: 75%;
+  }
+
+  .modal-crea h2 {
+    font-size: 2rem;
+  }
+
+  .modal-crea .form-crea input,
+  .modal-crea .form-crea select {
+    font-size: 1rem;
+  }
+
+  .modal-crea .form-crea select {
+    width: 210px;
+  }
+
+  .modal-crea .form-crea #submitCrea {
+    font-size: 1.5rem;
+  }
+
   .modal-del {
-    width: 75%; }
-    .modal-del h2 {
-      font-size: 2rem; }
-    .modal-del .form-del input, .modal-del .form-del select {
-      font-size: 1rem; }
-    .modal-del .form-del select {
-      width: 210px; }
-    .modal-del .form-del #submitDel {
-      font-size: 1.5rem; }
-  .msg_success, .msg_error {
-    font-size: 1.5rem; } }
+    width: 75%;
+  }
+
+  .modal-del h2 {
+    font-size: 2rem;
+  }
+
+  .modal-del .form-del input,
+  .modal-del .form-del select {
+    font-size: 1rem;
+  }
+
+  .modal-del .form-del select {
+    width: 210px;
+  }
+
+  .modal-del .form-del #submitDel {
+    font-size: 1.5rem;
+  }
+
+  .msg_success,
+  .msg_error {
+    font-size: 1.5rem;
+  }
+}
 
 @media only screen and (max-width: 320px) {
   .connexion-modal h2 {
-    font-size: 1.5rem; }
-  .connexion-modal div input, .connexion-modal div select {
-    font-size: 1rem; }
-  .connexion-modal div #submit {
-    font-size: 1.2rem; }
-  .modal-crea h2 {
-    font-size: 1.5rem; }
-  .modal-crea div input, .modal-crea div select {
-    font-size: 1rem; }
-  .modal-crea div #submitCrea {
-    font-size: 1.2rem; }
-  .modal-del h2 {
-    font-size: 1.5rem; }
-  .modal-del div input, .modal-del div select {
-    font-size: 1rem; }
-  .modal-del div #submitDel {
-    font-size: 1.2rem; }
-  .msg_success, .msg_error {
-    font-size: 1rem; } }
+    font-size: 1.5rem;
+  }
 
-#submitAdd, #submitUp, #submitAddYear {
+  .connexion-modal div input,
+  .connexion-modal div select {
+    font-size: 1rem;
+  }
+
+  .connexion-modal div #submit {
+    font-size: 1.2rem;
+  }
+
+  .modal-crea h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-crea div input,
+  .modal-crea div select {
+    font-size: 1rem;
+  }
+
+  .modal-crea div #submitCrea {
+    font-size: 1.2rem;
+  }
+
+  .modal-del h2 {
+    font-size: 1.5rem;
+  }
+
+  .modal-del div input,
+  .modal-del div select {
+    font-size: 1rem;
+  }
+
+  .modal-del div #submitDel {
+    font-size: 1.2rem;
+  }
+
+  .msg_success,
+  .msg_error {
+    font-size: 1rem;
+  }
+}
+
+#submitAdd,
+#submitUp,
+#submitAddYear {
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
   align-self: center;
   background-color: #3e0018;
   color: #ff7b6c;
   border: none;
   margin: 2rem 0;
-  transition: all 0.2s ease-in-out; }
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
 
 #champ-requis {
   position: absolute;
   bottom: 1rem;
   left: 4rem;
-  color: #88002d; }
+  color: #88002d;
+}
 
-#resultAdd, #resultUp, #resultAddYear {
-  font-size: 1.5rem; }
+#resultAdd,
+#resultUp,
+#resultAddYear {
+  font-size: 1.5rem;
+}
 
-.modal-add-bottle, .modal-up-bottle, .modal-add-year {
+.modal-add-bottle,
+.modal-up-bottle,
+.modal-add-year {
   text-align: center;
   background-color: #ff7b6c;
   border-radius: 30px;
@@ -1322,426 +2867,1008 @@ nav ul {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
-  .modal-add-bottle h2, .modal-up-bottle h2, .modal-add-year h2 {
-    font-family: 'SourceB', sans-serif;
-    font-size: 3rem;
-    margin: 2rem 0; }
-  .modal-add-bottle form, .modal-up-bottle form, .modal-add-year form {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column; }
-    .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
-      width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle, .modal-up-bottle form #cont-form-add-bottle, .modal-add-year form #cont-form-add-bottle {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr 2fr;
-      grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr;
-      justify-items: start; }
-      .modal-add-bottle form #cont-form-add-bottle #name-label, .modal-up-bottle form #cont-form-add-bottle #name-label, .modal-add-year form #cont-form-add-bottle #name-label {
-        grid-column: 1;
-        grid-row: 1;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #year-label, .modal-up-bottle form #cont-form-add-bottle #year-label, .modal-add-year form #cont-form-add-bottle #year-label {
-        grid-column: 1;
-        grid-row: 2;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes-label, .modal-up-bottle form #cont-form-add-bottle #grapes-label, .modal-add-year form #cont-form-add-bottle #grapes-label {
-        grid-column: 1;
-        grid-row: 3;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #country-label, .modal-up-bottle form #cont-form-add-bottle #country-label, .modal-add-year form #cont-form-add-bottle #country-label {
-        grid-column: 3;
-        grid-row: 2;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #region-label, .modal-up-bottle form #cont-form-add-bottle #region-label, .modal-add-year form #cont-form-add-bottle #region-label {
-        grid-column: 3;
-        grid-row: 3;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #description-label, .modal-up-bottle form #cont-form-add-bottle #description-label, .modal-add-year form #cont-form-add-bottle #description-label {
-        grid-column: 1;
-        grid-row: 4;
-        margin-top: 1rem; }
-      .modal-add-bottle form #cont-form-add-bottle #photo-label, .modal-up-bottle form #cont-form-add-bottle #photo-label, .modal-add-year form #cont-form-add-bottle #photo-label {
-        grid-column: 1;
-        grid-row: 5;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #type-label, .modal-up-bottle form #cont-form-add-bottle #type-label, .modal-add-year form #cont-form-add-bottle #type-label {
-        grid-column: 3;
-        grid-row: 5;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #stock-label, .modal-up-bottle form #cont-form-add-bottle #stock-label, .modal-add-year form #cont-form-add-bottle #stock-label {
-        grid-column: 1;
-        grid-row: 6;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-add-year form #cont-form-add-bottle #cont-tof-stock {
-        grid-column: 1/5;
-        grid-row: 6;
-        align-self: center;
-        display: flex; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #container-photo img {
-          display: block;
-          width: 62.5px;
-          height: 75px;
-          margin-left: 1rem; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
-          margin-left: 8rem;
-          align-self: center; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
-          width: 4rem; }
-      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
-        grid-column: 2 / 5;
-        grid-row: 1;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #year, .modal-add-bottle form #cont-form-add-bottle #year-up, .modal-up-bottle form #cont-form-add-bottle #year, .modal-up-bottle form #cont-form-add-bottle #year-up, .modal-add-year form #cont-form-add-bottle #year, .modal-add-year form #cont-form-add-bottle #year-up {
-        grid-column: 2;
-        grid-row: 2;
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
-        grid-column: 2;
-        grid-row: 3; }
-      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
-        grid-column: 4;
-        grid-row: 2; }
-      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
-        grid-column: 4;
-        grid-row: 3; }
-      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
-        resize: none;
-        grid-column: 2 / 5;
-        grid-row: 4;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
-        grid-column: 2;
-        grid-row: 5;
-        padding: .8rem 0 0 0;
-        font-size: 1.1rem;
-        color: #88002d; }
-      .modal-add-bottle form #cont-form-add-bottle #type, .modal-add-bottle form #cont-form-add-bottle #type-up, .modal-up-bottle form #cont-form-add-bottle #type, .modal-up-bottle form #cont-form-add-bottle #type-up, .modal-add-year form #cont-form-add-bottle #type, .modal-add-year form #cont-form-add-bottle #type-up {
-        grid-column: 4;
-        grid-row: 5;
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-up-bottle form #cont-form-add-bottle #stock, .modal-add-year form #cont-form-add-bottle #stock {
-        grid-column: 2;
-        grid-row: 6;
-        width: 4rem; }
-    .modal-add-bottle form #cont-form-add-year, .modal-up-bottle form #cont-form-add-year, .modal-add-year form #cont-form-add-year {
-      display: grid;
-      grid-template-columns: 1fr 2fr 1fr 2fr;
-      grid-template-rows: 1fr 2fr 1fr;
-      justify-items: start; }
-      .modal-add-bottle form #cont-form-add-year #year-add-year-label, .modal-up-bottle form #cont-form-add-year #year-add-year-label, .modal-add-year form #cont-form-add-year #year-add-year-label {
-        grid-column: 1;
-        grid-row: 1;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-year #description-add-year-label, .modal-up-bottle form #cont-form-add-year #description-add-year-label, .modal-add-year form #cont-form-add-year #description-add-year-label {
-        grid-column: 1;
-        grid-row: 2;
-        margin-top: 1rem; }
-      .modal-add-bottle form #cont-form-add-year #photo-add-year-label, .modal-up-bottle form #cont-form-add-year #photo-add-year-label, .modal-add-year form #cont-form-add-year #photo-add-year-label {
-        grid-column: 1;
-        grid-row: 3;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-year #stock-add-year-label, .modal-up-bottle form #cont-form-add-year #stock-add-year-label, .modal-add-year form #cont-form-add-year #stock-add-year-label {
-        grid-column: 3;
-        grid-row: 1;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-year #year-add-year, .modal-up-bottle form #cont-form-add-year #year-add-year, .modal-add-year form #cont-form-add-year #year-add-year {
-        grid-column: 2;
-        grid-row: 1;
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-year #description-add-year, .modal-up-bottle form #cont-form-add-year #description-add-year, .modal-add-year form #cont-form-add-year #description-add-year {
-        resize: none;
-        grid-column: 2 / 5;
-        grid-row: 2;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-year #photo-add-year, .modal-up-bottle form #cont-form-add-year #photo-add-year, .modal-add-year form #cont-form-add-year #photo-add-year {
-        grid-column: 2/5;
-        grid-row: 3;
-        padding: .8rem 0 0 0;
-        font-size: 1.1rem;
-        color: #88002d; }
-      .modal-add-bottle form #cont-form-add-year #stock-add-year, .modal-up-bottle form #cont-form-add-year #stock-add-year, .modal-add-year form #cont-form-add-year #stock-add-year {
-        grid-column: 4;
-        grid-row: 1;
-        width: 4rem; }
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.modal-add-bottle h2,
+.modal-up-bottle h2,
+.modal-add-year h2 {
+  font-family: 'SourceB', sans-serif;
+  font-size: 3rem;
+  margin: 2rem 0;
+}
+
+.modal-add-bottle form,
+.modal-up-bottle form,
+.modal-add-year form {
+  width: 90%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.modal-add-bottle form .field,
+.modal-up-bottle form .field,
+.modal-add-year form .field {
+  width: 90%;
+}
+
+.modal-add-bottle form #cont-form-add-bottle,
+.modal-up-bottle form #cont-form-add-bottle,
+.modal-add-year form #cont-form-add-bottle {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr;
+  justify-items: start;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #name-label,
+.modal-up-bottle form #cont-form-add-bottle #name-label,
+.modal-add-year form #cont-form-add-bottle #name-label {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #year-label,
+.modal-up-bottle form #cont-form-add-bottle #year-label,
+.modal-add-year form #cont-form-add-bottle #year-label {
+  grid-column: 1;
+  grid-row: 2;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #grapes-label,
+.modal-up-bottle form #cont-form-add-bottle #grapes-label,
+.modal-add-year form #cont-form-add-bottle #grapes-label {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #country-label,
+.modal-up-bottle form #cont-form-add-bottle #country-label,
+.modal-add-year form #cont-form-add-bottle #country-label {
+  grid-column: 3;
+  grid-row: 2;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #region-label,
+.modal-up-bottle form #cont-form-add-bottle #region-label,
+.modal-add-year form #cont-form-add-bottle #region-label {
+  grid-column: 3;
+  grid-row: 3;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #description-label,
+.modal-up-bottle form #cont-form-add-bottle #description-label,
+.modal-add-year form #cont-form-add-bottle #description-label {
+  grid-column: 1;
+  grid-row: 4;
+  margin-top: 1rem;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #photo-label,
+.modal-up-bottle form #cont-form-add-bottle #photo-label,
+.modal-add-year form #cont-form-add-bottle #photo-label {
+  grid-column: 1;
+  grid-row: 5;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #type-label,
+.modal-up-bottle form #cont-form-add-bottle #type-label,
+.modal-add-year form #cont-form-add-bottle #type-label {
+  grid-column: 3;
+  grid-row: 5;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #stock-label,
+.modal-up-bottle form #cont-form-add-bottle #stock-label,
+.modal-add-year form #cont-form-add-bottle #stock-label {
+  grid-column: 1;
+  grid-row: 6;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #cont-tof-stock,
+.modal-up-bottle form #cont-form-add-bottle #cont-tof-stock,
+.modal-add-year form #cont-form-add-bottle #cont-tof-stock {
+  grid-column: 1/5;
+  grid-row: 6;
+  align-self: center;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img,
+.modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img,
+.modal-add-year form #cont-form-add-bottle #cont-tof-stock #container-photo img {
+  display: block;
+  width: 62.5px;
+  height: 75px;
+  margin-left: 1rem;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up,
+.modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up,
+.modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
+  margin-left: 8rem;
+  -webkit-align-self: center;
+  -ms-flex-item-align: center;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up,
+.modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up,
+.modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
+  width: 4rem;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #name,
+.modal-add-bottle form #cont-form-add-bottle #name-up,
+.modal-up-bottle form #cont-form-add-bottle #name,
+.modal-up-bottle form #cont-form-add-bottle #name-up,
+.modal-add-year form #cont-form-add-bottle #name,
+.modal-add-year form #cont-form-add-bottle #name-up {
+  grid-column: 2 / 5;
+  grid-row: 1;
+  width: 96%;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #year,
+.modal-add-bottle form #cont-form-add-bottle #year-up,
+.modal-up-bottle form #cont-form-add-bottle #year,
+.modal-up-bottle form #cont-form-add-bottle #year-up,
+.modal-add-year form #cont-form-add-bottle #year,
+.modal-add-year form #cont-form-add-bottle #year-up {
+  grid-column: 2;
+  grid-row: 2;
+  width: 100%;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #grapes,
+.modal-add-bottle form #cont-form-add-bottle #grapes-up,
+.modal-up-bottle form #cont-form-add-bottle #grapes,
+.modal-up-bottle form #cont-form-add-bottle #grapes-up,
+.modal-add-year form #cont-form-add-bottle #grapes,
+.modal-add-year form #cont-form-add-bottle #grapes-up {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #country,
+.modal-add-bottle form #cont-form-add-bottle #country-up,
+.modal-up-bottle form #cont-form-add-bottle #country,
+.modal-up-bottle form #cont-form-add-bottle #country-up,
+.modal-add-year form #cont-form-add-bottle #country,
+.modal-add-year form #cont-form-add-bottle #country-up {
+  grid-column: 4;
+  grid-row: 2;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #region,
+.modal-add-bottle form #cont-form-add-bottle #region-up,
+.modal-up-bottle form #cont-form-add-bottle #region,
+.modal-up-bottle form #cont-form-add-bottle #region-up,
+.modal-add-year form #cont-form-add-bottle #region,
+.modal-add-year form #cont-form-add-bottle #region-up {
+  grid-column: 4;
+  grid-row: 3;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #description,
+.modal-add-bottle form #cont-form-add-bottle #description-up,
+.modal-up-bottle form #cont-form-add-bottle #description,
+.modal-up-bottle form #cont-form-add-bottle #description-up,
+.modal-add-year form #cont-form-add-bottle #description,
+.modal-add-year form #cont-form-add-bottle #description-up {
+  resize: none;
+  grid-column: 2 / 5;
+  grid-row: 4;
+  width: 96%;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #photo,
+.modal-add-bottle form #cont-form-add-bottle #photo-up,
+.modal-up-bottle form #cont-form-add-bottle #photo,
+.modal-up-bottle form #cont-form-add-bottle #photo-up,
+.modal-add-year form #cont-form-add-bottle #photo,
+.modal-add-year form #cont-form-add-bottle #photo-up {
+  grid-column: 2;
+  grid-row: 5;
+  padding: .8rem 0 0 0;
+  font-size: 1.1rem;
+  color: #88002d;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #type,
+.modal-add-bottle form #cont-form-add-bottle #type-up,
+.modal-up-bottle form #cont-form-add-bottle #type,
+.modal-up-bottle form #cont-form-add-bottle #type-up,
+.modal-add-year form #cont-form-add-bottle #type,
+.modal-add-year form #cont-form-add-bottle #type-up {
+  grid-column: 4;
+  grid-row: 5;
+  width: 100%;
+}
+
+.modal-add-bottle form #cont-form-add-bottle #stock,
+.modal-up-bottle form #cont-form-add-bottle #stock,
+.modal-add-year form #cont-form-add-bottle #stock {
+  grid-column: 2;
+  grid-row: 6;
+  width: 4rem;
+}
+
+.modal-add-bottle form #cont-form-add-year,
+.modal-up-bottle form #cont-form-add-year,
+.modal-add-year form #cont-form-add-year {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr 2fr;
+  grid-template-rows: 1fr 2fr 1fr;
+  justify-items: start;
+}
+
+.modal-add-bottle form #cont-form-add-year #year-add-year-label,
+.modal-up-bottle form #cont-form-add-year #year-add-year-label,
+.modal-add-year form #cont-form-add-year #year-add-year-label {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-year #description-add-year-label,
+.modal-up-bottle form #cont-form-add-year #description-add-year-label,
+.modal-add-year form #cont-form-add-year #description-add-year-label {
+  grid-column: 1;
+  grid-row: 2;
+  margin-top: 1rem;
+}
+
+.modal-add-bottle form #cont-form-add-year #photo-add-year-label,
+.modal-up-bottle form #cont-form-add-year #photo-add-year-label,
+.modal-add-year form #cont-form-add-year #photo-add-year-label {
+  grid-column: 1;
+  grid-row: 3;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-year #stock-add-year-label,
+.modal-up-bottle form #cont-form-add-year #stock-add-year-label,
+.modal-add-year form #cont-form-add-year #stock-add-year-label {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+}
+
+.modal-add-bottle form #cont-form-add-year #year-add-year,
+.modal-up-bottle form #cont-form-add-year #year-add-year,
+.modal-add-year form #cont-form-add-year #year-add-year {
+  grid-column: 2;
+  grid-row: 1;
+  width: 100%;
+}
+
+.modal-add-bottle form #cont-form-add-year #description-add-year,
+.modal-up-bottle form #cont-form-add-year #description-add-year,
+.modal-add-year form #cont-form-add-year #description-add-year {
+  resize: none;
+  grid-column: 2 / 5;
+  grid-row: 2;
+  width: 96%;
+}
+
+.modal-add-bottle form #cont-form-add-year #photo-add-year,
+.modal-up-bottle form #cont-form-add-year #photo-add-year,
+.modal-add-year form #cont-form-add-year #photo-add-year {
+  grid-column: 2/5;
+  grid-row: 3;
+  padding: .8rem 0 0 0;
+  font-size: 1.1rem;
+  color: #88002d;
+}
+
+.modal-add-bottle form #cont-form-add-year #stock-add-year,
+.modal-up-bottle form #cont-form-add-year #stock-add-year,
+.modal-add-year form #cont-form-add-year #stock-add-year {
+  grid-column: 4;
+  grid-row: 1;
+  width: 4rem;
+}
 
 @media only screen and (max-width: 1200px) {
-  .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
+
+  .modal-add-bottle form .field,
+  .modal-up-bottle form .field,
+  .modal-add-year form .field {
     font-size: 1rem;
-    padding: 0.4rem 0.8rem; }
-  .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
-    width: 95%; }
-  .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
-    width: 87%; }
-  .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
-    width: 87%; }
-  .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
-    width: 87%; }
-  .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
-    width: 95%; }
-  .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
+    padding: 0.4rem 0.8rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #name,
+  .modal-add-bottle form #cont-form-add-bottle #name-up,
+  .modal-up-bottle form #cont-form-add-bottle #name,
+  .modal-up-bottle form #cont-form-add-bottle #name-up,
+  .modal-add-year form #cont-form-add-bottle #name,
+  .modal-add-year form #cont-form-add-bottle #name-up {
+    width: 95%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #grapes,
+  .modal-add-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-up-bottle form #cont-form-add-bottle #grapes,
+  .modal-up-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-add-year form #cont-form-add-bottle #grapes,
+  .modal-add-year form #cont-form-add-bottle #grapes-up {
+    width: 87%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #country,
+  .modal-add-bottle form #cont-form-add-bottle #country-up,
+  .modal-up-bottle form #cont-form-add-bottle #country,
+  .modal-up-bottle form #cont-form-add-bottle #country-up,
+  .modal-add-year form #cont-form-add-bottle #country,
+  .modal-add-year form #cont-form-add-bottle #country-up {
+    width: 87%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #region,
+  .modal-add-bottle form #cont-form-add-bottle #region-up,
+  .modal-up-bottle form #cont-form-add-bottle #region,
+  .modal-up-bottle form #cont-form-add-bottle #region-up,
+  .modal-add-year form #cont-form-add-bottle #region,
+  .modal-add-year form #cont-form-add-bottle #region-up {
+    width: 87%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #description,
+  .modal-add-bottle form #cont-form-add-bottle #description-up,
+  .modal-up-bottle form #cont-form-add-bottle #description,
+  .modal-up-bottle form #cont-form-add-bottle #description-up,
+  .modal-add-year form #cont-form-add-bottle #description,
+  .modal-add-year form #cont-form-add-bottle #description-up {
+    width: 95%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #photo,
+  .modal-add-bottle form #cont-form-add-bottle #photo-up,
+  .modal-up-bottle form #cont-form-add-bottle #photo,
+  .modal-up-bottle form #cont-form-add-bottle #photo-up,
+  .modal-add-year form #cont-form-add-bottle #photo,
+  .modal-add-year form #cont-form-add-bottle #photo-up {
     padding-top: 1rem;
-    font-size: 0.8rem; } }
+    font-size: 0.8rem;
+  }
+}
 
 @media only screen and (max-width: 992px) {
-  .modal-add-bottle form .field, .modal-up-bottle form .field {
+
+  .modal-add-bottle form .field,
+  .modal-up-bottle form .field {
     font-size: 0.8rem;
-    padding: 0.3rem 0.6rem; }
-  .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up {
-    width: 94%; }
-  .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up {
-    width: 84%; }
-  .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up {
-    width: 84%; }
-  .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up {
-    width: 84%; }
-  .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up {
-    width: 94%; } }
+    padding: 0.3rem 0.6rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #name,
+  .modal-add-bottle form #cont-form-add-bottle #name-up,
+  .modal-up-bottle form #cont-form-add-bottle #name,
+  .modal-up-bottle form #cont-form-add-bottle #name-up {
+    width: 94%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #grapes,
+  .modal-add-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-up-bottle form #cont-form-add-bottle #grapes,
+  .modal-up-bottle form #cont-form-add-bottle #grapes-up {
+    width: 84%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #country,
+  .modal-add-bottle form #cont-form-add-bottle #country-up,
+  .modal-up-bottle form #cont-form-add-bottle #country,
+  .modal-up-bottle form #cont-form-add-bottle #country-up {
+    width: 84%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #region,
+  .modal-add-bottle form #cont-form-add-bottle #region-up,
+  .modal-up-bottle form #cont-form-add-bottle #region,
+  .modal-up-bottle form #cont-form-add-bottle #region-up {
+    width: 84%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #description,
+  .modal-add-bottle form #cont-form-add-bottle #description-up,
+  .modal-up-bottle form #cont-form-add-bottle #description,
+  .modal-up-bottle form #cont-form-add-bottle #description-up {
+    width: 94%;
+  }
+}
 
 @media only screen and (max-width: 768px) {
-  .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-    width: 85%; }
-    .modal-add-bottle h2, .modal-up-bottle h2, .modal-add-year h2 {
-      font-size: 2.5rem; }
-    .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
-      font-size: 0.8rem;
-      padding: 0.2rem 0.5rem; }
-    .modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
-      font-size: 1.2rem; }
-    .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
-      width: 97%; }
-    .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
-      width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
-      width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
-      width: 90%; }
-    .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
-      width: 97%; }
-    .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
-      padding-top: 0.6rem;
-      font-size: 0.7rem; }
-    .modal-add-bottle form #cont-form-add-year, .modal-up-bottle form #cont-form-add-year, .modal-add-year form #cont-form-add-year {
-      display: grid;
-      grid-template-columns: 1fr 3fr;
-      grid-template-rows: 1fr 2fr 1fr 1fr;
-      justify-items: start; }
-      .modal-add-bottle form #cont-form-add-year #year-add-year-label, .modal-up-bottle form #cont-form-add-year #year-add-year-label, .modal-add-year form #cont-form-add-year #year-add-year-label {
-        grid-column: 1;
-        grid-row: 1;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-year #description-add-year-label, .modal-up-bottle form #cont-form-add-year #description-add-year-label, .modal-add-year form #cont-form-add-year #description-add-year-label {
-        grid-column: 1;
-        grid-row: 2;
-        margin-top: 1rem; }
-      .modal-add-bottle form #cont-form-add-year #photo-add-year-label, .modal-up-bottle form #cont-form-add-year #photo-add-year-label, .modal-add-year form #cont-form-add-year #photo-add-year-label {
-        grid-column: 1;
-        grid-row: 3;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-year #stock-add-year-label, .modal-up-bottle form #cont-form-add-year #stock-add-year-label, .modal-add-year form #cont-form-add-year #stock-add-year-label {
-        grid-column: 1;
-        grid-row: 4;
-        align-self: center; }
-      .modal-add-bottle form #cont-form-add-year #year-add-year, .modal-up-bottle form #cont-form-add-year #year-add-year, .modal-add-year form #cont-form-add-year #year-add-year {
-        grid-column: 2;
-        grid-row: 1;
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-year #description-add-year, .modal-up-bottle form #cont-form-add-year #description-add-year, .modal-add-year form #cont-form-add-year #description-add-year {
-        resize: none;
-        grid-column: 2;
-        grid-row: 2;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-year #photo-add-year, .modal-up-bottle form #cont-form-add-year #photo-add-year, .modal-add-year form #cont-form-add-year #photo-add-year {
-        grid-column: 2;
-        grid-row: 3;
-        padding: .6rem 0 0 0;
-        font-size: 0.7rem;
-        color: #88002d; }
-      .modal-add-bottle form #cont-form-add-year #stock-add-year, .modal-up-bottle form #cont-form-add-year #stock-add-year, .modal-add-year form #cont-form-add-year #stock-add-year {
-        grid-column: 2;
-        grid-row: 4;
-        width: 4rem; } }
+
+  .modal-add-bottle,
+  .modal-up-bottle,
+  .modal-add-year {
+    width: 85%;
+  }
+
+  .modal-add-bottle h2,
+  .modal-up-bottle h2,
+  .modal-add-year h2 {
+    font-size: 2.5rem;
+  }
+
+  .modal-add-bottle form .field,
+  .modal-up-bottle form .field,
+  .modal-add-year form .field {
+    font-size: 0.8rem;
+    padding: 0.2rem 0.5rem;
+  }
+
+  .modal-add-bottle form label,
+  .modal-up-bottle form label,
+  .modal-add-year form label {
+    font-size: 1.2rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #name,
+  .modal-add-bottle form #cont-form-add-bottle #name-up,
+  .modal-up-bottle form #cont-form-add-bottle #name,
+  .modal-up-bottle form #cont-form-add-bottle #name-up,
+  .modal-add-year form #cont-form-add-bottle #name,
+  .modal-add-year form #cont-form-add-bottle #name-up {
+    width: 97%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #grapes,
+  .modal-add-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-up-bottle form #cont-form-add-bottle #grapes,
+  .modal-up-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-add-year form #cont-form-add-bottle #grapes,
+  .modal-add-year form #cont-form-add-bottle #grapes-up {
+    width: 90%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #country,
+  .modal-add-bottle form #cont-form-add-bottle #country-up,
+  .modal-up-bottle form #cont-form-add-bottle #country,
+  .modal-up-bottle form #cont-form-add-bottle #country-up,
+  .modal-add-year form #cont-form-add-bottle #country,
+  .modal-add-year form #cont-form-add-bottle #country-up {
+    width: 90%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #region,
+  .modal-add-bottle form #cont-form-add-bottle #region-up,
+  .modal-up-bottle form #cont-form-add-bottle #region,
+  .modal-up-bottle form #cont-form-add-bottle #region-up,
+  .modal-add-year form #cont-form-add-bottle #region,
+  .modal-add-year form #cont-form-add-bottle #region-up {
+    width: 90%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #description,
+  .modal-add-bottle form #cont-form-add-bottle #description-up,
+  .modal-up-bottle form #cont-form-add-bottle #description,
+  .modal-up-bottle form #cont-form-add-bottle #description-up,
+  .modal-add-year form #cont-form-add-bottle #description,
+  .modal-add-year form #cont-form-add-bottle #description-up {
+    width: 97%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #photo,
+  .modal-add-bottle form #cont-form-add-bottle #photo-up,
+  .modal-up-bottle form #cont-form-add-bottle #photo,
+  .modal-up-bottle form #cont-form-add-bottle #photo-up,
+  .modal-add-year form #cont-form-add-bottle #photo,
+  .modal-add-year form #cont-form-add-bottle #photo-up {
+    padding-top: 0.6rem;
+    font-size: 0.7rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-year,
+  .modal-up-bottle form #cont-form-add-year,
+  .modal-add-year form #cont-form-add-year {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 2fr 1fr 1fr;
+    justify-items: start;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #year-add-year-label,
+  .modal-up-bottle form #cont-form-add-year #year-add-year-label,
+  .modal-add-year form #cont-form-add-year #year-add-year-label {
+    grid-column: 1;
+    grid-row: 1;
+    align-self: center;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #description-add-year-label,
+  .modal-up-bottle form #cont-form-add-year #description-add-year-label,
+  .modal-add-year form #cont-form-add-year #description-add-year-label {
+    grid-column: 1;
+    grid-row: 2;
+    margin-top: 1rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #photo-add-year-label,
+  .modal-up-bottle form #cont-form-add-year #photo-add-year-label,
+  .modal-add-year form #cont-form-add-year #photo-add-year-label {
+    grid-column: 1;
+    grid-row: 3;
+    align-self: center;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #stock-add-year-label,
+  .modal-up-bottle form #cont-form-add-year #stock-add-year-label,
+  .modal-add-year form #cont-form-add-year #stock-add-year-label {
+    grid-column: 1;
+    grid-row: 4;
+    align-self: center;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #year-add-year,
+  .modal-up-bottle form #cont-form-add-year #year-add-year,
+  .modal-add-year form #cont-form-add-year #year-add-year {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #description-add-year,
+  .modal-up-bottle form #cont-form-add-year #description-add-year,
+  .modal-add-year form #cont-form-add-year #description-add-year {
+    resize: none;
+    grid-column: 2;
+    grid-row: 2;
+    width: 96%;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #photo-add-year,
+  .modal-up-bottle form #cont-form-add-year #photo-add-year,
+  .modal-add-year form #cont-form-add-year #photo-add-year {
+    grid-column: 2;
+    grid-row: 3;
+    padding: .6rem 0 0 0;
+    font-size: 0.7rem;
+    color: #88002d;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #stock-add-year,
+  .modal-up-bottle form #cont-form-add-year #stock-add-year,
+  .modal-add-year form #cont-form-add-year #stock-add-year {
+    grid-column: 2;
+    grid-row: 4;
+    width: 4rem;
+  }
+}
 
 @media only screen and (max-width: 576px) {
-  .modal-add-bottle-container, .modal-up-bottle-container, .modal-add-year-container {
+
+  .modal-add-bottle-container,
+  .modal-up-bottle-container,
+  .modal-add-year-container {
     position: absolute;
-    height: 300vh; }
-  .modal-add-bottle, .modal-up-bottle, .modal-add-year {
-    top: 28%; }
-    .modal-add-bottle #submitAdd, .modal-add-bottle #submitUp, .modal-add-bottle #submitAddYear, .modal-up-bottle #submitAdd, .modal-up-bottle #submitUp, .modal-up-bottle #submitAddYear, .modal-add-year #submitAdd, .modal-add-year #submitUp, .modal-add-year #submitAddYear {
-      font-size: 1.5rem;
-      margin: 1.5rem 0; }
-    .modal-add-bottle h2, .modal-up-bottle h2, .modal-add-year h2 {
-      font-size: 2rem;
-      margin: 1rem 0; }
-    .modal-add-bottle form .field, .modal-up-bottle form .field, .modal-add-year form .field {
-      font-size: 0.7rem;
-      padding: 0.15rem 0.4rem; }
-    .modal-add-bottle form label, .modal-up-bottle form label, .modal-add-year form label {
-      font-size: 1rem; }
-    .modal-add-bottle form #cont-form-add-bottle, .modal-up-bottle form #cont-form-add-bottle, .modal-add-year form #cont-form-add-bottle {
-      grid-template-columns: 1fr 4fr;
-      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr; }
-      .modal-add-bottle form #cont-form-add-bottle #name-label, .modal-up-bottle form #cont-form-add-bottle #name-label, .modal-add-year form #cont-form-add-bottle #name-label {
-        grid-column: 1;
-        grid-row: 1; }
-      .modal-add-bottle form #cont-form-add-bottle #year-label, .modal-up-bottle form #cont-form-add-bottle #year-label, .modal-add-year form #cont-form-add-bottle #year-label {
-        grid-column: 1;
-        grid-row: 2; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes-label, .modal-up-bottle form #cont-form-add-bottle #grapes-label, .modal-add-year form #cont-form-add-bottle #grapes-label {
-        grid-column: 1;
-        grid-row: 3; }
-      .modal-add-bottle form #cont-form-add-bottle #country-label, .modal-up-bottle form #cont-form-add-bottle #country-label, .modal-add-year form #cont-form-add-bottle #country-label {
-        grid-column: 1;
-        grid-row: 4; }
-      .modal-add-bottle form #cont-form-add-bottle #region-label, .modal-up-bottle form #cont-form-add-bottle #region-label, .modal-add-year form #cont-form-add-bottle #region-label {
-        grid-column: 1;
-        grid-row: 5; }
-      .modal-add-bottle form #cont-form-add-bottle #description-label, .modal-up-bottle form #cont-form-add-bottle #description-label, .modal-add-year form #cont-form-add-bottle #description-label {
-        grid-column: 1;
-        grid-row: 6; }
-      .modal-add-bottle form #cont-form-add-bottle #type-label, .modal-up-bottle form #cont-form-add-bottle #type-label, .modal-add-year form #cont-form-add-bottle #type-label {
-        grid-column: 1;
-        grid-row: 7; }
-      .modal-add-bottle form #cont-form-add-bottle #photo-label, .modal-up-bottle form #cont-form-add-bottle #photo-label, .modal-add-year form #cont-form-add-bottle #photo-label {
-        grid-column: 1;
-        grid-row: 8; }
-      .modal-add-bottle form #cont-form-add-bottle #stock-label, .modal-up-bottle form #cont-form-add-bottle #stock-label, .modal-add-year form #cont-form-add-bottle #stock-label {
-        grid-column: 1;
-        grid-row: 9; }
-      .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock, .modal-add-year form #cont-form-add-bottle #cont-tof-stock {
-        grid-column: 1/3;
-        grid-row: 9; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
-          margin-left: 3rem; }
-        .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up, .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
-          width: 3rem; }
-      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
-        grid-column: 2;
-        grid-row: 1;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #year, .modal-add-bottle form #cont-form-add-bottle #year-up, .modal-up-bottle form #cont-form-add-bottle #year, .modal-up-bottle form #cont-form-add-bottle #year-up, .modal-add-year form #cont-form-add-bottle #year, .modal-add-year form #cont-form-add-bottle #year-up {
-        grid-column: 2;
-        grid-row: 2;
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
-        grid-column: 2;
-        grid-row: 3;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
-        grid-column: 2;
-        grid-row: 4;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
-        grid-column: 2;
-        grid-row: 5;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
-        grid-column: 2;
-        grid-row: 6;
-        width: 96%; }
-      .modal-add-bottle form #cont-form-add-bottle #type, .modal-add-bottle form #cont-form-add-bottle #type-up, .modal-up-bottle form #cont-form-add-bottle #type, .modal-up-bottle form #cont-form-add-bottle #type-up, .modal-add-year form #cont-form-add-bottle #type, .modal-add-year form #cont-form-add-bottle #type-up {
-        grid-column: 2;
-        grid-row: 7;
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #photo, .modal-add-bottle form #cont-form-add-bottle #photo-up, .modal-up-bottle form #cont-form-add-bottle #photo, .modal-up-bottle form #cont-form-add-bottle #photo-up, .modal-add-year form #cont-form-add-bottle #photo, .modal-add-year form #cont-form-add-bottle #photo-up {
-        grid-column: 2;
-        grid-row: 8; }
-      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-up-bottle form #cont-form-add-bottle #stock, .modal-add-year form #cont-form-add-bottle #stock {
-        grid-column: 2;
-        grid-row: 9; } }
+    height: 300vh;
+  }
+
+  .modal-add-bottle,
+  .modal-up-bottle,
+  .modal-add-year {
+    top: 28%;
+  }
+
+  .modal-add-bottle #submitAdd,
+  .modal-add-bottle #submitUp,
+  .modal-add-bottle #submitAddYear,
+  .modal-up-bottle #submitAdd,
+  .modal-up-bottle #submitUp,
+  .modal-up-bottle #submitAddYear,
+  .modal-add-year #submitAdd,
+  .modal-add-year #submitUp,
+  .modal-add-year #submitAddYear {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+  }
+
+  .modal-add-bottle h2,
+  .modal-up-bottle h2,
+  .modal-add-year h2 {
+    font-size: 2rem;
+    margin: 1rem 0;
+  }
+
+  .modal-add-bottle form .field,
+  .modal-up-bottle form .field,
+  .modal-add-year form .field {
+    font-size: 0.7rem;
+    padding: 0.15rem 0.4rem;
+  }
+
+  .modal-add-bottle form label,
+  .modal-up-bottle form label,
+  .modal-add-year form label {
+    font-size: 1rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle,
+  .modal-up-bottle form #cont-form-add-bottle,
+  .modal-add-year form #cont-form-add-bottle {
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 2fr 1fr 1fr 1fr;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #name-label,
+  .modal-up-bottle form #cont-form-add-bottle #name-label,
+  .modal-add-year form #cont-form-add-bottle #name-label {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #year-label,
+  .modal-up-bottle form #cont-form-add-bottle #year-label,
+  .modal-add-year form #cont-form-add-bottle #year-label {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #grapes-label,
+  .modal-up-bottle form #cont-form-add-bottle #grapes-label,
+  .modal-add-year form #cont-form-add-bottle #grapes-label {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #country-label,
+  .modal-up-bottle form #cont-form-add-bottle #country-label,
+  .modal-add-year form #cont-form-add-bottle #country-label {
+    grid-column: 1;
+    grid-row: 4;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #region-label,
+  .modal-up-bottle form #cont-form-add-bottle #region-label,
+  .modal-add-year form #cont-form-add-bottle #region-label {
+    grid-column: 1;
+    grid-row: 5;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #description-label,
+  .modal-up-bottle form #cont-form-add-bottle #description-label,
+  .modal-add-year form #cont-form-add-bottle #description-label {
+    grid-column: 1;
+    grid-row: 6;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #type-label,
+  .modal-up-bottle form #cont-form-add-bottle #type-label,
+  .modal-add-year form #cont-form-add-bottle #type-label {
+    grid-column: 1;
+    grid-row: 7;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #photo-label,
+  .modal-up-bottle form #cont-form-add-bottle #photo-label,
+  .modal-add-year form #cont-form-add-bottle #photo-label {
+    grid-column: 1;
+    grid-row: 8;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #stock-label,
+  .modal-up-bottle form #cont-form-add-bottle #stock-label,
+  .modal-add-year form #cont-form-add-bottle #stock-label {
+    grid-column: 1;
+    grid-row: 9;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock,
+  .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock,
+  .modal-add-year form #cont-form-add-bottle #cont-tof-stock {
+    grid-column: 1/3;
+    grid-row: 9;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up,
+  .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up,
+  .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up {
+    margin-left: 3rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up,
+  .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up,
+  .modal-add-year form #cont-form-add-bottle #cont-tof-stock #cont-stock-up #stock-up {
+    width: 3rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #name,
+  .modal-add-bottle form #cont-form-add-bottle #name-up,
+  .modal-up-bottle form #cont-form-add-bottle #name,
+  .modal-up-bottle form #cont-form-add-bottle #name-up,
+  .modal-add-year form #cont-form-add-bottle #name,
+  .modal-add-year form #cont-form-add-bottle #name-up {
+    grid-column: 2;
+    grid-row: 1;
+    width: 96%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #year,
+  .modal-add-bottle form #cont-form-add-bottle #year-up,
+  .modal-up-bottle form #cont-form-add-bottle #year,
+  .modal-up-bottle form #cont-form-add-bottle #year-up,
+  .modal-add-year form #cont-form-add-bottle #year,
+  .modal-add-year form #cont-form-add-bottle #year-up {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #grapes,
+  .modal-add-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-up-bottle form #cont-form-add-bottle #grapes,
+  .modal-up-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-add-year form #cont-form-add-bottle #grapes,
+  .modal-add-year form #cont-form-add-bottle #grapes-up {
+    grid-column: 2;
+    grid-row: 3;
+    width: 96%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #country,
+  .modal-add-bottle form #cont-form-add-bottle #country-up,
+  .modal-up-bottle form #cont-form-add-bottle #country,
+  .modal-up-bottle form #cont-form-add-bottle #country-up,
+  .modal-add-year form #cont-form-add-bottle #country,
+  .modal-add-year form #cont-form-add-bottle #country-up {
+    grid-column: 2;
+    grid-row: 4;
+    width: 96%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #region,
+  .modal-add-bottle form #cont-form-add-bottle #region-up,
+  .modal-up-bottle form #cont-form-add-bottle #region,
+  .modal-up-bottle form #cont-form-add-bottle #region-up,
+  .modal-add-year form #cont-form-add-bottle #region,
+  .modal-add-year form #cont-form-add-bottle #region-up {
+    grid-column: 2;
+    grid-row: 5;
+    width: 96%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #description,
+  .modal-add-bottle form #cont-form-add-bottle #description-up,
+  .modal-up-bottle form #cont-form-add-bottle #description,
+  .modal-up-bottle form #cont-form-add-bottle #description-up,
+  .modal-add-year form #cont-form-add-bottle #description,
+  .modal-add-year form #cont-form-add-bottle #description-up {
+    grid-column: 2;
+    grid-row: 6;
+    width: 96%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #type,
+  .modal-add-bottle form #cont-form-add-bottle #type-up,
+  .modal-up-bottle form #cont-form-add-bottle #type,
+  .modal-up-bottle form #cont-form-add-bottle #type-up,
+  .modal-add-year form #cont-form-add-bottle #type,
+  .modal-add-year form #cont-form-add-bottle #type-up {
+    grid-column: 2;
+    grid-row: 7;
+    width: 100%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #photo,
+  .modal-add-bottle form #cont-form-add-bottle #photo-up,
+  .modal-up-bottle form #cont-form-add-bottle #photo,
+  .modal-up-bottle form #cont-form-add-bottle #photo-up,
+  .modal-add-year form #cont-form-add-bottle #photo,
+  .modal-add-year form #cont-form-add-bottle #photo-up {
+    grid-column: 2;
+    grid-row: 8;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #stock,
+  .modal-up-bottle form #cont-form-add-bottle #stock,
+  .modal-add-year form #cont-form-add-bottle #stock {
+    grid-column: 2;
+    grid-row: 9;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   #champ-requis {
     bottom: .5rem;
-    left: 2rem; }
-  .modal-add-bottle, .modal-add-year {
+    left: 2rem;
+  }
+
+  .modal-add-bottle,
+  .modal-add-year {
     padding: 1rem;
     text-align: left;
-    top: 28%; }
-    .modal-add-bottle h2, .modal-add-year h2 {
-      margin: 1rem 1rem; }
-    .modal-add-bottle form .field, .modal-add-year form .field {
-      padding: .5rem .5rem; }
-    .modal-add-bottle form label, .modal-add-year form label {
-      font-size: 0.9rem;
-      margin-left: 0; }
-    .modal-add-bottle form #cont-form-add-bottle, .modal-add-year form #cont-form-add-bottle {
-      display: block; }
-      .modal-add-bottle form #cont-form-add-bottle #name, .modal-add-bottle form #cont-form-add-bottle #name-up, .modal-add-year form #cont-form-add-bottle #name, .modal-add-year form #cont-form-add-bottle #name-up {
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #grapes, .modal-add-bottle form #cont-form-add-bottle #grapes-up, .modal-add-year form #cont-form-add-bottle #grapes, .modal-add-year form #cont-form-add-bottle #grapes-up {
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #country, .modal-add-bottle form #cont-form-add-bottle #country-up, .modal-add-year form #cont-form-add-bottle #country, .modal-add-year form #cont-form-add-bottle #country-up {
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #region, .modal-add-bottle form #cont-form-add-bottle #region-up, .modal-add-year form #cont-form-add-bottle #region, .modal-add-year form #cont-form-add-bottle #region-up {
-        width: 100%; }
-      .modal-add-bottle form #cont-form-add-bottle #description, .modal-add-bottle form #cont-form-add-bottle #description-up, .modal-add-year form #cont-form-add-bottle #description, .modal-add-year form #cont-form-add-bottle #description-up {
-        width: 100%;
-        height: 100px; }
-      .modal-add-bottle form #cont-form-add-bottle #stock, .modal-add-year form #cont-form-add-bottle #stock {
-        padding: .5rem .5rem; }
-    .modal-add-bottle form #cont-form-add-year, .modal-add-year form #cont-form-add-year {
-      display: block; }
-      .modal-add-bottle form #cont-form-add-year #description-add-year, .modal-add-year form #cont-form-add-year #description-add-year {
-        height: 50px;
-        width: 93%; }
+    top: 28%;
+  }
+
+  .modal-add-bottle h2,
+  .modal-add-year h2 {
+    margin: 1rem 1rem;
+  }
+
+  .modal-add-bottle form .field,
+  .modal-add-year form .field {
+    padding: .5rem .5rem;
+  }
+
+  .modal-add-bottle form label,
+  .modal-add-year form label {
+    font-size: 0.9rem;
+    margin-left: 0;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle,
+  .modal-add-year form #cont-form-add-bottle {
+    display: block;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #name,
+  .modal-add-bottle form #cont-form-add-bottle #name-up,
+  .modal-add-year form #cont-form-add-bottle #name,
+  .modal-add-year form #cont-form-add-bottle #name-up {
+    width: 100%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #grapes,
+  .modal-add-bottle form #cont-form-add-bottle #grapes-up,
+  .modal-add-year form #cont-form-add-bottle #grapes,
+  .modal-add-year form #cont-form-add-bottle #grapes-up {
+    width: 100%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #country,
+  .modal-add-bottle form #cont-form-add-bottle #country-up,
+  .modal-add-year form #cont-form-add-bottle #country,
+  .modal-add-year form #cont-form-add-bottle #country-up {
+    width: 100%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #region,
+  .modal-add-bottle form #cont-form-add-bottle #region-up,
+  .modal-add-year form #cont-form-add-bottle #region,
+  .modal-add-year form #cont-form-add-bottle #region-up {
+    width: 100%;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #description,
+  .modal-add-bottle form #cont-form-add-bottle #description-up,
+  .modal-add-year form #cont-form-add-bottle #description,
+  .modal-add-year form #cont-form-add-bottle #description-up {
+    width: 100%;
+    height: 100px;
+  }
+
+  .modal-add-bottle form #cont-form-add-bottle #stock,
+  .modal-add-year form #cont-form-add-bottle #stock {
+    padding: .5rem .5rem;
+  }
+
+  .modal-add-bottle form #cont-form-add-year,
+  .modal-add-year form #cont-form-add-year {
+    display: block;
+  }
+
+  .modal-add-bottle form #cont-form-add-year #description-add-year,
+  .modal-add-year form #cont-form-add-year #description-add-year {
+    height: 50px;
+    width: 93%;
+  }
+
   .modal-up-bottle {
     padding: 1rem;
     text-align: left;
-    top: 34%; }
-    .modal-up-bottle h2 {
-      margin: 1rem 1rem; }
-    .modal-up-bottle form .field {
-      padding: .5rem .5rem; }
-    .modal-up-bottle form label {
-      font-size: 0.9rem;
-      margin-left: 0; }
-    .modal-up-bottle form #cont-form-add-bottle {
-      display: block; }
-      .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img {
-        margin-left: 0; }
-      .modal-up-bottle form #cont-form-add-bottle #name, .modal-up-bottle form #cont-form-add-bottle #name-up {
-        width: 100%; }
-      .modal-up-bottle form #cont-form-add-bottle #grapes, .modal-up-bottle form #cont-form-add-bottle #grapes-up {
-        width: 100%; }
-      .modal-up-bottle form #cont-form-add-bottle #country, .modal-up-bottle form #cont-form-add-bottle #country-up {
-        width: 100%; }
-      .modal-up-bottle form #cont-form-add-bottle #region, .modal-up-bottle form #cont-form-add-bottle #region-up {
-        width: 100%; }
-      .modal-up-bottle form #cont-form-add-bottle #description, .modal-up-bottle form #cont-form-add-bottle #description-up {
-        width: 100%;
-        height: 100px; } }
+    top: 34%;
+  }
+
+  .modal-up-bottle h2 {
+    margin: 1rem 1rem;
+  }
+
+  .modal-up-bottle form .field {
+    padding: .5rem .5rem;
+  }
+
+  .modal-up-bottle form label {
+    font-size: 0.9rem;
+    margin-left: 0;
+  }
+
+  .modal-up-bottle form #cont-form-add-bottle {
+    display: block;
+  }
+
+  .modal-up-bottle form #cont-form-add-bottle #cont-tof-stock #container-photo img {
+    margin-left: 0;
+  }
+
+  .modal-up-bottle form #cont-form-add-bottle #name,
+  .modal-up-bottle form #cont-form-add-bottle #name-up {
+    width: 100%;
+  }
+
+  .modal-up-bottle form #cont-form-add-bottle #grapes,
+  .modal-up-bottle form #cont-form-add-bottle #grapes-up {
+    width: 100%;
+  }
+
+  .modal-up-bottle form #cont-form-add-bottle #country,
+  .modal-up-bottle form #cont-form-add-bottle #country-up {
+    width: 100%;
+  }
+
+  .modal-up-bottle form #cont-form-add-bottle #region,
+  .modal-up-bottle form #cont-form-add-bottle #region-up {
+    width: 100%;
+  }
+
+  .modal-up-bottle form #cont-form-add-bottle #description,
+  .modal-up-bottle form #cont-form-add-bottle #description-up {
+    width: 100%;
+    height: 100px;
+  }
+}
 
 #footer {
   font-size: 1.5rem;
-  margin: 1rem; }
+  margin: 1rem;
+}
 
 #footer-index {
   position: absolute;
-  bottom: 0; }
+  bottom: 0;
+}
 
 .red {
   color: red;
   text-decoration: underline;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .green {
   color: #add400;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .border_red {
-  border: 3px solid red !important; }
+  border: 3px solid red !important;
+}
 
 @media only screen and (max-width: 576px) {
   #footer {
     font-size: 1rem;
-    margin: 0.8rem; } }
+    margin: 0.8rem;
+  }
+}
 
 @media only screen and (max-width: 425px) {
   .red {
-    font-size: 1rem; }
+    font-size: 1rem;
+  }
+
   .green {
-    font-size: 1rem; } }
+    font-size: 1rem;
+  }
+}

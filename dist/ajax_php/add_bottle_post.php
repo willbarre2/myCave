@@ -54,9 +54,9 @@ if ($name == '') {
                 $id_session = intval($_SESSION['id']);
                 $generic = 'generic.jpg';
                 $req = $db->prepare(
-                    "INSERT INTO bottle(nom, cepage, region, pays, id_to_user, id_to_category)
+                    "INSERT INTO estate(nom, cepage, region, pays, id_to_user, id_to_category)
 					VALUES (:nom, :cepage, :region, :pays, :iduser, :idcat);
-                    INSERT INTO year(annee, stock, descri, id_to_bottle, photo)
+                    INSERT INTO year(annee, stock, descri, id_to_estate, photo)
 					VALUES (:annee, :stock, :descri, LAST_INSERT_ID(), :photo)
 				"
                 );

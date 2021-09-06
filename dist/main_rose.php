@@ -7,9 +7,9 @@ require 'connect.php';
 $req = $db->query(
     "SELECT COUNT(id_year) AS count_years
 	FROM year y
-    INNER JOIN bottle b
-    ON y.id_to_bottle = b.id_bottle
-    WHERE b.id_to_category = 3 
+    INNER JOIN estate e
+    ON y.id_to_estate = e.id_estate
+    WHERE e.id_to_category = 3 
 "
 );
 $result = $req->fetchObject();
@@ -70,12 +70,12 @@ if (isset($_GET['page']) && $_GET['page'] > 0 && $_GET['page'] <= $nb_pages) {
 $req = $db->prepare(
     "SELECT *
         FROM year y
-        INNER JOIN bottle b
-        ON y.id_to_bottle = b.id_bottle
+        INNER JOIN estate e
+        ON y.id_to_estate = e.id_estate
         INNER JOIN category c
-        ON b.id_to_category = c.id_category
+        ON e.id_to_category = c.id_category
         WHERE c.id_category = 3
-        ORDER BY b.nom
+        ORDER BY e.nom
         LIMIT :offset, :per_page
         "
 );
@@ -89,9 +89,9 @@ $req->execute();
     <article class="cards">
         <?php if (isset($_SESSION['role'])) : ?>
             <div class="del-creat-cont">
-                <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression" class="btn-del" data-idy="<?php echo $cards->id_year ?>" data-idb="<?php echo $cards->id_bottle ?>">
+                <img src="./assets/img/logos/icon_year_bx.svg" alt="icon d'ajout d'année" class="btn-add-year" data-id="<?php echo $cards->id_estate ?>">
                 <img src="./assets/img/logos/icon_crayon.svg" alt="icon d'édition" class="btn-up" data-id="<?php echo $cards->id_year ?>">
-                <img src="./assets/img/logos/icon_year_bx.svg" alt="icon d'ajout d'année" class="btn-add-year" data-id="<?php echo $cards->id_bottle ?>">
+                <img src="./assets/img/logos/icon_croix_bx.svg" alt="icon des suppression" class="btn-del" data-idy="<?php echo $cards->id_year ?>" data-idb="<?php echo $cards->id_estate ?>">
             </div>
         <?php endif; ?>
         <div class="card-cont">

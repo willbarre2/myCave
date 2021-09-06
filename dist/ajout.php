@@ -6,13 +6,14 @@ function mb_ucfirst($s)
     $s = mb_strtolower($s);
     return mb_strtoupper(mb_substr($s, 0, 1)) . mb_substr($s, 1);
 }
-$req = $db->query("
-    SELECT *
+$req = $db->query(
+    "SELECT *
     FROM role
     WHERE id
     ORDER BY id
     DESC
-");
+"
+);
 $req->execute();
 ?>
 

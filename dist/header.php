@@ -4,10 +4,11 @@ if (empty(session_id())) {
 };
 
 $domaine = "https://mycavewb.com/";
-$page_rouge = $domaine;
+$page_rouge = $domaine . "rouge.php";
 $page_blanc = $domaine . "blanc.php";
 $page_rose = $domaine . "rose.php";
 
+$home_name = "myCave / Accueil";
 $rouge_name = "myCave / Rouge";
 $blanc_name = "myCave / Blanc";
 $rose_name = "myCave / Rosé";
@@ -15,8 +16,11 @@ $rose_name = "myCave / Rosé";
 
 $current_url = strtok(('https://mycavewb.com' . $_SERVER['REQUEST_URI']), '?');
 
+if ($domaine === $current_url || $domaine . "index.php" === $current_url) :
 
-if ($page_rouge === $current_url) :
+    $title = $home_name;
+
+elseif ($page_rouge === $current_url) :
 
     $title = $rouge_name;
 
@@ -49,7 +53,7 @@ endif;
     <header>
         <div id="btn-burger"></div>
         <div id="nav-cont">
-            <img src="./assets/img/logos/logo-Cave.svg" alt="logo myCave">
+            <a href="index.php"><img src="./assets/img/logos/logo-Cave.svg" alt="logo myCave"></a>
             <nav>
                 <ul>
                     <li>

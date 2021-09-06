@@ -10,11 +10,11 @@ $bottle_id = intval($_POST['bottleId']);
 $req = $db->prepare(
     "SELECT photo
 	FROM year y
-	WHERE id_to_bottle = :idb;
+	WHERE id_to_estate = :idestate;
 "
 );
 
-$req->bindValue(':idb', $bottle_id, PDO::PARAM_INT);
+$req->bindValue(':idestate', $bottle_id, PDO::PARAM_INT);
 $req->execute();
 while ($resultat = $req->fetchObject()) {
     $tof = "../assets/img/photos/$resultat->photo";
@@ -28,15 +28,15 @@ while ($resultat = $req->fetchObject()) {
 // requette pour effacer bouteille dans DB
 $req2 = $db->prepare(
     "DELETE 
-	FROM bottle  
-	WHERE bottle.id_bottle = :idb;
+	FROM estate  
+	WHERE estate.id_estate = :idestate;
 	DELETE 
 	FROM year 
-	WHERE year.id_to_bottle = :idb
+	WHERE year.id_to_estate = :idestate
 "
 );
 
-$req2->bindValue(':idb', $bottle_id, PDO::PARAM_INT);
+$req2->bindValue(':idestate', $bottle_id, PDO::PARAM_INT);
 $result = $req2->execute();
 
 $msg = array();
